@@ -14,6 +14,7 @@ related:
   - [[equipment/index|Equipment]]
   - [[knowledge-base/index|Knowledge Base]]
   - [[knowledge-base/domain-model-review|Domain Model Review]]
+  - [[knowledge-base/wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]]
   - [[company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
   - [[knowledge-base/agent-capability-map|Agent Capability Map]]
@@ -58,6 +59,7 @@ This is the root navigation page for the Fit Supply LLM Wiki. Start here when or
 - [[sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] - Design-hypothesis sales pattern for existing multifamily prospecting, reactivation, nurture, and human-reviewed outreach policy.
 - [[projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]] - Case-backed project workflow from approval to delivery, completion, and relationship continuity.
 - [[knowledge-base/domain-model-review|Domain Model Review]] - First domain-structure checkpoint after roadmap synthesis, including the order-execution lens decision.
+- [[knowledge-base/wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] - Reference-pattern bridge for translating mature wiki knowledge into future build-facing agent requirements without creating product schema or architecture.
 
 ## Order-Execution Synthesis Lane
 

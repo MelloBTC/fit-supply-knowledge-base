@@ -12,6 +12,7 @@ sources:
 related:
   - [[agent-answerability-targets|Agent Answerability Targets]]
   - [[domain-model-review|Domain Model Review]]
+  - [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]]
   - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[../governance/source-manifest|Source Manifest]]
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
@@ -91,6 +92,7 @@ Completed on 2026-06-27:
 - FSCR-009 was synthesized into [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]].
 - FSCR-010 was synthesized into [[../projects/order-execution-state-model|Order Execution State Model]] and [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
 - FSCR-012 was synthesized into [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] as a `design-hypothesis` page without importing the machine-readable fixture bundle.
+- FSCR-013 was synthesized into [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] as a `reference-pattern` bridge without creating product schema, agent architecture, live tooling, or implementation specs.
 - FSCR-016 was classified from the roadmap lead-intake/source-routing artifact family and synthesized into [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] without importing raw customer, pricing, quote, or NetSuite artifacts.
 - FSCR-004 remains an `upstream-dependency` owned by `fast-os-knowledge-base`.
 
@@ -121,6 +123,16 @@ This page is intentionally `design-hypothesis`, not `target-state`, because the 
 
 Treat `hunter-sales` as a sales sub-lane for now. Do not create a top-level `lead-intelligence` or `prospecting` domain until validated compiled pages create stronger navigation pressure.
 
+## Current Wiki-To-Agent Build Bridge Result
+
+FSCR-013 now has one compiled knowledge-base page: [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]].
+
+This page is `reference-pattern` because it adapts a roadmap bridge from workflow decomposition to future product build inputs. It records how mature wiki knowledge can later become build-facing requirements while keeping product schema, agent architecture, live tooling, executable tests, and implementation specs out of this repo.
+
+Treat `agent-workflows` as a knowledge-base answerability and bridge lens for now. Do not create a top-level `agent-workflows` domain until multiple bridge or context-contract pages create stronger ownership and navigation pressure.
+
 ## Recommended Next Slice
 
-If evaluation discipline becomes the priority, review FSCR-011 for order-execution gate fixtures or the FSCR-012 fixture bundle for hunter-sales policy evaluation. Otherwise, continue with a non-gated workflow family. After FSCR-016, the strongest next candidates are selective case-backed validation of source-aware lead intake with additional sanitized examples, or a governance bridge from wiki knowledge to future agent build requirements if no new examples are available.
+FSCR-013 closes the governance bridge checkpoint without opening implementation scope.
+
+If evaluation discipline becomes the priority, review FSCR-011 for order-execution gate fixtures or the FSCR-012 fixture bundle for hunter-sales policy evaluation. Otherwise, continue with a non-gated workflow family or validate source-aware lead intake or hunter-sales with real or sanitized dealer examples before moving either lane toward build-facing requirements.

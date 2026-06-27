@@ -14,6 +14,7 @@ sources:
   - wiki/company/commercial-fitness-distributor-operating-model.md
   - wiki/knowledge-base/distributor-workflow-map.md
   - wiki/knowledge-base/agent-capability-map.md
+  - wiki/knowledge-base/wiki-to-agent-build-bridge.md
   - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/projects/order-execution-readiness-agent-requirements.md
   - wiki/projects/order-execution-state-model.md
@@ -22,6 +23,7 @@ related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[roadmap-import-plan|Roadmap Import Plan]]
   - [[domain-model-review|Domain Model Review]]
+  - [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]]
   - [[../equipment/index|Equipment]]
   - [[../sales/index|Sales]]
   - [[../projects/index|Projects]]
@@ -42,7 +44,7 @@ tags:
   - answerability
   - target-state
   - agent-design
-provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, FSCR-012, and FSCR-016.
+provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, FSCR-012, FSCR-013, and FSCR-016.
 ---
 
 # Agent Answerability Targets
@@ -136,6 +138,13 @@ The first roadmap synthesis pass adds these more specific answerability targets:
 ### Upstream Dependency Boundary
 
 - Flag equipment catalog, model-specific specification, price freshness, product compatibility, and equipment answerability questions as upstream dependencies owned by `fast-os-knowledge-base` until mature outputs are available for local evaluation.
+
+### Wiki-To-Agent Build Bridge
+
+- Explain when a compiled wiki workflow is mature enough to inform future build-facing agent requirements.
+- Preserve the distinction between source-backed answerability, conceptual data-shape implications, and product implementation details.
+- Identify workflow evidence, repeated decisions, required context, expected outputs, risk, human review, test evidence, evaluation, and observability questions before any implementation lane treats a workflow as build-ready.
+- Say when a page is useful wiki knowledge but not yet ready for build planning because validation, human boundaries, data availability, or test evidence remain weak.
 
 ## Target Behavior Standard
 

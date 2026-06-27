@@ -13,6 +13,7 @@ related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
   - [[domain-model-review|Domain Model Review]]
+  - [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]]
   - [[distributor-workflow-map|Distributor Workflow Map]]
   - [[agent-capability-map|Agent Capability Map]]
 agent_answerability:
@@ -34,6 +35,7 @@ Knowledge Base pages explain how this wiki works, how to contribute to it, how i
 - Source ingestion patterns
 - Agent navigation instructions
 - Agent answerability targets
+- Wiki-to-agent build bridge patterns
 - Wiki maintenance routines
 - Context contracts for future agent roles
 
@@ -42,6 +44,7 @@ Knowledge Base pages explain how this wiki works, how to contribute to it, how i
 - [[agent-answerability-targets|Agent Answerability Targets]]
 - [[roadmap-import-plan|Roadmap Import Plan]]
 - [[domain-model-review|Domain Model Review]]
+- [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]]
 - [[distributor-workflow-map|Distributor Workflow Map]]
 - [[agent-capability-map|Agent Capability Map]]
 
