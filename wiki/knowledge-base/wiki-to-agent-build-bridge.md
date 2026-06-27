@@ -143,7 +143,7 @@ This bridge currently applies to the wiki at the pattern level:
 - [[distributor-workflow-map|Distributor Workflow Map]] identifies lifecycle stages and synthesis boundaries.
 - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] is a stronger candidate for future bridge use because it has a clear source event, route decision, owner/action state, and outcome loop.
 - [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]] and [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] are implementation-adjacent, so they need especially careful separation between wiki rules and future build specifications.
-- [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] now has a validation-status checkpoint from real/sanitized examples, but it should not move toward build requirements because remaining budget-window, no-response, manager-change, hard-stop, soft-negative, and sensitive-account probes are still provisional or split-required.
+- [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] now has a validation-status checkpoint from real/sanitized examples and a soft-negative split-candidate capture, but it should not move toward build requirements because remaining budget-window, no-response, manager-change, hard-stop, soft-negative, and sensitive-account probes are still provisional or split-required.
 
 The first production agent remains out of scope for this repo. The correct local move is to improve source-backed answerability until a future build lane can make implementation decisions from stronger evidence.
 

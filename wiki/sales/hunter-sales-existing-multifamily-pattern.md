@@ -33,7 +33,7 @@ tags:
   - existing-multifamily
   - policy-validation
   - roadmap-derived
-provenance_notes: Synthesized from roadmap FSCR-012 as a design-hypothesis sales pattern. Updated 2026-06-27 with a validation-status checkpoint from real/sanitized example pressure tests and provisional probe results. The source family includes candidate policy defaults and synthetic fixture labels, so this page must not be treated as approved dealer policy, current Fit Supply operations, or build-ready evaluator behavior.
+provenance_notes: Synthesized from roadmap FSCR-012 as a design-hypothesis sales pattern. Updated 2026-06-27 with a validation-status checkpoint from real/sanitized example pressure tests, provisional probe results, and a soft-negative split-candidate capture. The source family includes candidate policy defaults and synthetic fixture labels, so this page must not be treated as approved dealer policy, current Fit Supply operations, or build-ready evaluator behavior.
 ---
 
 # Hunter Sales Existing Multifamily Pattern
@@ -180,6 +180,31 @@ real/sanitized pressure test
 -> no fixture promotion without matching dealer judgment
 ```
 
+### Example Capture - Soft-Negative Split Candidate
+
+The soft-negative response probe is the next compiled hunter-sales example capture for this page. It is not dealer-confirmed. It is a synthetic/sanitized split candidate from the FSCR-012 provisional probe and reasoning-note layer, captured here because it prevents a risky shortcut: treating every negative reply as an explicit hard stop.
+
+| Capture Field | Read |
+| --- | --- |
+| Source or signal type | Soft-negative response signal in existing multifamily prospecting, such as "not now", wrong person, bounce, vendor already selected, or complaint without an explicit stop. |
+| Evidence label | Synthetic/sanitized probe and reasoning note; `split_required`; `policy_parameter_needed`; not `real_example_backed_candidate`. |
+| What the example validates | The workflow must classify the response before changing suppression, nurture, contact-correction, deprioritization, or policy-review state. Explicit hard stops and soft negatives are different signals. |
+| What it does not validate | It does not validate dealer-approved quiet periods, universal follow-up timing, suppression scope, future trigger rules, or any actual Fit Supply outcome. |
+| Outcome or holding state | Hold as `split_required` with no fixture promotion. Keep customer-facing outreach blocked until a rep or policy owner reviews the classified response and allowed next step. |
+| Remaining validation gaps | Capture a real or sanitized dealer response with response type, source evidence type, suppression scope, reviewer or override owner, rep judgment, and future trigger. |
+| Implications for hunter-sales policy | Add or preserve `ResponseSignal` before `SuppressionRecord`; do not reuse `suppression_no_follow_up` unless the response is an explicit stop, unsubscribe, or policy-confirmed hard stop. |
+
+This capture keeps the policy default narrow:
+
+```text
+negative response
+-> classify response type
+-> choose contact correction, nurture, quiet period, lifecycle watch, policy review, or hard suppression
+-> require human review for ambiguous relationship risk or customer-facing next action
+```
+
+The durable lesson is that "negative" is not a policy state. A negative response becomes useful only after the system knows whether it is a timing objection, wrong-contact signal, bounce, vendor-cycle signal, relationship-risk complaint, or explicit stop.
+
 ## Data Shape Implications
 
 This pattern implies these reusable objects or events:
@@ -217,6 +242,6 @@ For now, the sales index should treat hunter sales as an active sub-lane with pr
 - Capture a prospecting no-response case with touch count, last touch date, channels, contact confidence, and next meaningful trigger.
 - Capture a manager-change or management-company-change signal with role level, source reliability, fitness relevance, and rep judgment.
 - Capture an explicit hard-stop example with stop type, suppression scope, source evidence, override owner, and future queue rule.
-- Capture a soft negative response that is not a hard stop, such as "not now", wrong person, bounce, or vendor selected.
+- Capture a real or sanitized dealer soft-negative response that is not a hard stop, using the split-candidate capture above as the checklist.
 - Capture a strategic or sensitive account example where a normal target signal changes the review owner or allowed preparation.
 - Keep cadence, channels, sender identity, quiet windows, stop rules, override permissions, and learning thresholds as dealer-policy parameters until validated.
