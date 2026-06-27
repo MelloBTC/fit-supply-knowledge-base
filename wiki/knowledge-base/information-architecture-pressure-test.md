@@ -19,7 +19,15 @@ sources:
   - wiki/index.md
   - wiki/knowledge-base/index.md
   - wiki/company/commercial-fitness-distributor-operating-model.md
+  - wiki/sales/source-aware-lead-intake-routing.md
+  - wiki/sales/lead-to-closed-won-workflow.md
+  - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/projects/close-won-to-delivery-workflow.md
+  - wiki/projects/order-execution-readiness-agent-requirements.md
+  - wiki/projects/order-execution-state-model.md
+  - wiki/governance/order-execution-transition-gate-rules.md
+  - wiki/governance/source-manifest.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/macro-workflow-map-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/agent-candidate-inventory-v1.md
 related:
@@ -43,7 +51,7 @@ tags:
   - domain-model
   - roadmap-derived
   - wiki-maintenance
-provenance_notes: Created as an information-architecture pressure test after the first roadmap synthesis pass. This page evaluates structure against fast-os-capability-roadmap evidence and records a navigation recommendation; it does not move folders or promote a new phase. Updated 2026-06-27 after the first IA-guided navigation cleanup and the FSCR-017 freight/install quote-readiness classification pass.
+provenance_notes: Created as an information-architecture pressure test after the first roadmap synthesis pass. This page evaluates structure against fast-os-capability-roadmap evidence and records a navigation recommendation; it does not move folders or promote a new phase. Updated 2026-06-27 after the first IA-guided navigation cleanup, the FSCR-017 freight/install quote-readiness classification pass, and the no-move structure audit with a v0.4 target-structure proposal.
 ---
 
 # Information Architecture Pressure Test
@@ -275,6 +283,113 @@ The current folders should be treated as storage domains, not as the complete in
 | Agent Evaluation Fixtures | Records evaluation-fixture and trace discipline without creating an implementation or new domain. |
 | Information Architecture Pressure Test | Records the broader structure decision and migration criteria. |
 
+## No-Move Structure Audit 2026-06-27
+
+Josh re-raised the folder-structure question after the wiki gained enough compiled pages for the mismatch to become more visible. This audit keeps the current files in place and maps the current page set against the structure the content is trying to become.
+
+Audit result:
+
+1. The mismatch is real enough to name directly.
+2. The mismatch is not yet strong enough to justify a full physical migration.
+3. `order-execution` is the first credible pilot candidate if Josh chooses to test a folder promotion.
+4. `lead-intelligence`, `quote-readiness`, `agent-readiness`, `installed-base`, and `accounts-and-sites` should remain named lanes until more validated pages exist.
+
+### Page Density Snapshot
+
+| Area | Current compiled shape | IA signal | Current decision |
+| --- | --- | --- | --- |
+| Root | One root index. | Working as the entry point for lens-first navigation. | Keep. |
+| `knowledge-base` | Seven content pages plus an index. | Over-carrying navigation, answerability, roadmap import, build bridge, and structure-governance work. | Keep as control plane for now; likely later split some material into `agent-readiness` and `governance`. |
+| `sales` | Four workflow pages plus an index. | Real density, but it contains three different lanes: lead intelligence, lead-to-close workflow, and quote readiness. | Keep as storage for now; do not let `sales` hide the active lanes. |
+| `projects` | Three workflow pages plus an index. | Mostly order-execution material now. | Closest candidate for a pilot migration. |
+| `governance` | Three governance pages plus an index. | Contains general source governance plus order-execution gate/evaluation governance. | Keep for now; if order-execution moves, decide whether gate rules move with it. |
+| `company` | One operating-model page plus an index. | `company` is acting as a home for operating-model truth, not company current-state truth. | Keep until lifecycle, role, and value-stream pages multiply. |
+| `design`, `equipment`, `service`, `current-state` | Index-only placeholders. | Important domains, but not yet enough compiled local pages to drive migration. | Keep quiet; equipment remains upstream-dependent for deep catalog/schema work. |
+
+### Migration Matrix For Current Pages
+
+| Current page | Current home | Conceptual lane | Lifecycle, readiness, or capability lens | Likely future home | Current action |
+| --- | --- | --- | --- | --- | --- |
+| `wiki/index.md` | Root | Root navigation | All lenses | Root | Keep. |
+| `wiki/company/index.md` | `company` | Domain facet | Company/operating-model context | Domain facet or `operating-model` index later | Keep. |
+| `wiki/company/commercial-fitness-distributor-operating-model.md` | `company` | Operating model | Parent lifecycle, roles, data-object spine | `operating-model` | Keep until operating-model pages multiply. |
+| `wiki/sales/index.md` | `sales` | Domain facet | Sales, lead, quote, and handoff navigation | Domain facet or split lane indexes later | Keep. |
+| `wiki/sales/source-aware-lead-intake-routing.md` | `sales` | Lead intelligence | Lead identification, source routing, research/enrichment | `lead-intelligence` | Keep until lead research, source quality, and routing pages multiply. |
+| `wiki/sales/lead-to-closed-won-workflow.md` | `sales` | End-to-end workflow | Lead signal through approval and order-readiness boundary | `workflows` | Keep; likely moves only in a broader lifecycle migration. |
+| `wiki/sales/hunter-sales-existing-multifamily-pattern.md` | `sales` | Lead intelligence / prospecting | Target coverage, reactivation, suppression, human review | `lead-intelligence` | Keep because the page remains `design-hypothesis`. |
+| `wiki/sales/freight-install-quote-readiness.md` | `sales` | Quote readiness | Pricing/quote creation, F&I review, handoff continuity | `quote-readiness` | Keep until quote-readiness pages expand beyond F&I. |
+| `wiki/design/index.md` | `design` | Domain facet | Layout/design workflow placeholder | Domain facet or `workflows`/`equipment` facet later | Keep. |
+| `wiki/equipment/index.md` | `equipment` | Equipment ontology | Product taxonomy and source freshness | `equipment` | Keep; wait for upstream mature outputs. |
+| `wiki/projects/index.md` | `projects` | Domain facet | Project/order-execution navigation | Domain facet or `order-execution` index later | Keep for now. |
+| `wiki/projects/close-won-to-delivery-workflow.md` | `projects` | Order execution / workflow | Closed-won through delivery, install, relationship transition | `order-execution` or `workflows` | Candidate for order-execution pilot. |
+| `wiki/projects/order-execution-readiness-agent-requirements.md` | `projects` | Order execution / agent readiness | Coordinator behavior, blockers, human review | `order-execution` | Candidate for order-execution pilot. |
+| `wiki/projects/order-execution-state-model.md` | `projects` | Order execution | Quote-ready through relationship-ready state model | `order-execution` | Candidate for order-execution pilot. |
+| `wiki/service/index.md` | `service` | Domain facet | Service/warranty/installed-base placeholder | Domain facet or `installed-base` later | Keep. |
+| `wiki/current-state/index.md` | `current-state` | Current-state lane | Staff-validated operating truth | `current-state` | Keep quiet. |
+| `wiki/governance/index.md` | `governance` | Governance facet | Review, source, freshness, conflict rules | `governance` | Keep. |
+| `wiki/governance/source-manifest.md` | `governance` | Source governance | Source/provenance discipline | `governance` | Keep. |
+| `wiki/governance/order-execution-transition-gate-rules.md` | `governance` | Order execution governance | Gate rules, blockers, warnings, overrides | `order-execution` or `governance` | Decide during pilot; this is the key split point. |
+| `wiki/governance/agent-evaluation-fixtures.md` | `governance` | Agent evaluation / readiness | Fixture discipline, trace expectations, human review | `agent-readiness` or `governance` | Keep; do not move with order-execution unless scope widens. |
+| `wiki/knowledge-base/index.md` | `knowledge-base` | Wiki control plane | Navigation, import, answerability, IA | `knowledge-base` or split control plane | Keep. |
+| `wiki/knowledge-base/agent-answerability-targets.md` | `knowledge-base` | Agent readiness | Answerability standards across domains | `agent-readiness` | Keep until agent-readiness folder exists. |
+| `wiki/knowledge-base/roadmap-import-plan.md` | `knowledge-base` | Import governance | Roadmap classification and synthesis process | `governance` or `knowledge-base` | Keep. |
+| `wiki/knowledge-base/domain-model-review.md` | `knowledge-base` | Structure governance | Domain promotion decisions | `governance` or `knowledge-base` | Keep as paired IA evidence. |
+| `wiki/knowledge-base/information-architecture-pressure-test.md` | `knowledge-base` | Structure governance | Folder migration criteria and target IA | `governance` or `knowledge-base` | Keep as canonical structure decision page. |
+| `wiki/knowledge-base/wiki-to-agent-build-bridge.md` | `knowledge-base` | Agent readiness / build bridge | Build-readiness boundary and evidence standard | `agent-readiness` | Keep until multiple build-bridge pages exist. |
+| `wiki/knowledge-base/distributor-workflow-map.md` | `knowledge-base` | Workflow map | Lifecycle spine from lead source to relationship expansion | `workflows` | Keep as primary navigation lens. |
+| `wiki/knowledge-base/agent-capability-map.md` | `knowledge-base` | Agent capability map | Capability clusters and human review boundaries | `agent-readiness` | Keep as primary navigation lens. |
+
+### v0.4 Target Structure Proposal
+
+If a physical migration is approved later, the next structure should not be another department-first layout. The likely `v0.4` structure should be lane-first while preserving governance and current-state boundaries:
+
+```text
+wiki/
+  index.md
+  operating-model/
+  workflows/
+  lead-intelligence/
+  quote-readiness/
+  order-execution/
+  equipment/
+  accounts-and-sites/
+  installed-base/
+  agent-readiness/
+  governance/
+  knowledge-base/
+  current-state/
+```
+
+This is a target proposal, not the active structure. In that model:
+
+| Proposed folder | Role |
+| --- | --- |
+| `operating-model` | Parent lifecycle, role, value-stream, data-object, and distributor operating-model pages. |
+| `workflows` | End-to-end lifecycle maps and cross-stage workflow pages that should not be owned by a department. |
+| `lead-intelligence` | Source-aware lead intake, lead research, prospecting, target coverage, source quality, and outreach policy. |
+| `quote-readiness` | Quote completeness, F&I readiness, pricing assumptions, proposal readiness, approval provenance, and quote-source freshness. |
+| `order-execution` | Closed-won through order readiness, vendor order, site readiness, delivery, install, closeout, and relationship-ready state. |
+| `equipment` | Equipment ontology, manufacturer/model/source-freshness knowledge, and compatibility once upstream work matures. |
+| `accounts-and-sites` | Account, property, site, contact, management company, buyer-path, and relationship-memory knowledge. |
+| `installed-base` | Installed asset context, warranty, service history, replacement triggers, parts, and relationship expansion. |
+| `agent-readiness` | Agent answerability, capability maps, context contracts, build bridges, fixture discipline, evaluation, and human-boundary patterns. |
+| `governance` | Schema, review process, source manifests, freshness, conflict handling, provenance, and promotion/deprecation rules. |
+| `knowledge-base` | Remaining wiki operating instructions and navigation patterns that do not yet belong in governance or agent-readiness. |
+| `current-state` | Staff-validated actual Fit Supply operating notes, kept separate from target-state design. |
+
+### Pilot Migration Candidate
+
+If Josh chooses to test a physical folder promotion, start with `order-execution`, not a full restructure.
+
+The pilot candidate would likely include:
+
+- `wiki/projects/close-won-to-delivery-workflow.md`.
+- `wiki/projects/order-execution-readiness-agent-requirements.md`.
+- `wiki/projects/order-execution-state-model.md`.
+- Possibly `wiki/governance/order-execution-transition-gate-rules.md`, if the pilot treats gate policy as part of the order-execution lane rather than general governance.
+
+Do not include `wiki/governance/agent-evaluation-fixtures.md` in that first move unless the scope explicitly becomes an `agent-readiness` migration. Do not include `wiki/sales/freight-install-quote-readiness.md`; it should stay in the quote-readiness lane until that lane has enough pages to promote.
+
 ## Migration Triggers
 
 Do not move folders just because a term repeats. Move only when the current structure creates practical maintenance pain.
@@ -314,20 +429,20 @@ The important idea is that `sales`, `projects`, and `service` may become lifecyc
 
 ## What To Do Next
 
-The initial no-new-examples navigation cleanup is complete:
+The no-move structure audit is complete:
 
-1. Keep the current physical folders stable.
-2. Use `wiki/index.md` as the root lens path before browsing domain folders.
-3. Use `wiki/knowledge-base/index.md` as the local hub for workflow, capability, structure, evaluation, and build-readiness lenses.
-4. Use this page and [[domain-model-review|Domain Model Review]] before adding or moving any top-level folder.
-5. FSCR-017 freight/install quote readiness has now been synthesized as the first post-cleanup non-gated roadmap family and classified against lifecycle, state/readiness, agent capability, evaluation/build-readiness, storage-domain fit, and domain-promotion pressure.
-6. When synthesizing the next non-gated roadmap family, repeat that classification before adding pages or moving folders.
-7. Reassess folder migration only after at least one candidate lane meets its migration trigger.
+1. Keep the current physical folders stable unless Josh explicitly approves a pilot migration.
+2. Treat `order-execution` as the first pilot candidate if the repo tests physical folder promotion.
+3. Use the migration matrix above before moving any page.
+4. Use `wiki/index.md` as the root lens path before browsing domain folders.
+5. Use `wiki/knowledge-base/index.md` as the local hub for workflow, capability, structure, evaluation, and build-readiness lenses.
+6. Use this page and [[domain-model-review|Domain Model Review]] before adding or moving any top-level folder.
+7. When synthesizing the next non-gated roadmap family, repeat lifecycle, state/readiness, agent capability, evaluation/build-readiness, storage-domain fit, and domain-promotion classification before adding pages or moving folders.
 
-The best next content slice without new examples is now:
+The best next move is now a decision fork:
 
-- Another non-gated roadmap workflow family if it strengthens the lifecycle, readiness/state, evaluation, or agent-readiness maps.
-- A second navigation cleanup only when new compiled pages create fresh link, orientation, or page-density pressure.
+- If Josh wants to reorganize now, run a bounded `order-execution` pilot migration and update all wikilinks/frontmatter in the same checkpoint.
+- If Josh wants more evidence first, continue with another non-gated roadmap workflow family and keep using the current folders as storage homes.
 
 ## Decision
 
@@ -341,4 +456,4 @@ then land pages in the least-bad current storage folder
 and promote folders only when evidence creates real navigation pressure
 ```
 
-This preserves simplicity while acknowledging Josh's concern: the starter folder structure is not the final answer. It is scaffolding while the better FAST OS-shaped information architecture emerges.
+This preserves simplicity while acknowledging Josh's concern: the starter folder structure is not the final answer. It is scaffolding while the better FAST OS-shaped information architecture emerges. The no-move audit makes the next likely structure visible without making the repo pay migration cost before a bounded pilot is approved.
