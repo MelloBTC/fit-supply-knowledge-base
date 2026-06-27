@@ -13,6 +13,8 @@ sources:
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-segment-policy-validation-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-policy-profile-and-synthetic-scenarios-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-real-example-policy-pressure-test-v1.md
+  - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/05-capability-roadmap/regency-at-dell-ranch-outbound-campaign-response-case-study-v1.md
+  - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/regency-lead-to-closed-won-work-unit-decomposition-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-provisional-example-validation-pass-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-provisional-sanitized-example-probes-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-provisional-probe-validation-results-v1.md
@@ -33,7 +35,7 @@ tags:
   - existing-multifamily
   - policy-validation
   - roadmap-derived
-provenance_notes: Synthesized from roadmap FSCR-012 as a design-hypothesis sales pattern. Updated 2026-06-27 with a validation-status checkpoint from real/sanitized example pressure tests, provisional probe results, and a soft-negative split-candidate capture. The source family includes candidate policy defaults and synthetic fixture labels, so this page must not be treated as approved dealer policy, current Fit Supply operations, or build-ready evaluator behavior.
+provenance_notes: Synthesized from roadmap FSCR-012 as a design-hypothesis sales pattern. Updated 2026-06-27 with a validation-status checkpoint from real/sanitized example pressure tests, provisional probe results, a soft-negative split-candidate capture, and a dealer-backed Regency active-workflow duplicate-block example. The source family includes candidate policy defaults and synthetic fixture labels, so this page must not be treated as approved dealer policy, current Fit Supply operations, or build-ready evaluator behavior.
 ---
 
 # Hunter Sales Existing Multifamily Pattern
@@ -148,6 +150,33 @@ The roadmap source family now includes real/sanitized pressure tests and provisi
 | Lenox Park direct inbound bid request asked for specific equipment. | A high-intent quote request can originate outside an approved outbound sequence and should preserve `source_origin` before routing. | It does not validate manager-change reactivation, because the manager context belongs to an inbound quote request. |
 | Park at Rialto service-created replacement signal became quote work. | Service or installed-base replacement demand needs service-to-sales review, replacement opportunity context, and quote-readiness preparation. | Its post-quote silence should not be reused as proof for pre-opportunity prospecting no-response policy. |
 | Regency and Madison shared relationship context but stayed separate workflows. | Related-property or shared-management context should produce grouped review and relationship awareness without merging quotes, approvals, or outcomes. | It does not prove that management-company change alone should trigger outreach. |
+
+### Example Capture - Dealer-Backed Active Workflow Block
+
+The Regency outbound campaign response is the first compiled dealer-backed hunter-sales example capture for this page. It is still sanitized and should not be treated as a universal prospecting policy, but it has stronger evidence than the provisional synthetic probes because it comes from the Regency case study, Josh walkthrough context, and the real-example pressure test.
+
+| Capture Field | Read |
+| --- | --- |
+| Source or signal type | Outbound campaign response from an existing multifamily target, followed by related-property context for Regency and Madison. |
+| Evidence label | Real/sanitized dealer example; evidence-backed for the response, site visit, proposal, bid-collection, approval, and closed-won states described in the source artifacts. |
+| What the example validates | A prospect reply can convert into opportunity review without becoming automatically quote-ready; related properties need grouped context without merged outcomes; active proposal, bid collection, approved quote, closed-won, and order-readiness states should block duplicate hunter outreach. |
+| What it does not validate | It does not validate budget-window target review, prospecting no-response thresholds, manager-change timing, explicit hard-stop scope, soft-negative handling, sensitive-account ownership, or automatic customer-facing outreach. |
+| Outcome or holding state | `outbound_response` moved to `site_visit_required`, proposal send, `bid_collection`, approved quote, and closed-won. Any later hunter-sales trigger for the same active workflow should route as `active_owner_context`, not as a new reactivation package. |
+| Remaining validation gaps | Capture a separate budget-window, no-response, manager-change, hard-stop, soft-negative, or sensitive-account example before changing those policy defaults. |
+| Implications for hunter-sales policy | Preserve `source_origin`, `quote_readiness_distance`, `next_workflow_route`, `RelatedTargetGroupMap`, and `ActiveOwnerContextNote` before deciding whether to pursue, nurture, suppress, or route to an active owner. |
+
+This capture keeps the guardrail narrow:
+
+```text
+outbound response
+-> opportunity review
+-> site visit / discovery / quote-readiness route
+-> active proposal or closed-won state
+-> block duplicate hunter motion
+-> route context to active owner
+```
+
+The durable lesson is that hunter-sales systems need to recognize when their job is done. Once a target has become active sales or post-close work, the safe behavior is to preserve context for the active owner instead of starting another prospecting motion.
 
 ### Current Policy Corrections
 
