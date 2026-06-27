@@ -6,6 +6,8 @@ The Fit Supply Knowledge Base is a structured LLM Wiki for designing a target-st
 
 The goal is not just to collect documents or mirror current operations. The goal is to turn source material, completed roadmap work, and Fit Supply-informed examples into traceable, maintained knowledge that can support future AI agents and show what an agent-ready distributor operating system could look like.
 
+The finished artifact should be useful as a knowledge base and guidebook for a commercial fitness distributor evaluating what it means to become AI-enabled. The FAST OS vision should be shown through credible operating-model detail, workflow design, and agent-support patterns rather than stated as overt marketing copy.
+
 ## Current Phase
 
 **Phase**: Target-state skeleton and first roadmap synthesis
@@ -19,6 +21,7 @@ The current work is focused on:
 - Framing the wiki as a target-state exemplar before importing roadmap material.
 - Incorporating completed work from `fast-os-capability-roadmap` without duplicating active work in `fast-os-knowledge-base`.
 - Maintaining the first roadmap-derived synthesis pages while preserving source handling and knowledge-scope discipline.
+- Reviewing whether the starter `wiki/` folder structure should evolve based on roadmap evidence before forcing new material into the initial skeleton.
 
 ## Source Model
 
@@ -57,6 +60,7 @@ The other domains exist to connect equipment knowledge to real business workflow
 
 - Keep the structure simple until real source material reveals the need for more complexity.
 - Treat the current domain list as provisional; expand it when the roadmap inventory shows missing workflow areas.
+- Let the stronger `fast-os-capability-roadmap` information architecture influence this repo's domain model; do not force roadmap concepts into starter folders when they deserve first-class homes.
 - Prefer improving existing pages and links over creating duplicates.
 - Treat uncertain information as uncertain.
 - Do not promote pages beyond `Draft` without a clear review action.
@@ -68,4 +72,4 @@ The other domains exist to connect equipment knowledge to real business workflow
 
 The first durable roadmap synthesis pass now exists in `wiki/company/commercial-fitness-distributor-operating-model.md`, `wiki/knowledge-base/distributor-workflow-map.md`, `wiki/knowledge-base/agent-capability-map.md`, `wiki/sales/lead-to-closed-won-workflow.md`, and `wiki/projects/close-won-to-delivery-workflow.md`.
 
-The next durable step is to review those pages for domain fit and terminology, then decide whether the next synthesis pass should deepen the `projects` order-execution lane from FSCR-009 through FSCR-011 or first create a dedicated `operating-model`, `agent-workflows`, or `order-execution` lens. Treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.
+The next durable step is a domain model review. Review the first synthesis pages and the roadmap inventory to decide whether concepts such as `order-execution`, `agent-workflows`, `operating-model`, `lead-intelligence`, and `installed-base` deserve first-class homes because the roadmap evidence supports them. Treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.

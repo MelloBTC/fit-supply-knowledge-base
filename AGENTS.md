@@ -54,3 +54,6 @@ Act as a careful, long-term wiki maintainer. The goal is to make this target-sta
 - Update it when the active checkpoint, recommended next action, boundaries, or restart prompt changes.
 - Keep detailed source status in `raw/imports/` or relevant wiki pages rather than expanding the handoff.
 - End meaningful checkpoints with a short restart prompt or a pointer to `docs/session-handoff.md`.
+- Standing order from Josh: at the end of a coherent session, agents may commit and push to `main` after verification passes, as long as no Josh decision is needed and the work is not switching the repo into a new phase.
+- This standing order does not authorize destructive Git operations, private/raw source imports, pricing/customer/quote material, product or schema implementation, remote tooling, or any gated lane that requires Josh approval.
+- After commit/push, report the commit hash, verification status, push status, and whether the worktree is clean.

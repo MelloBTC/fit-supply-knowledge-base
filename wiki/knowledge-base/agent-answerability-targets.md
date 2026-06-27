@@ -114,4 +114,4 @@ A future agent should be able to:
 
 ## Next Refinement Step
 
-After human review of the first synthesis pages, decide whether to deepen the `projects` order-execution lane with state-transition and gate-rule pages or first expand domain navigation with an `operating-model`, `agent-workflows`, or `order-execution` lens.
+After human review of the first synthesis pages, run a domain model review before the next synthesis pass. Decide whether concepts such as `order-execution`, `agent-workflows`, `operating-model`, `lead-intelligence`, and `installed-base` deserve first-class homes because the roadmap evidence supports them, rather than forcing them into the starter folder structure.

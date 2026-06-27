@@ -36,6 +36,7 @@ The first durable synthesis pass created compiled wiki pages for the distributor
 - Default new compiled pages to `knowledge_scope: target-state` unless the source clearly requires `reference-pattern`, `design-hypothesis`, or `current-state`.
 - Keep `current-state/` quiet until target-state design is more mature.
 - Do not bulk-copy roadmap artifacts into wiki truth. Inventory, classify, then synthesize.
+- Treat the current `wiki/` folder structure as provisional. Let the stronger `fast-os-capability-roadmap` information architecture influence this repo's domain model instead of forcing roadmap concepts into starter folders.
 - Do not replicate active `fast-os-knowledge-base` work on catalog/schema risk, equipment answerability, source manifest patterns, validation gates, or repo-boundary options. Track that lane as an upstream dependency to revisit later.
 
 ## Active Source Inventory
@@ -53,7 +54,7 @@ The completed first import slice is:
 
 ## Recommended Next Action
 
-Review the first synthesis pages for domain fit, terminology, and page granularity. Then decide whether the next synthesis pass should deepen the `projects` order-execution lane from FSCR-009 through FSCR-011 or first create a dedicated `operating-model`, `agent-workflows`, or `order-execution` lens.
+Run a domain model review before the next synthesis pass. Review the first synthesis pages and the roadmap inventory for domain fit, terminology, page granularity, and whether concepts such as `order-execution`, `agent-workflows`, `operating-model`, `lead-intelligence`, and `installed-base` deserve first-class homes because the roadmap evidence supports them.
 
 Do not open commercial equipment catalog/schema or model-specific answerability work locally until `fast-os-knowledge-base` has mature outputs to evaluate.
 
@@ -65,8 +66,10 @@ At the end of a meaningful checkpoint:
 - Keep this file short and action-oriented.
 - Put detailed artifact status in `raw/imports/` or relevant wiki pages, not here.
 - For docs-only changes, run `git diff --check` before closing.
+- Standing order from Josh: commit and push coherent completed work to `main` after verification passes, unless a Josh decision is needed or the work would switch the repo into a new phase.
+- The standing order does not open destructive Git operations, private/raw source imports, pricing/customer/quote material, product or schema implementation, remote tooling, or other gated lanes.
 - Include a short restart prompt in the final response or point back to this file.
 
 ## Restart Prompt
 
-Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode, review the first roadmap-derived synthesis pages, and choose the next bounded step: deepen the `projects` order-execution lane from FSCR-009 through FSCR-011 or create a dedicated operating-model / agent-workflows / order-execution lens. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.
+Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and run the next checkpoint as a domain model review: use the first roadmap-derived synthesis pages and roadmap inventory to decide whether `order-execution`, `agent-workflows`, `operating-model`, `lead-intelligence`, and `installed-base` deserve first-class homes before more synthesis. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.

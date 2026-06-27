@@ -70,6 +70,8 @@ Do not replicate active `fast-os-knowledge-base` work around catalog/schema risk
 
 If a roadmap artifact points into that active lane, classify it as `upstream-dependency` unless the user explicitly opens a small adaptation task. This repo should focus on incorporating already-completed `fast-os-capability-roadmap` operating-model, macro-workflow, agent-candidate, and case-backed workflow artifacts.
 
+The starter `wiki/` folder structure is provisional. The roadmap inventory should influence the final domain model; do not force roadmap concepts into starter folders when the evidence shows they need a first-class domain or cross-domain lens.
+
 ## Current Inventory
 
 The first read-only inventory is recorded at `raw/imports/fast-os-capability-roadmap-source-inventory.md`.
@@ -87,7 +89,7 @@ Completed on 2026-06-27:
 
 ## Recommended Next Slice
 
-1. Review the first synthesis pages for domain fit and terminology.
-2. Decide whether the next synthesis pass should deepen `projects` with order-readiness state, transition-gate, and evaluation-fixture patterns from FSCR-009 through FSCR-011.
-3. Consider whether an `order-execution`, `agent-workflows`, or `operating-model` lens has earned a top-level domain after the next pass.
+1. Run a domain model review before the next synthesis pass.
+2. Use the first synthesis pages and roadmap inventory to decide whether `order-execution`, `agent-workflows`, `operating-model`, `lead-intelligence`, and `installed-base` deserve first-class homes.
+3. If the domain model is still unclear, keep new content under the best current domain but record the unresolved lens in `provenance_notes` or import notes.
 4. Continue tracking the commercial equipment knowledge-layer memo as an `upstream-dependency` owned by `fast-os-knowledge-base`, not as local synthesis work.
