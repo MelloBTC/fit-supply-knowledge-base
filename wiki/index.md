@@ -9,16 +9,22 @@ reviewed_by:
 sources:
   - schema.md
   - PROJECT_CONTEXT.md
+  - wiki/knowledge-base/information-architecture-pressure-test.md
+  - wiki/knowledge-base/domain-model-review.md
 related:
   - [[governance/index|Governance]]
   - [[equipment/index|Equipment]]
   - [[knowledge-base/index|Knowledge Base]]
+  - [[knowledge-base/agent-answerability-targets|Agent Answerability Targets]]
+  - [[knowledge-base/roadmap-import-plan|Roadmap Import Plan]]
   - [[knowledge-base/domain-model-review|Domain Model Review]]
   - [[knowledge-base/information-architecture-pressure-test|Information Architecture Pressure Test]]
   - [[knowledge-base/wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]]
   - [[company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
   - [[knowledge-base/agent-capability-map|Agent Capability Map]]
+  - [[sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
+  - [[projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[projects/order-execution-state-model|Order Execution State Model]]
   - [[governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
@@ -32,12 +38,24 @@ agent_answerability:
 tags:
   - root-index
   - navigation
-provenance_notes: Root index for the target-state Fit Supply LLM Wiki skeleton.
+provenance_notes: Root index for the target-state Fit Supply LLM Wiki skeleton; updated 2026-06-27 to make IA navigation lenses explicit before domain folder browsing.
 ---
 
 # Fit Supply Knowledge Base Index
 
 This is the root navigation page for the Fit Supply LLM Wiki. Start here when orienting to the compiled knowledge in `wiki/`.
+
+## Primary Navigation Lenses
+
+Use these lenses before browsing folders when a question crosses departments, workflow states, or future agent boundaries.
+
+- [[company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]] - Parent operating model, lifecycle, roles, and data-object spine.
+- [[knowledge-base/distributor-workflow-map|Distributor Workflow Map]] - Primary lifecycle navigation from lead source through relationship expansion.
+- [[knowledge-base/agent-capability-map|Agent Capability Map]] - Agent-readiness navigation by capability cluster and human review boundary.
+- [[projects/order-execution-state-model|Order Execution State Model]] - Readiness/state navigation for avoiding false progress after approval.
+- [[governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]] - Evaluation-readiness lens for future testable agent behavior without opening product implementation.
+- [[knowledge-base/wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] - Build-readiness bridge for mature wiki knowledge, not an implementation plan.
+- [[knowledge-base/domain-model-review|Domain Model Review]] and [[knowledge-base/information-architecture-pressure-test|Information Architecture Pressure Test]] - Structure-governance pages to read before adding or moving top-level folders.
 
 ## Domains
 
@@ -74,7 +92,7 @@ This is the root navigation page for the Fit Supply LLM Wiki. Start here when or
 ## Working Notes
 
 - Treat `target-state` as the default knowledge scope.
-- Prefer domain indexes before individual pages.
+- Start from the primary navigation lenses for cross-domain workflow questions, then use domain indexes as storage homes.
 - Keep source-backed claims connected to `raw/` material, roadmap artifacts, or documented first-party knowledge.
 - Leave pages in `Draft` until they have been reviewed.
 - Expand the domain model when roadmap inventory reveals important workflow areas that do not fit the starter skeleton.

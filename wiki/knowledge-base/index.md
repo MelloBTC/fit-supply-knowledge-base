@@ -9,9 +9,13 @@ reviewed_by:
 sources:
   - schema.md
   - PROJECT_CONTEXT.md
+  - wiki/knowledge-base/information-architecture-pressure-test.md
+  - wiki/knowledge-base/domain-model-review.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
+  - [[agent-answerability-targets|Agent Answerability Targets]]
+  - [[roadmap-import-plan|Roadmap Import Plan]]
   - [[domain-model-review|Domain Model Review]]
   - [[information-architecture-pressure-test|Information Architecture Pressure Test]]
   - [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]]
@@ -24,7 +28,7 @@ agent_answerability:
 tags:
   - domain-index
   - knowledge-base
-provenance_notes: Starter domain index created during target-state skeleton setup; content areas are placeholders until source-backed pages are added.
+provenance_notes: Starter domain index created during target-state skeleton setup; updated 2026-06-27 to make navigation lenses explicit and remove completed starter-page duplicates.
 ---
 
 # Knowledge Base
@@ -43,6 +47,15 @@ Knowledge Base pages explain how this wiki works, how to contribute to it, how i
 - Wiki maintenance routines
 - Context contracts for future agent roles
 
+## Navigation Lenses
+
+- [[distributor-workflow-map|Distributor Workflow Map]] - Use first for lifecycle questions and cross-domain workflow placement.
+- [[agent-capability-map|Agent Capability Map]] - Use first for capability clusters, human review posture, and future agent-readiness questions.
+- [[domain-model-review|Domain Model Review]] - Use before promoting an active lane into a top-level domain.
+- [[information-architecture-pressure-test|Information Architecture Pressure Test]] - Use before folder migration or major navigation changes.
+- [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] - Use before treating a mature wiki workflow as build-facing requirements.
+- [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]] - Use before moving agent-supported workflow behavior toward fixture or evaluation planning.
+
 ## Current Pages
 
 - [[agent-answerability-targets|Agent Answerability Targets]]
@@ -57,13 +70,13 @@ Knowledge Base pages explain how this wiki works, how to contribute to it, how i
 
 - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
 
-## Starter Pages To Add
+## Candidate Pages To Add Later
 
-- `agent-answerability-targets.md`
-- `roadmap-import-plan.md`
 - `contribution-guidelines.md`
 - `source-ingestion.md`
 - `agent-navigation.md`
+
+Add these only when repeated maintenance work needs a standalone page. For now, the root index, this index, [[domain-model-review|Domain Model Review]], and [[information-architecture-pressure-test|Information Architecture Pressure Test]] are the active navigation surfaces.
 
 ## Maintenance Notes
 

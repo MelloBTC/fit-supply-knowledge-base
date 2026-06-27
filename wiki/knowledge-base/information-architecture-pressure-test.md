@@ -16,6 +16,8 @@ sources:
   - wiki/knowledge-base/agent-capability-map.md
   - wiki/knowledge-base/wiki-to-agent-build-bridge.md
   - wiki/governance/agent-evaluation-fixtures.md
+  - wiki/index.md
+  - wiki/knowledge-base/index.md
   - wiki/company/commercial-fitness-distributor-operating-model.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/macro-workflow-map-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/agent-candidate-inventory-v1.md
@@ -39,7 +41,7 @@ tags:
   - domain-model
   - roadmap-derived
   - wiki-maintenance
-provenance_notes: Created as an information-architecture pressure test after the first roadmap synthesis pass. This page evaluates structure against fast-os-capability-roadmap evidence and records a navigation recommendation; it does not move folders or promote a new phase.
+provenance_notes: Created as an information-architecture pressure test after the first roadmap synthesis pass. This page evaluates structure against fast-os-capability-roadmap evidence and records a navigation recommendation; it does not move folders or promote a new phase. Updated 2026-06-27 after the first IA-guided navigation cleanup made the lens path explicit in the root and knowledge-base indexes.
 ---
 
 # Information Architecture Pressure Test
@@ -260,7 +262,8 @@ The current folders should be treated as storage domains, not as the complete in
 
 | Layer | Role |
 | --- | --- |
-| Root index | Start page for humans and agents. Should point to the major navigation lenses. |
+| Root index | Start page for humans and agents. Now points to the major navigation lenses before domain folders. |
+| Knowledge Base index | Local hub for navigation lenses, import planning, answerability, structure governance, and build-readiness boundaries. |
 | Domain indexes | Storage homes and local page lists. Useful, but not enough alone. |
 | Distributor Workflow Map | Primary lifecycle navigation. Use before creating workflow pages. |
 | Agent Capability Map | Primary agent-readiness navigation. Use before naming agents or build candidates. |
@@ -307,19 +310,19 @@ The important idea is that `sales`, `projects`, and `service` may become lifecyc
 
 ## What To Do Next
 
-The next no-new-examples progress path is:
+The initial no-new-examples navigation cleanup is complete:
 
 1. Keep the current physical folders stable.
-2. Strengthen workflow-first navigation in the root and knowledge-base indexes.
-3. Use this page and [[domain-model-review|Domain Model Review]] before adding or moving any top-level folder.
-4. When synthesizing the next non-gated roadmap family, classify it against lifecycle, state/readiness, agent capability, and storage-domain fit.
-5. Reassess folder migration only after at least one candidate lane meets its migration trigger.
+2. Use `wiki/index.md` as the root lens path before browsing domain folders.
+3. Use `wiki/knowledge-base/index.md` as the local hub for workflow, capability, structure, evaluation, and build-readiness lenses.
+4. Use this page and [[domain-model-review|Domain Model Review]] before adding or moving any top-level folder.
+5. When synthesizing the next non-gated roadmap family, classify it against lifecycle, state/readiness, agent capability, evaluation/build-readiness, and storage-domain fit.
+6. Reassess folder migration only after at least one candidate lane meets its migration trigger.
 
-The best next content slice without new examples is still open:
+The best next content slice without new examples is now:
 
-- A navigation cleanup pass now that FSCR-011 evaluation discipline is synthesized in [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]].
-- Another non-gated roadmap workflow family if it strengthens the lifecycle or agent-readiness maps.
-- A navigation cleanup pass if the immediate goal is making the existing wiki easier to traverse.
+- Another non-gated roadmap workflow family if it strengthens the lifecycle, readiness/state, evaluation, or agent-readiness maps.
+- A second navigation cleanup only when new compiled pages create fresh link, orientation, or page-density pressure.
 
 ## Decision
 
