@@ -9,9 +9,12 @@ reviewed_by:
 sources:
   - schema.md
   - PROJECT_CONTEXT.md
+  - raw/imports/fast-os-capability-roadmap-source-inventory.md
 related:
   - [[../knowledge-base/index|Knowledge Base]]
   - [[../index|Fit Supply Knowledge Base Index]]
+  - [[../knowledge-base/domain-model-review|Domain Model Review]]
+  - [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
 agent_answerability:
   - What belongs in the Governance domain?
   - Which starter pages should be created first for this domain?
@@ -35,9 +38,17 @@ Governance covers the rules, review patterns, freshness expectations, source man
 - Conflict handling and provenance rules
 - Agent and contributor operating rules
 
+## Current Pages
+
+- [[source-manifest|Source Manifest]]
+- [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+
+## Active Order-Execution Lens
+
+Order-execution governance currently lives in [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]. Keep broad review-process work separate from this lane until repeated patterns justify a more general human-review boundary page.
+
 ## Starter Pages To Add
 
-- `source-manifest.md`
 - `review-process.md`
 - `freshness-policy.md`
 - `knowledge-change-conflict-boundary.md`

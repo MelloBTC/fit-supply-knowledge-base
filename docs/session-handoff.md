@@ -28,7 +28,9 @@ The project is in target-state skeleton and first roadmap synthesis.
 
 The first durable synthesis pass created compiled wiki pages for the distributor operating model, workflow map, agent capability map, lead-to-closed-won workflow, and close-won-to-delivery workflow.
 
-The first domain model review is complete in `wiki/knowledge-base/domain-model-review.md`.
+The order-execution synthesis lane now exists under `projects` and `governance` with readiness requirements, state model, and transition gate rules.
+
+The first domain model review is complete in `wiki/knowledge-base/domain-model-review.md` and still keeps the top-level domain model stable.
 
 ## Current Boundaries
 
@@ -52,18 +54,26 @@ The completed first import slice is:
 3. FSCR-006 synthesized into `wiki/knowledge-base/agent-capability-map.md`.
 4. FSCR-007 imported to `raw/imports/fast-os-capability-roadmap/` and synthesized into `wiki/sales/lead-to-closed-won-workflow.md`.
 5. FSCR-008 imported to `raw/imports/fast-os-capability-roadmap/` and synthesized into `wiki/projects/close-won-to-delivery-workflow.md`.
-6. FSCR-004 remains an upstream dependency owned by `fast-os-knowledge-base`.
+6. FSCR-009 synthesized into `wiki/projects/order-execution-readiness-agent-requirements.md`.
+7. FSCR-010 synthesized into `wiki/projects/order-execution-state-model.md` and `wiki/governance/order-execution-transition-gate-rules.md`.
+8. FSCR-004 remains an upstream dependency owned by `fast-os-knowledge-base`.
 
 ## Recommended Next Action
 
-Deepen `order-execution` as the next synthesis lane without changing the top-level domain model yet. Review FSCR-009 and FSCR-010 from `raw/imports/fast-os-capability-roadmap-source-inventory.md`, then synthesize readiness/state material under `wiki/projects/` and governance-heavy gate/review material under `wiki/governance/`.
+The order-execution lane has been deepened without changing the top-level domain model. The current pages are:
+
+- `wiki/projects/order-execution-readiness-agent-requirements.md`.
+- `wiki/projects/order-execution-state-model.md`.
+- `wiki/governance/order-execution-transition-gate-rules.md`.
+
+Recommended next action: review FSCR-011 only if the next checkpoint is evaluation discipline for order-execution gates. Otherwise, pause to reassess whether the new order-execution pages create enough navigation pressure for a future top-level domain, or continue the next roadmap workflow family.
 
 The domain model review decision is:
 
 - Keep `operating-model` as a canonical lens in `company` for now.
 - Keep `agent-workflows` as a `knowledge-base` answerability lens for now.
-- Promote `order-execution` as the next active synthesis lane inside `projects` and `governance`.
-- Defer `lead-intelligence` and `installed-base` as first-class domains until stronger compiled pages exist.
+- Keep `order-execution` as an active lane inside `projects` and `governance` for now.
+- Defer `lead-intelligence`, `installed-base`, and a top-level `order-execution` domain until stronger compiled page density supports the move.
 
 Do not open commercial equipment catalog/schema or model-specific answerability work locally until `fast-os-knowledge-base` has mature outputs to evaluate.
 
@@ -81,4 +91,4 @@ At the end of a meaningful checkpoint:
 
 ## Restart Prompt
 
-Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md` as the domain-structure checkpoint. Next, review FSCR-009 and FSCR-010 from the roadmap inventory and synthesize the order-execution readiness/state lane inside `projects` and `governance` without creating a new top-level domain yet. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.
+Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md` as the domain-structure checkpoint. The order-execution readiness/state lane is now synthesized inside `projects` and `governance` without a new top-level domain. Next, review FSCR-011 only if evaluation discipline is the priority; otherwise reassess domain pressure or continue the next roadmap workflow family. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.

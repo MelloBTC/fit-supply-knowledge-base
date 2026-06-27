@@ -72,6 +72,8 @@ The other domains exist to connect equipment knowledge to real business workflow
 
 The first durable roadmap synthesis pass now exists in `wiki/company/commercial-fitness-distributor-operating-model.md`, `wiki/knowledge-base/distributor-workflow-map.md`, `wiki/knowledge-base/agent-capability-map.md`, `wiki/sales/lead-to-closed-won-workflow.md`, and `wiki/projects/close-won-to-delivery-workflow.md`.
 
-The domain model review now exists in `wiki/knowledge-base/domain-model-review.md`. It keeps the top-level schema stable, promotes `order-execution` as the next active synthesis lane inside `projects` and `governance`, and defers top-level domains for `agent-workflows`, `operating-model`, `lead-intelligence`, and `installed-base` until compiled page density supports the move.
+The order-execution synthesis lane now exists in `wiki/projects/order-execution-readiness-agent-requirements.md`, `wiki/projects/order-execution-state-model.md`, and `wiki/governance/order-execution-transition-gate-rules.md`.
 
-The next durable step is to review FSCR-009 and FSCR-010 from the roadmap inventory and synthesize order-execution readiness/state material without changing the top-level domain model yet. Treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.
+The domain model review now exists in `wiki/knowledge-base/domain-model-review.md`. It keeps the top-level schema stable, treats `order-execution` as an active lens inside `projects` and `governance`, and defers top-level domains for `agent-workflows`, `operating-model`, `lead-intelligence`, `installed-base`, and `order-execution` until compiled page density supports the move.
+
+The next durable step is to review FSCR-011 only if evaluation discipline for order-execution gates is the priority; otherwise reassess whether the new order-execution pages create enough domain pressure for a future top-level domain or continue the next roadmap workflow family. Treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.

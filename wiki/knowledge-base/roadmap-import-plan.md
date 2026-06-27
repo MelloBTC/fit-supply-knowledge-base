@@ -86,15 +86,21 @@ Completed on 2026-06-27:
 - FSCR-006 was synthesized into [[agent-capability-map|Agent Capability Map]].
 - FSCR-007 was selectively imported to `raw/imports/fast-os-capability-roadmap/regency-lead-to-closed-won-work-unit-decomposition-v1.md` and synthesized into [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]].
 - FSCR-008 was selectively imported to `raw/imports/fast-os-capability-roadmap/regency-close-won-to-delivery-workflow-decomposition-v1.md` and synthesized into [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]].
+- FSCR-009 was synthesized into [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]].
+- FSCR-010 was synthesized into [[../projects/order-execution-state-model|Order Execution State Model]] and [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
 - FSCR-004 remains an `upstream-dependency` owned by `fast-os-knowledge-base`.
 
-## Recommended Next Slice
+## Current Order-Execution Synthesis Result
 
 The first domain model review is recorded in [[domain-model-review|Domain Model Review]].
 
 1. Keep the top-level wiki domain model unchanged for now.
-2. Deepen `order-execution` as the next active synthesis lane using FSCR-009 and FSCR-010.
-3. Put workflow-state and readiness pages under `wiki/projects/`; put review, gate, or evaluation policy pages under `wiki/governance/`.
-4. Use `order-execution` tags and wikilinks before creating a new top-level `order-execution` domain.
-5. Reassess domain promotion after the next one or two order-execution pages exist.
+2. Treat `order-execution` as an active lens spanning `projects` and `governance`, not as a new domain.
+3. Use [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]] for coordinator behavior and human-boundary expectations.
+4. Use [[../projects/order-execution-state-model|Order Execution State Model]] for state definitions and transition concepts.
+5. Use [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] for blocker, warning, review, override, and evaluation policy.
 6. Continue tracking the commercial equipment knowledge-layer memo as an `upstream-dependency` owned by `fast-os-knowledge-base`, not as local synthesis work.
+
+## Recommended Next Slice
+
+Review FSCR-011 only if the next checkpoint is evaluation discipline for the order-execution gate lane. Otherwise, pause to reassess whether the new order-execution pages create enough navigation pressure for a future top-level domain, or whether the wiki should continue with the next roadmap workflow family.

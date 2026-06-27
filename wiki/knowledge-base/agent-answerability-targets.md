@@ -13,6 +13,9 @@ sources:
   - wiki/company/commercial-fitness-distributor-operating-model.md
   - wiki/knowledge-base/distributor-workflow-map.md
   - wiki/knowledge-base/agent-capability-map.md
+  - wiki/projects/order-execution-readiness-agent-requirements.md
+  - wiki/projects/order-execution-state-model.md
+  - wiki/governance/order-execution-transition-gate-rules.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[roadmap-import-plan|Roadmap Import Plan]]
@@ -25,6 +28,9 @@ related:
   - [[agent-capability-map|Agent Capability Map]]
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+  - [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
+  - [[../projects/order-execution-state-model|Order Execution State Model]]
+  - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
 agent_answerability:
   - What should future agents be able to answer or do using this knowledge base?
   - Which wiki domains should be built first to support useful agent behavior?
@@ -32,7 +38,7 @@ tags:
   - answerability
   - target-state
   - agent-design
-provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, and FSCR-008.
+provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, and FSCR-010.
 ---
 
 # Agent Answerability Targets
@@ -99,6 +105,14 @@ The first roadmap synthesis pass adds these more specific answerability targets:
 - Explain why closed-won, order-ready, delivery-ready, install-complete, and relationship-ready are different states.
 - Identify what context must carry from sales into project execution so post-close work does not rediscover the same facts.
 
+### Order-Execution Readiness And State
+
+- Explain what an order-execution readiness coordinator should detect, classify, route, draft, preserve, monitor, recommend, request for review, and record.
+- Distinguish blockers, warnings, informational facts, and monitors for order-execution state transitions.
+- Identify when a missing fact blocks only the next unsafe action while safe parallel work can continue.
+- Explain which human review boundaries apply to approval proof, PO mismatch, contract terms, payment, vendor order, customer promise, install release, completion, exception closure, and relationship-ready status.
+- Explain when sales should be notified versus asked to make a customer-facing or trust-sensitive decision.
+
 ### Upstream Dependency Boundary
 
 - Flag equipment catalog, model-specific specification, price freshness, product compatibility, and equipment answerability questions as upstream dependencies owned by `fast-os-knowledge-base` until mature outputs are available for local evaluation.
@@ -115,4 +129,4 @@ A future agent should be able to:
 
 ## Domain Model Review Outcome
 
-The first domain model review is recorded in [[domain-model-review|Domain Model Review]]. It keeps the top-level schema stable for now, promotes `order-execution` as the next active synthesis lane inside `projects` and `governance`, and defers first-class domains for `agent-workflows`, `operating-model`, `lead-intelligence`, and `installed-base` until more compiled page density supports the move.
+The first domain model review is recorded in [[domain-model-review|Domain Model Review]]. It keeps the top-level schema stable for now, treats `order-execution` as an active lane inside `projects` and `governance`, and defers first-class domains for `agent-workflows`, `operating-model`, `lead-intelligence`, `installed-base`, and `order-execution` until more compiled page density supports the move.

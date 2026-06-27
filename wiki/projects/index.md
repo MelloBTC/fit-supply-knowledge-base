@@ -9,11 +9,15 @@ reviewed_by:
 sources:
   - schema.md
   - PROJECT_CONTEXT.md
+  - raw/imports/fast-os-capability-roadmap-source-inventory.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
   - [[../knowledge-base/domain-model-review|Domain Model Review]]
   - [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+  - [[order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
+  - [[order-execution-state-model|Order Execution State Model]]
+  - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
 agent_answerability:
   - What belongs in the Projects domain?
   - Which starter pages should be created first for this domain?
@@ -39,18 +43,20 @@ Projects knowledge covers the target-state lifecycle after a sale becomes work t
 ## Current Pages
 
 - [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+- [[order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
+- [[order-execution-state-model|Order Execution State Model]]
 
 ## Active Lens
 
-`order-execution` is the next active synthesis lens inside this domain. Keep the first order-readiness and execution-state pages under `projects`, link governance-heavy rules to `governance`, and reassess a top-level `order-execution` domain only after the compiled page density justifies it.
+`order-execution` is the active synthesis lens inside this domain. The first order-readiness and execution-state pages now live under `projects`, with governance-heavy gate policy linked from [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
+
+Do not create a top-level `order-execution` domain yet. Reassess only after these pages and any next synthesis page create enough repeated navigation or ownership logic to justify the move.
 
 ## Starter Pages To Add
 
 - `project-lifecycle.md`
 - `handoff-checklist.md`
 - `delivery-and-installation.md`
-- `order-execution-readiness-agent-requirements.md`
-- `order-execution-state-model.md`
 
 ## Maintenance Notes
 
