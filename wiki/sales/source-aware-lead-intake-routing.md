@@ -34,7 +34,7 @@ tags:
   - source-intelligence
   - routing
   - roadmap-derived
-provenance_notes: Synthesized from the roadmap source-aware lead intake family and four mapped source cases. This page generalizes the workflow without importing raw customer, pricing, quote, or NetSuite artifacts.
+provenance_notes: Synthesized from the roadmap source-aware lead intake family and four mapped source cases. This page generalizes the workflow without importing raw customer, pricing, quote, or NetSuite artifacts. Updated 2026-06-27 with a formal-feed example capture from the Bailey at Berkman ConstructConnect case.
 ---
 
 # Source-Aware Lead Intake And Routing
@@ -61,6 +61,35 @@ The four evidence patterns are:
 | Owner-forwarded project intelligence | Shows a human-forwarded project signal may need enrichment, pursuit planning, task ownership, and outcome tracking. | Preserve evidence labels because generated plans can mix facts and assumptions. |
 | Inbound bid or equipment request | Shows direct buyer requests should move quickly toward account matching, product-request extraction, quote-readiness questions, and follow-up. | Do not over-process as a broad research workflow. |
 | Formal project intelligence feed | Shows formal feed items can be human-curated before the rep acts and may need source preservation, fit review, research, and park/pursue decisions. | Keep raw feed and NetSuite details out of the wiki unless intentionally sanitized later. |
+
+## Example Capture - Formal Feed With Human Curation
+
+The Bailey at Berkman ConstructConnect case is the first compiled formal-feed dealer example for this page. It should be treated as a routing and source-preservation example, not as proof that every formal feed item deserves pursuit.
+
+This example is especially useful because the lead did not move directly from a feed into rep outreach. A person first reviewed the ConstructConnect item, created or updated NetSuite prospect/task context, copied project details into notes, preserved contacts, and assigned the rep a task. That means the target-state workflow needs to model both the original feed event and the human curation event.
+
+| Example Read | Evidence Label | Wiki Meaning |
+| --- | --- | --- |
+| The original source type is a formal project-intelligence feed, while the rep-facing handoff arrived through a human-curated NetSuite task. | Evidence-backed for current handling pattern. | Preserve `SourceEvent` and `LeadCurationEvent` separately so source provenance does not collapse into the CRM task. |
+| The project looked plausibly relevant because it was multifamily with community-space context, but no direct fitness scope, equipment request, buyer conversation, or quote request was captured. | Strong inference. | Route as `pursuit_worthy_not_quote_ready`, not as an inbound bid or quote-prep item. |
+| The right first output is a formal-feed research brief, not an outreach sequence or quote package. | Strong inference. | Include project facts, source confidence, human-curation note, account/project match, contacts, amenity relevance, missing buyer context, and recommended owner/action. |
+| Raw ConstructConnect fields, downstream research, outreach, quote, park/reject decision, and source outcome were not captured in the provided case materials. | Not captured. | Do not claim source quality, conversion value, or policy defaults from this example yet. |
+
+Minimum route for this kind of case:
+
+```text
+formal feed item
+-> source event preserved
+-> human curation event preserved
+-> account / project / contact match
+-> amenity relevance and buyer-path research
+-> formal-feed research brief
+-> rep or manager review
+-> pursue / research more / park / reject / monitor
+-> outcome recorded
+```
+
+The durable lesson is narrow but important: formal feed leads can become useful only after source preservation, fit review, research/enrichment, ownership, and outcome tracking. A feed item plus a CRM task is not enough to prove actionability.
 
 ## Business Outcome
 
@@ -222,6 +251,7 @@ Keep `lead-intelligence` and `prospecting` as sales sub-lanes for now. This page
 - Decide who owns ambiguous lead triage: rep, owner, manager, admin, or shared review queue.
 - Validate the minimum research brief that saves rep time without becoming noisy.
 - Confirm whether high-intent inbound requests should always create follow-up tasks.
-- Test raw formal feed, referral, manufacturer, website, phone, or municipal RFP artifacts against the taxonomy.
+- Capture downstream research, outreach, park/reject, or quote outcomes for the formal-feed example so source quality can be measured honestly.
+- Test additional raw formal feed, referral, manufacturer, website, phone, or municipal RFP artifacts against the taxonomy; the current formal-feed example validates human-curated handling, not raw-feed field coverage.
 - Validate which outcome states reps and owners will actually maintain.
 - Preserve the boundary that product/pricing/catalog answerability remains upstream-owned until mature enough to consume here.
