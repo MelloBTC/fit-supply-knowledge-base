@@ -72,7 +72,7 @@ Completed on 2026-06-27:
 | FSCR-010 | Synthesized into `wiki/projects/order-execution-state-model.md` and `wiki/governance/order-execution-transition-gate-rules.md`. |
 | FSCR-012 | Synthesized into `wiki/sales/hunter-sales-existing-multifamily-pattern.md` as a `design-hypothesis` page; machine-readable fixture bundle remains upstream. Updated with a 2026-06-27 validation-status checkpoint from real/sanitized example pressure tests and provisional probe results. |
 | FSCR-013 | Synthesized into `wiki/knowledge-base/wiki-to-agent-build-bridge.md` as a `reference-pattern` page; no product schema, agent architecture, live tooling, or implementation specs were created. |
-| FSCR-016 | Synthesized into `wiki/sales/source-aware-lead-intake-routing.md` as a `target-state` page; raw customer, pricing, quote, NetSuite, and source-feed artifacts were not imported. |
+| FSCR-016 | Synthesized into `wiki/sales/source-aware-lead-intake-routing.md` as a `target-state` page; raw customer, pricing, quote, NetSuite, and source-feed artifacts were not imported. Updated 2026-06-27 with Bailey at Berkman formal-feed handling and Park at Rialto service-created replacement outcome captures. |
 | FSCR-004 | Preserved as an upstream dependency owned by `fast-os-knowledge-base`; not locally synthesized. |
 
 ## What Not To Do Yet

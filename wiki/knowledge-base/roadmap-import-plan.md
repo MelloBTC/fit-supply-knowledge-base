@@ -26,7 +26,7 @@ tags:
   - import-plan
   - roadmap
   - source-discovery
-provenance_notes: Initial process for read-only inventory of fast-os-capability-roadmap before importing or synthesizing content. Updated 2026-06-27 after the FSCR-012 hunter-sales validation-status checkpoint and the FSCR-016 formal-feed example capture.
+provenance_notes: Initial process for read-only inventory of fast-os-capability-roadmap before importing or synthesizing content. Updated 2026-06-27 after the FSCR-012 hunter-sales validation-status checkpoint and the FSCR-016 formal-feed plus service-created replacement example captures.
 ---
 
 # Roadmap Import Plan
@@ -95,7 +95,7 @@ Completed on 2026-06-27:
 - FSCR-010 was synthesized into [[../projects/order-execution-state-model|Order Execution State Model]] and [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
 - FSCR-012 was synthesized into [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] as a `design-hypothesis` page without importing the machine-readable fixture bundle, then updated with a validation-status checkpoint from real/sanitized example pressure tests and provisional probe results.
 - FSCR-013 was synthesized into [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] as a `reference-pattern` bridge without creating product schema, agent architecture, live tooling, or implementation specs.
-- FSCR-016 was classified from the roadmap lead-intake/source-routing artifact family and synthesized into [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] without importing raw customer, pricing, quote, or NetSuite artifacts; updated 2026-06-27 with a Bailey at Berkman formal-feed example capture.
+- FSCR-016 was classified from the roadmap lead-intake/source-routing artifact family and synthesized into [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] without importing raw customer, pricing, quote, or NetSuite artifacts; updated 2026-06-27 with a Bailey at Berkman formal-feed example capture and a Park at Rialto service-created replacement outcome capture.
 - FSCR-004 remains an `upstream-dependency` owned by `fast-os-knowledge-base`.
 
 ## Current Order-Execution Synthesis Result
@@ -113,7 +113,7 @@ The first domain model review is recorded in [[domain-model-review|Domain Model 
 
 FSCR-016 now has one compiled sales page: [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]].
 
-This page is `target-state` because it synthesizes a future-state source-aware lead intake workflow from roadmap capability, taxonomy, data-model, research/enrichment, and case-study artifacts. It preserves customer/source evidence as source labels and workflow patterns without importing raw customer emails, quote PDFs, pricing, NetSuite exports, source-feed records, or private attachments. The 2026-06-27 formal-feed example capture uses the Bailey at Berkman ConstructConnect case to preserve the distinction between original source event, human curation, rep task, research need, and open source-quality outcome.
+This page is `target-state` because it synthesizes a future-state source-aware lead intake workflow from roadmap capability, taxonomy, data-model, research/enrichment, and case-study artifacts. It preserves customer/source evidence as source labels and workflow patterns without importing raw customer emails, quote PDFs, pricing, NetSuite exports, source-feed records, or private attachments. The 2026-06-27 example-first captures use the Bailey at Berkman ConstructConnect case to preserve the distinction between original source event, human curation, rep task, research need, and open source-quality outcome, and the Park at Rialto service referral case to preserve source-to-quote/no-response outcome evidence without importing quote/pricing artifacts.
 
 Treat `source-intelligence`, `lead-intake`, and `lead-research` as active sales sub-lanes for now. Do not create a top-level `lead-intelligence` domain until validated page density and navigation pressure justify it.
 
@@ -137,4 +137,4 @@ Treat `agent-workflows` as a knowledge-base answerability and bridge lens for no
 
 FSCR-013 closes the governance bridge checkpoint without opening implementation scope.
 
-If evaluation discipline becomes the priority, review FSCR-011 for order-execution gate fixtures or the FSCR-012 fixture bundle for hunter-sales policy evaluation. Otherwise, continue the example-first rule before build-facing requirements: capture downstream outcome evidence for the formal-feed source-aware example, capture another real or sanitized lead-intake example, or capture one hunter-sales example from the open validation list before promoting any remaining policy defaults. If no dealer examples are available, continue with a non-gated roadmap workflow family.
+If evaluation discipline becomes the priority, review FSCR-011 for order-execution gate fixtures or the FSCR-012 fixture bundle for hunter-sales policy evaluation. Otherwise, continue the example-first rule before build-facing requirements: capture downstream outcome evidence for the formal-feed source-aware example, capture another explicit downstream lead-intake outcome, or capture one hunter-sales example from the open validation list before promoting any remaining policy defaults. If no dealer examples are available, continue with a non-gated roadmap workflow family.

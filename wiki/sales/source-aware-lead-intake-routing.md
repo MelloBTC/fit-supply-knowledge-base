@@ -34,7 +34,7 @@ tags:
   - source-intelligence
   - routing
   - roadmap-derived
-provenance_notes: Synthesized from the roadmap source-aware lead intake family and four mapped source cases. This page generalizes the workflow without importing raw customer, pricing, quote, or NetSuite artifacts. Updated 2026-06-27 with a formal-feed example capture from the Bailey at Berkman ConstructConnect case.
+provenance_notes: Synthesized from the roadmap source-aware lead intake family and four mapped source cases. This page generalizes the workflow without importing raw customer, pricing, quote, or NetSuite artifacts. Updated 2026-06-27 with a formal-feed example capture from the Bailey at Berkman ConstructConnect case and a service-created replacement outcome capture from the Park at Rialto case.
 ---
 
 # Source-Aware Lead Intake And Routing
@@ -90,6 +90,34 @@ formal feed item
 ```
 
 The durable lesson is narrow but important: formal feed leads can become useful only after source preservation, fit review, research/enrichment, ownership, and outcome tracking. A feed item plus a CRM task is not enough to prove actionability.
+
+## Example Capture - Service-Created Replacement With Quote Outcome
+
+The Park at Rialto service referral case is the first compiled downstream-outcome lead-intake example for this page. It should be treated as a source-aware routing and outcome-tracking example, not as a pricing, product, or quote-artifact import.
+
+This example is useful because the source signal did move past intake. A service or PM finding created a replacement lead, sales prepared and sent a quote, and the current captured outcome was quote sent with no customer response after the quote. That means the target-state workflow needs to track both the source-to-quote conversion and the follow-up gap instead of stopping at "lead created" or "quote generated."
+
+| Example Read | Evidence Label | Wiki Meaning |
+| --- | --- | --- |
+| The original source type is a service-created replacement signal: service work surfaced failed equipment and replacement need, then business development routed a task to the sales rep. | Evidence-backed. | Preserve the service case/source event and the sales handoff separately so the replacement rationale does not disappear into a thin task notification. |
+| The lead was quote-plausible but still context-incomplete because product direction, prior history, pricing freshness, freight/install, extraction/removal, and customer decision path needed review. | Evidence-backed with some workflow inference. | Route as `quote_plausible_context_incomplete`, not as a cold lead or automatically quote-ready request. |
+| The downstream action did become quote work: a customer-facing quote was sent, but the customer did not respond after quote send, and no follow-up reminder was scheduled in the captured workflow. | Evidence-backed from the case study. | Track `quote_sent`, `no_response`, and `follow_up_missing` or equivalent states without prematurely marking the source won, lost, or poor quality. |
+| The service-created source produced useful sales motion, but final conversion and source-quality value remained unresolved. | Strong inference. | Source-quality learning requires response, follow-up, win/loss, parked, or explicit no-action outcome, not just quote creation. |
+
+Minimum route for this kind of case:
+
+```text
+service finding / PM evidence
+-> source event preserved
+-> replacement opportunity brief
+-> account, service, prior quote, and quote-readiness review
+-> reviewed quote package
+-> customer email / quote sent
+-> follow-up task and response monitoring
+-> quote response, no response, won, lost, parked, or next-action outcome recorded
+```
+
+The durable lesson is that service-created replacement leads can validate the source-aware model all the way into quote work, but they also expose why outcome tracking matters. A quote sent with no response is meaningful evidence; it is not the same as a converted opportunity, and it should trigger follow-up discipline before source quality is judged.
 
 ## Business Outcome
 
@@ -252,6 +280,7 @@ Keep `lead-intelligence` and `prospecting` as sales sub-lanes for now. This page
 - Validate the minimum research brief that saves rep time without becoming noisy.
 - Confirm whether high-intent inbound requests should always create follow-up tasks.
 - Capture downstream research, outreach, park/reject, or quote outcomes for the formal-feed example so source quality can be measured honestly.
+- Capture at least one more downstream lead-intake example where the terminal or holding outcome is explicit, such as parked, rejected, no action, no response after structured follow-up, opportunity created, quote sent, won, or lost.
 - Test additional raw formal feed, referral, manufacturer, website, phone, or municipal RFP artifacts against the taxonomy; the current formal-feed example validates human-curated handling, not raw-feed field coverage.
 - Validate which outcome states reps and owners will actually maintain.
 - Preserve the boundary that product/pricing/catalog answerability remains upstream-owned until mature enough to consume here.
