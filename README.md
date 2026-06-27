@@ -54,4 +54,4 @@ fit-supply-knowledge-base/
 
 ## Current Priority
 
-The order-execution pilot migration is complete. Use `wiki/order-execution/index.md` as the home for post-close readiness, transition gates, delivery/install execution, completion, and relationship-ready handoff. Keep broader `v0.4` migration gated, and treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.
+The order-execution pilot migration is complete. Use `wiki/order-execution/index.md` as the home for post-close readiness, transition gates, delivery/install execution, completion, and relationship-ready handoff. The latest non-gated roadmap synthesis adds `wiki/sales/proposal-package-readiness.md` as a sales-stored proposal-readiness page. Keep broader `v0.4` migration gated, and treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.

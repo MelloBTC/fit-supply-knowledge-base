@@ -12,6 +12,7 @@ sources:
   - wiki/knowledge-base/information-architecture-pressure-test.md
   - wiki/knowledge-base/domain-model-review.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/sales/proposal-package-readiness.md
   - wiki/order-execution/index.md
 related:
   - [[governance/index|Governance]]
@@ -35,6 +36,7 @@ related:
   - [[sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
+  - [[sales/proposal-package-readiness|Proposal Package Readiness]]
   - [[current-state/index|Current State]]
 agent_answerability:
   - Where should an agent start when navigating the target-state distributor knowledge base?
@@ -42,7 +44,7 @@ agent_answerability:
 tags:
   - root-index
   - navigation
-provenance_notes: Root index for the target-state Fit Supply LLM Wiki skeleton; updated 2026-06-27 to make IA navigation lenses explicit before domain folder browsing and to link the promoted order-execution pilot domain.
+provenance_notes: Root index for the target-state Fit Supply LLM Wiki skeleton; updated 2026-06-27 to make IA navigation lenses explicit before domain folder browsing and to link the promoted order-execution pilot domain plus the proposal package readiness synthesis.
 ---
 
 # Fit Supply Knowledge Base Index
@@ -82,6 +84,7 @@ Use these lenses before browsing folders when a question crosses departments, wo
 - [[sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] - Source-aware workflow for preserving lead provenance, routing first action, and tracking outcomes.
 - [[sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]] - Case-backed sales workflow from lead signal to closed-won boundary.
 - [[sales/freight-install-quote-readiness|Freight And Install Quote Readiness]] - Target-state quote-readiness workflow for freight, install, extraction, review/provenance, and handoff continuity.
+- [[sales/proposal-package-readiness|Proposal Package Readiness]] - Target-state proposal-readiness workflow for project context, room uncertainty, design assets, visuals, quote/package alignment, delivery event, and follow-up state.
 - [[sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] - Design-hypothesis sales pattern and validation-status checkpoint for existing multifamily prospecting, reactivation, source-origin routing, provisional probes, and human-reviewed outreach policy.
 - [[order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]] - Case-backed order-execution workflow from approval to delivery, completion, and relationship continuity.
 - [[knowledge-base/domain-model-review|Domain Model Review]] - Domain-structure checkpoint after roadmap synthesis, including the bounded order-execution pilot promotion.

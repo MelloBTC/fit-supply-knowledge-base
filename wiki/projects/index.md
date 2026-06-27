@@ -12,19 +12,21 @@ sources:
   - raw/imports/fast-os-capability-roadmap-source-inventory.md
   - wiki/order-execution/index.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/sales/proposal-package-readiness.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../order-execution/index|Order Execution]]
   - [[../governance/index|Governance]]
   - [[../knowledge-base/domain-model-review|Domain Model Review]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
+  - [[../sales/proposal-package-readiness|Proposal Package Readiness]]
 agent_answerability:
   - What belongs in the Projects domain?
   - Which project-lifecycle pages still belong outside the Order Execution domain?
 tags:
   - domain-index
   - projects
-provenance_notes: Starter domain index created during target-state skeleton setup; updated 2026-06-27 after the bounded order-execution pilot migration moved post-close readiness, state, and gate pages into wiki/order-execution/.
+provenance_notes: Starter domain index created during target-state skeleton setup; updated 2026-06-27 after the bounded order-execution pilot migration moved post-close readiness, state, and gate pages into wiki/order-execution/ and proposal package readiness was linked as a sales-stored workflow with project-context dependencies.
 ---
 
 # Projects
@@ -54,6 +56,8 @@ The first post-close project workflow pages now live in [[../order-execution/ind
 - [[../order-execution/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
 
 [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]] remains stored in `sales`, but order-execution pages should treat its reviewed F&I assumptions as part of the handoff context that prevents post-close reconstruction.
+
+[[../sales/proposal-package-readiness|Proposal Package Readiness]] also remains stored in `sales`, but broader project lifecycle pages should treat its room context, design assets, vendor branches, proposal delivery event, and handoff assumptions as project context that should not be rediscovered later.
 
 ## Starter Pages To Add
 

@@ -13,6 +13,7 @@ sources:
   - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/governance/agent-evaluation-fixtures.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/sales/proposal-package-readiness.md
   - wiki/order-execution/index.md
   - wiki/knowledge-base/information-architecture-pressure-test.md
 related:
@@ -24,6 +25,7 @@ related:
   - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
+  - [[../sales/proposal-package-readiness|Proposal Package Readiness]]
   - [[../order-execution/index|Order Execution]]
   - [[information-architecture-pressure-test|Information Architecture Pressure Test]]
   - [[../index|Fit Supply Knowledge Base Index]]
@@ -34,7 +36,7 @@ tags:
   - import-plan
   - roadmap
   - source-discovery
-provenance_notes: Initial process for read-only inventory of fast-os-capability-roadmap before importing or synthesizing content. Updated 2026-06-27 after the FSCR-017 freight/install quote-readiness synthesis and bounded order-execution pilot migration.
+provenance_notes: Initial process for read-only inventory of fast-os-capability-roadmap before importing or synthesizing content. Updated 2026-06-27 after the FSCR-018 proposal package readiness synthesis and bounded order-execution pilot migration.
 ---
 
 # Roadmap Import Plan
@@ -106,6 +108,7 @@ Completed on 2026-06-27:
 - FSCR-013 was synthesized into [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] as a `reference-pattern` bridge without creating product schema, agent architecture, live tooling, or implementation specs.
 - FSCR-016 was classified from the roadmap lead-intake/source-routing artifact family and synthesized into [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] without importing raw customer, pricing, quote, or NetSuite artifacts; updated 2026-06-27 with a Bailey at Berkman formal-feed example capture and a Park at Rialto service-created replacement outcome capture.
 - FSCR-017 was classified from the roadmap freight/install quote-readiness family and synthesized into [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]] without importing raw NetSuite tasks, screenshots, quote PDFs, customer names, source amounts, pricing, or private logistics artifacts.
+- FSCR-018 was classified from the sanitized Regency proposal workflow family and synthesized into [[../sales/proposal-package-readiness|Proposal Package Readiness]] without importing raw customer folders, quote PDFs, photos, pricing, contact details, generated proposal assets, or presentation-builder source artifacts.
 - FSCR-004 remains an `upstream-dependency` owned by `fast-os-knowledge-base`.
 
 ## Current Order-Execution Synthesis Result
@@ -139,6 +142,16 @@ The page preserves the boundary that F&I readiness is not a live pricing engine.
 
 Keep `quote-readiness` as a sales sub-lane for now. Do not create a top-level `quote-readiness`, `pricing`, or `freight-install` domain until multiple validated quote readiness pages create real navigation pressure.
 
+## Current Proposal Package Readiness Result
+
+FSCR-018 now has one compiled sales page: [[../sales/proposal-package-readiness|Proposal Package Readiness]].
+
+This page is `target-state` because it synthesizes a future-state proposal-readiness workflow from sanitized roadmap proposal workflow learning and the lead-to-quote decomposition example. It classifies the family through lifecycle, capability, readiness/state, evaluation/build-readiness, storage-domain, and domain-promotion lenses before storing the result in `sales`.
+
+The page preserves the boundary that proposal readiness is not an autonomous proposal generator or visual generation pipeline. It can support future answerability around project context, room uncertainty, design assets, ECDESIGN/rendering review, quote/F&I alignment, vendor branches, proposal delivery, web-proposal parity, and follow-up state, but raw project folders, generated proposal assets, customer-facing sends, and product implementation remain out of scope.
+
+Keep `proposal-readiness` as a sales sub-lane for now. Do not create a top-level `proposal-readiness`, `quote-readiness`, or `workflows` domain until multiple validated proposal, pricing, quote, and package-readiness pages create real navigation pressure.
+
 ## Current Hunter-Sales Synthesis Result
 
 FSCR-012 now has one compiled sales page: [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]].
@@ -157,6 +170,6 @@ Treat `agent-workflows` as a knowledge-base answerability and bridge lens for no
 
 ## Recommended Next Slice
 
-FSCR-017 closes the freight/install quote-readiness checkpoint without opening raw quote import, customer/pricing material, live pricing automation, customer-facing quote updates, or product implementation scope.
+FSCR-018 closes the proposal package readiness checkpoint without opening raw project-folder import, quote PDFs, photos, pricing, generated proposal assets, visual generation automation, customer-facing proposal sends, or product implementation scope.
 
-FSCR-011 is now closed as a local governance synthesis page, not a fixture import. The order-execution pilot migration is also complete, so the next move should not be another folder migration unless fresh evidence and Josh approval open that scope. Otherwise, continue the example-first rule before build-facing requirements: capture downstream outcome evidence for the formal-feed source-aware example, capture another explicit downstream lead-intake outcome, or capture the next dealer-backed hunter-sales example from the remaining open validation list before promoting any remaining policy defaults. If no dealer examples are available, continue with another non-gated roadmap workflow family after classifying it through the lifecycle, capability, readiness/state, evaluation/build-readiness, storage-domain, and domain-promotion lenses.
+FSCR-011 is closed as a local governance synthesis page, not a fixture import. FSCR-017 and FSCR-018 are closed as local sales readiness synthesis pages, not pricing/proposal tooling. The order-execution pilot migration is also complete, so the next move should not be another folder migration unless fresh evidence and Josh approval open that scope. Otherwise, continue the example-first rule before build-facing requirements: capture downstream outcome evidence for the formal-feed source-aware example, capture another explicit downstream lead-intake outcome, or capture the next dealer-backed hunter-sales example from the remaining open validation list before promoting any remaining policy defaults. If no dealer examples are available, continue with another non-gated roadmap workflow family after classifying it through the lifecycle, capability, readiness/state, evaluation/build-readiness, storage-domain, and domain-promotion lenses.

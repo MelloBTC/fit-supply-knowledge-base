@@ -13,6 +13,7 @@ sources:
   - raw/imports/fast-os-capability-roadmap/regency-close-won-to-delivery-workflow-decomposition-v1.md
   - wiki/sales/source-aware-lead-intake-routing.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/sales/proposal-package-readiness.md
   - wiki/order-execution/index.md
 related:
   - [[distributor-workflow-map|Distributor Workflow Map]]
@@ -20,6 +21,7 @@ related:
   - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
+  - [[../sales/proposal-package-readiness|Proposal Package Readiness]]
   - [[../order-execution/index|Order Execution]]
   - [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[agent-answerability-targets|Agent Answerability Targets]]
@@ -31,7 +33,7 @@ tags:
   - agent-capabilities
   - answerability
   - roadmap-derived
-provenance_notes: Synthesized from FSCR-006. Cluster names are candidate capability boundaries, not final product agent names. Updated 2026-06-27 after order-execution became the first promoted workflow domain.
+provenance_notes: Synthesized from FSCR-006. Cluster names are candidate capability boundaries, not final product agent names. Updated 2026-06-27 after proposal package readiness was synthesized and order-execution became the first promoted workflow domain.
 ---
 
 # Agent Capability Map
@@ -83,6 +85,12 @@ The practical rule for future agents is: classify the source event and quote-rea
 
 The practical rule for future agents is: prepare freight/install/extraction readiness, estimates, exception routes, provenance, validity, and handoff assumptions, but require human approval before any customer-facing financial value or quote resend.
 
+## Current Proposal Package Readiness Lane
+
+[[../sales/proposal-package-readiness|Proposal Package Readiness]] is now the compiled wiki home for the proposal package portion of ACI-07 quote and proposal readiness, with connections to ACI-04 site-visit capture and debrief, ACI-05 project-context readiness, ACI-06 solution design support, ACI-08 follow-up and decision-state, and ACI-09 approval and handoff readiness.
+
+The practical rule for future agents is: prepare project/room context, design asset inventory, visual review flags, proposal checklist, package draft, parity checks, and follow-up state, but require human approval before customer-facing proposal delivery, visual claims, package promises, or interactive proposal publication.
+
 ## Boundary Rules
 
 | Boundary | Rule |
@@ -106,7 +114,7 @@ The practical rule for future agents is: prepare freight/install/extraction read
 | Site-visit capture and debrief | `SiteVisitEvent`, `SiteVisitSummary`, `RoomContext`, `MeasurementSet`, `PhotoSet`, `ProcurementContext` |
 | Project-context readiness | `ProjectContextPacket`, `QuoteBlocker`, `OrderBlocker`, `ExtractionInstruction`, `FlooringScope`, `TradeInPacket` |
 | Solution design support | `LayoutPlan`, `ProductSelectionRationale`, `ProductOptionSet`, `ProposalPositioningNote` |
-| Quote and proposal readiness | `Quote`, `QuoteVersion`, `PriceFreshnessCheck`, `QuoteReadinessChecklist`, `FreightInstallInputPacket`, `FreightEstimate`, `FreightEstimateMode`, `FreightValidityWindow`, `InstallEstimate`, `ExtractionLine`, `EstimateReviewEvent`, `ProposalPackage`, `ProposalDeliveryEvent` |
+| Quote and proposal readiness | `Quote`, `QuoteVersion`, `PriceFreshnessCheck`, `QuoteReadinessChecklist`, `FreightInstallInputPacket`, `FreightEstimate`, `FreightEstimateMode`, `FreightValidityWindow`, `InstallEstimate`, `ExtractionLine`, `EstimateReviewEvent`, `ProposalReadinessChecklist`, `VisualAccuracyReview`, `ProposalPackage`, `ProposalDeliveryDraft`, `ProposalDeliveryEvent` |
 | Follow-up and decision-state | `FollowUpState`, `FollowUpTask`, `BidCollectionStatus`, `Interaction`, `ConversionStatus`, `WinLossReason` |
 | Approval and handoff readiness | `ApprovalProof`, `PurchaseOrderReview`, `ContractReviewHighlight`, `CustomerCommitmentEvent`, `ClosedWonEvent`, `OrderReadinessState`, `OrderReadinessChecklist`, `OrderHandoffReviewEvent` |
 | Order coordination | `InvoiceMilestonePlan`, `VendorPurchaseOrder`, `VendorAcknowledgmentEvent`, `LeadTimeStatus`, `ReceivingEvent`, `CustomerStatusUpdateEvent` |
@@ -122,7 +130,7 @@ Future agent surfaces should be workflow-centered, not a list of named agents.
 show the work unit, the decision, the evidence, the missing facts, and the next state change
 ```
 
-Likely early surfaces include a source review queue, research brief workspace, site-visit capture/debrief, quote readiness workspace, follow-up state view, handoff packet workspace, and delivery readiness workspace.
+Likely early surfaces include a source review queue, research brief workspace, site-visit capture/debrief, quote readiness workspace, proposal package readiness workspace, follow-up state view, handoff packet workspace, and delivery readiness workspace.
 
 ## Validation Needs
 

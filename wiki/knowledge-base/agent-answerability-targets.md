@@ -17,6 +17,7 @@ sources:
   - wiki/knowledge-base/wiki-to-agent-build-bridge.md
   - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/sales/proposal-package-readiness.md
   - wiki/order-execution/order-execution-readiness-agent-requirements.md
   - wiki/order-execution/order-execution-state-model.md
   - wiki/order-execution/order-execution-transition-gate-rules.md
@@ -36,6 +37,7 @@ related:
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
+  - [[../sales/proposal-package-readiness|Proposal Package Readiness]]
   - [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[../order-execution/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[../order-execution/order-execution-state-model|Order Execution State Model]]
@@ -48,7 +50,7 @@ tags:
   - answerability
   - target-state
   - agent-design
-provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, FSCR-012, FSCR-013, FSCR-016, and FSCR-017. Updated 2026-06-27 after the FSCR-017 freight/install quote-readiness synthesis and bounded order-execution pilot migration.
+provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, FSCR-012, FSCR-013, FSCR-016, FSCR-017, and FSCR-018. Updated 2026-06-27 after the FSCR-018 proposal package readiness synthesis and bounded order-execution pilot migration.
 ---
 
 # Agent Answerability Targets
@@ -141,6 +143,14 @@ The first roadmap synthesis pass adds these more specific answerability targets:
 - Identify which F&I actions a future agent can prepare versus which customer-facing financial, quote-update, rule-change, or exception decisions require human approval.
 - Preserve the boundary that current freight rules, installer rules, approval ownership, thresholds, and actual-cost variance still need validation before build-facing policy.
 
+### Proposal Package Readiness
+
+- Explain what must be known before a proposal package is safe for customer-facing use.
+- Distinguish project-context readiness, room-context uncertainty, design asset readiness, quote/F&I alignment, visual accuracy review, proposal delivery, and follow-up state.
+- Explain why polished proposal assets, renderings, and web proposals can create false confidence unless they stay aligned to approved quote versions, source room context, and human review.
+- Identify which proposal-preparation actions a future agent can prepare versus which product, visual, financial, and customer-facing decisions require human approval.
+- Preserve the boundary that proposal package readiness is wiki knowledge, not an autonomous proposal generator, raw project-folder importer, visual generation pipeline, or customer-facing send tool.
+
 ### Order-Execution Readiness And State
 
 - Explain what an order-execution readiness coordinator should detect, classify, route, draft, preserve, monitor, recommend, request for review, and record.
@@ -178,4 +188,4 @@ A future agent should be able to:
 
 ## Domain Model Review Outcome
 
-The first domain model review is recorded in [[domain-model-review|Domain Model Review]]. It records `order-execution` as the first bounded promoted workflow domain, treats `hunter-sales`, `source-intelligence`, `lead-intake`, and `quote-readiness` as active sales sub-lanes, and defers first-class domains for `agent-workflows`, `agent-readiness`, `operating-model`, `lead-intelligence`, `quote-readiness`, `installed-base`, and `accounts-and-sites` until more compiled page density supports the move.
+The first domain model review is recorded in [[domain-model-review|Domain Model Review]]. It records `order-execution` as the first bounded promoted workflow domain, treats `hunter-sales`, `source-intelligence`, `lead-intake`, `quote-readiness`, and `proposal-readiness` as active sales sub-lanes, and defers first-class domains for `agent-workflows`, `agent-readiness`, `operating-model`, `lead-intelligence`, `quote-readiness`, `proposal-readiness`, `installed-base`, and `accounts-and-sites` until more compiled page density supports the move.

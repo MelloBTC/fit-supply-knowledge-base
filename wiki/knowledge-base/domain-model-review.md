@@ -22,6 +22,7 @@ sources:
   - wiki/sales/lead-to-closed-won-workflow.md
   - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/sales/proposal-package-readiness.md
   - wiki/order-execution/close-won-to-delivery-workflow.md
   - wiki/order-execution/order-execution-readiness-agent-requirements.md
   - wiki/order-execution/order-execution-state-model.md
@@ -40,6 +41,7 @@ related:
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
+  - [[../sales/proposal-package-readiness|Proposal Package Readiness]]
   - [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[../order-execution/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[../order-execution/order-execution-state-model|Order Execution State Model]]
@@ -80,7 +82,7 @@ The broader structure review is recorded in [[information-architecture-pressure-
 | `operating-model` | Keep as a canonical lens, not a new domain. | `wiki/company/commercial-fitness-distributor-operating-model.md`, linked from root and workflow pages. | FSCR-002 and FSCR-003 establish the parent lifecycle and data-object spine, but the current page works as the parent map without a new folder. | Promote only if separate lifecycle, role, value-stream, and data-object pages become hard to maintain inside `company` and `knowledge-base`. |
 | `agent-workflows` or `agent-readiness` | Keep as knowledge-base and governance answerability lenses. | `wiki/knowledge-base/agent-capability-map.md`, `wiki/knowledge-base/wiki-to-agent-build-bridge.md`, `wiki/knowledge-base/agent-answerability-targets.md`, and `wiki/governance/agent-evaluation-fixtures.md`. | FSCR-006 identifies capability clusters, FSCR-011 gives fixture discipline, and FSCR-013 supplies a build-bridge pattern. These are not final product agents and should not be named as a product surface too early. | Promote only after multiple mature workflow pages need shared context contracts, build-readiness reviews, fixture/eval summaries, and human-boundary contracts. |
 | `lead-intelligence` or `prospecting` | Active sales sub-lanes, but not a top-level domain yet. | `wiki/sales/source-aware-lead-intake-routing.md`, `wiki/sales/lead-to-closed-won-workflow.md`, and `wiki/sales/hunter-sales-existing-multifamily-pattern.md`. | FSCR-016 gives source-aware lead intake a compiled workflow page, while FSCR-012 has a hunter-sales validation-status checkpoint, a dealer-backed Regency active-workflow duplicate-block capture, and a soft-negative split-candidate capture. Remaining probes stay provisional. | Reassess after source-aware lead intake, lead qualification, lead research, hunter sales, and source-quality learning have multiple validated compiled pages and repeated navigation pressure. |
-| `quote-readiness`, `pricing-readiness`, or `freight-install` | Active sales readiness sub-lane, but not a top-level domain yet. | `wiki/sales/freight-install-quote-readiness.md`, with links to sales, order-execution, governance, and equipment. | FSCR-017 creates one compiled F&I quote-readiness page that bridges quote/proposal readiness to order-execution handoff. It does not yet cover the full pricing, margin, tax, financing, proposal, or product/source-freshness family. | Reassess only after multiple validated quote-readiness pages create repeated navigation, ownership, review-boundary, or source-freshness pressure. |
+| `quote-readiness`, `pricing-readiness`, `proposal-readiness`, or `freight-install` | Active sales readiness sub-lane, but not a top-level domain yet. | `wiki/sales/freight-install-quote-readiness.md` and `wiki/sales/proposal-package-readiness.md`, with links to sales, design, projects, order-execution, governance, and equipment. | FSCR-017 creates an F&I quote-readiness page and FSCR-018 creates a proposal package readiness page. Together they strengthen quote/proposal readiness but still do not cover the full pricing, margin, tax, financing, approvals, or product/source-freshness family. | Reassess only after multiple validated quote/proposal readiness pages create repeated navigation, ownership, review-boundary, or source-freshness pressure. |
 | `installed-base` | Defer as a lifecycle lens across service, equipment, sales, and order-execution. | `wiki/service/`, `wiki/equipment/`, and relationship-continuity sections until sourced service/warranty pages exist. | The operating model says installed assets matter, but the current compiled evidence is strategic rather than enough for durable rules. | Reassess after service, warranty, parts, replacement, or post-install relationship pages are sourced. |
 
 ## Domain Pressure Recheck 2026-06-27
@@ -89,7 +91,7 @@ Recheck result: one bounded promotion, no full migration.
 
 - `order-execution` is now a first-class domain because the page family had become one coherent post-close lane rather than a loose set of project and governance notes.
 - `source-aware lead intake` now has one compiled target-state page under `sales`, and `hunter-sales` has one compiled design-hypothesis page with validation-status examples. A top-level `lead-intelligence` or `prospecting` domain would still make provisional or early-stage patterns look more settled than they are.
-- `freight/install quote readiness` now has one compiled target-state page under `sales`. A top-level `quote-readiness`, `pricing`, or `freight-install` domain would overstate the lane because current rules, owner thresholds, actual-cost variance, and broader pricing/proposal pages are not validated yet.
+- `freight/install quote readiness` and `proposal package readiness` now have compiled target-state pages under `sales`. A top-level `quote-readiness`, `pricing`, `proposal-readiness`, or `freight-install` domain would still overstate the lane because current rules, owner thresholds, actual-cost variance, proposal parity, visual review, and broader pricing/proposal pages are not validated yet.
 - `installed-base` appears as a relationship-ready and service-lifecycle concern, but the wiki does not yet have sourced warranty, parts, service, replacement, or post-install relationship pages. Keep it as a lifecycle lens until those pages exist.
 - `agent-workflows`, `agent-readiness`, and `operating-model` still work as lenses because the current pages are maps, capability summaries, bridge guidance, and evaluation discipline, not separate page families with their own maintenance needs.
 
@@ -127,13 +129,14 @@ The hunter-sales lane now has one compiled design-hypothesis page under `sales`:
 
 This page strengthens prospecting and lead-intelligence answerability without creating a top-level domain. The validation-status checkpoint confirms that real/sanitized examples support source-origin routing, service-to-sales review, grouped-property mapping, and active-workflow duplicate blocking. The dealer-backed Regency capture now anchors duplicate-outreach blocking when outbound response becomes active site visit, proposal, bid-collection, approved quote, closed-won, or order-readiness work. The soft-negative split-candidate capture clarifies response-classification needs, but no remaining provisional probe was promoted to dealer-confirmed or build-ready policy.
 
-## Current Freight And Install Quote-Readiness Lane
+## Current Quote And Proposal Readiness Lane
 
-The freight/install quote-readiness lane now has one compiled target-state page under `sales`:
+The quote/proposal readiness lane now has two compiled target-state pages under `sales`:
 
 - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]].
+- [[../sales/proposal-package-readiness|Proposal Package Readiness]].
 
-This page strengthens quote/proposal readiness without creating a top-level domain. Its source family crosses sales, order-execution, governance, and equipment, but its immediate business decision is whether freight, install, or extraction assumptions are safe enough for customer-facing quote use. Keep it in `sales` while linking to order-execution state, transition gate rules, and upstream equipment/source-freshness dependencies.
+These pages strengthen quote/proposal readiness without creating a top-level domain. F&I readiness asks whether freight, install, or extraction assumptions are safe enough for customer-facing quote use. Proposal package readiness asks whether project context, room uncertainty, design assets, visuals, quote/package alignment, delivery event, and follow-up state are reviewed enough for customer-facing proposal use. Keep both in `sales` while linking to design, projects, order-execution state, transition gate rules, and upstream equipment/source-freshness dependencies.
 
 ## Current Wiki-To-Agent Build Bridge Lane
 
@@ -151,7 +154,7 @@ The domain-pressure recheck is complete for the current page set. The next coher
 2. Treat FSCR-011 evaluation discipline as locally synthesized in [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]; do not import the upstream fixture bundle unless a future approved build lane opens that scope.
 3. Continue hunter-sales validation only by capturing or synthesizing the next real/sanitized dealer example from the remaining open list, especially budget-window target review, prospecting no-response, manager-change signal quality, scoped hard stops, soft-negative response, or sensitive-account review ownership.
 4. Validate source-aware lead intake with real or sanitized lead-source examples before moving it toward build-facing requirements.
-5. Treat FSCR-017 as locally synthesized in [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]; do not import raw quote/task/pricing artifacts or open live pricing automation unless Josh explicitly opens that scope.
+5. Treat FSCR-017 and FSCR-018 as locally synthesized in [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]] and [[../sales/proposal-package-readiness|Proposal Package Readiness]]; do not import raw quote/task/pricing artifacts, raw project folders, proposal assets, visual generation workflows, or customer-facing proposal/pricing automation unless Josh explicitly opens that scope.
 6. Continue the next non-gated roadmap workflow family if no dealer examples are available and no Josh-approved build/evaluation implementation lane is open.
 7. Use [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] only as a readiness lens; do not start implementation handoff until a workflow has stronger validation and a Josh-approved build lane.
 

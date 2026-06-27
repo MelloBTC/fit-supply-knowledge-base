@@ -20,6 +20,7 @@ related:
   - [[../projects/index|Projects]]
   - [[../governance/index|Governance]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
+  - [[../sales/proposal-package-readiness|Proposal Package Readiness]]
   - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[../knowledge-base/domain-model-review|Domain Model Review]]
   - [[../knowledge-base/information-architecture-pressure-test|Information Architecture Pressure Test]]
@@ -51,6 +52,7 @@ This domain exists because the order-execution pages created enough navigation p
 ## Related Pages
 
 - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]] remains in `sales`; its reviewed F&I assumptions feed order-execution handoff context.
+- [[../sales/proposal-package-readiness|Proposal Package Readiness]] remains in `sales`; its reviewed project context, design assets, proposal delivery event, and accepted package assumptions should not be rediscovered after approval.
 - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]] remains in `governance`; it defines synthetic-fixture and trace discipline without moving the wiki into product implementation.
 - [[../projects/index|Projects]] remains the broader delivery and project-lifecycle domain.
 

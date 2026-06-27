@@ -24,6 +24,7 @@ sources:
   - wiki/sales/lead-to-closed-won-workflow.md
   - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/sales/proposal-package-readiness.md
   - wiki/order-execution/close-won-to-delivery-workflow.md
   - wiki/order-execution/order-execution-readiness-agent-requirements.md
   - wiki/order-execution/order-execution-state-model.md
@@ -43,6 +44,7 @@ related:
   - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
+  - [[../sales/proposal-package-readiness|Proposal Package Readiness]]
   - [[../order-execution/order-execution-state-model|Order Execution State Model]]
 agent_answerability:
   - Is the current wiki folder structure still fit for the target-state FAST OS knowledge objective?
@@ -113,6 +115,7 @@ The remaining weakness is that active roadmap knowledge does not fit neatly into
 | Lead-to-closed-won | Crosses lead source, discovery, site visit, design, product selection, proposal, follow-up, approval, and order-readiness. |
 | Order execution | Starts after sales approval, but spans readiness state, vendor ordering, payment, site readiness, delivery, install, completion, and relationship continuity. This is now the pilot promoted domain. |
 | Freight/install quote readiness | Lives before quote send, but depends on product handling, site context, freight/install rules, approval provenance, validity windows, and order-execution handoff. |
+| Proposal package readiness | Lives before proposal send, but depends on project context, room uncertainty, design assets, visual review, quote/package alignment, proposal delivery, and follow-up state. |
 | Agent capability map | Cuts across every department and is better understood as repeated work-unit clusters. |
 | Equipment knowledge | Needs its own ontology, but deep answerability and source-manifest work remain upstream-owned for now. |
 
@@ -298,7 +301,7 @@ Pilot result:
 1. The mismatch is real enough to name directly.
 2. The mismatch is strong enough to promote only `order-execution` now.
 3. The mismatch is not yet strong enough to justify a full physical migration.
-4. `lead-intelligence`, `quote-readiness`, `agent-readiness`, `installed-base`, and `accounts-and-sites` should remain named lanes until more validated pages exist.
+4. `lead-intelligence`, `quote-readiness`, `proposal-readiness`, `agent-readiness`, `installed-base`, and `accounts-and-sites` should remain named lanes until more validated pages exist.
 
 ### Page Density Snapshot
 
@@ -306,7 +309,7 @@ Pilot result:
 | --- | --- | --- | --- |
 | Root | One root index. | Working as the entry point for lens-first navigation. | Keep. |
 | `knowledge-base` | Navigation, answerability, roadmap import, build bridge, and structure-governance pages. | Still a control plane, with some future `agent-readiness` pressure. | Keep as control plane for now. |
-| `sales` | Four workflow pages plus an index. | Real density, but it contains lead intelligence, lead-to-close workflow, hunter-sales, and quote readiness. | Keep as storage for now; do not let `sales` hide active lanes. |
+| `sales` | Five workflow pages plus an index. | Real density, but it contains lead intelligence, lead-to-close workflow, hunter-sales, quote readiness, and proposal readiness. | Keep as storage for now; do not let `sales` hide active lanes. |
 | `projects` | Index only after the pilot migration. | No longer carries order-execution pages; future project-lifecycle pages may still land here. | Keep quiet until new project-domain material appears. |
 | `order-execution` | Four content pages plus an index. | Strongest first workflow-domain candidate; now promoted. | Use as the pilot domain and template for future lane-promotion discipline. |
 | `governance` | Source manifest, evaluation fixture discipline, and an index. | General governance remains here; order-specific gate rules moved to order-execution. | Keep; do not move evaluation fixtures unless an `agent-readiness` migration is later approved. |
@@ -325,6 +328,7 @@ Pilot result:
 | `wiki/sales/lead-to-closed-won-workflow.md` | `sales` | End-to-end workflow | Lead signal through approval and order-readiness boundary | `workflows` | Keep; likely moves only in a broader lifecycle migration. |
 | `wiki/sales/hunter-sales-existing-multifamily-pattern.md` | `sales` | Lead intelligence / prospecting | Target coverage, reactivation, suppression, human review | `lead-intelligence` | Keep because the page remains `design-hypothesis`. |
 | `wiki/sales/freight-install-quote-readiness.md` | `sales` | Quote readiness | Pricing/quote creation, F&I review, handoff continuity | `quote-readiness` | Keep until quote-readiness pages expand beyond F&I. |
+| `wiki/sales/proposal-package-readiness.md` | `sales` | Proposal readiness | Proposal assembly, project-context readiness, room/design asset review, visual accuracy, follow-up state | `quote-readiness`, `proposal-readiness`, or `workflows` | Keep until proposal/pricing/readiness pages multiply enough to create real navigation pressure. |
 | `wiki/design/index.md` | `design` | Domain facet | Layout/design workflow placeholder | Domain facet or `workflows`/`equipment` facet later | Keep. |
 | `wiki/equipment/index.md` | `equipment` | Equipment ontology | Product taxonomy and source freshness | `equipment` | Keep; wait for upstream mature outputs. |
 | `wiki/projects/index.md` | `projects` | Domain facet | Broader project lifecycle placeholder after order-execution promotion | Domain facet or workflow facet later | Keep quiet until new project-domain material appears. |
@@ -375,7 +379,7 @@ This is a target proposal, not the active migration plan. The only piece of it a
 | `operating-model` | Parent lifecycle, role, value-stream, data-object, and distributor operating-model pages. |
 | `workflows` | End-to-end lifecycle maps and cross-stage workflow pages that should not be owned by a department. |
 | `lead-intelligence` | Source-aware lead intake, lead research, prospecting, target coverage, source quality, and outreach policy. |
-| `quote-readiness` | Quote completeness, F&I readiness, pricing assumptions, proposal readiness, approval provenance, and quote-source freshness. |
+| `quote-readiness` | Quote completeness, F&I readiness, proposal package readiness, pricing assumptions, approval provenance, and quote-source freshness. |
 | `order-execution` | Closed-won through order readiness, vendor order, site readiness, delivery, install, closeout, and relationship-ready state. |
 | `equipment` | Equipment ontology, manufacturer/model/source-freshness knowledge, and compatibility once upstream work matures. |
 | `accounts-and-sites` | Account, property, site, contact, management company, buyer-path, and relationship-memory knowledge. |
@@ -394,7 +398,7 @@ The bounded pilot created `wiki/order-execution/` and moved these pages:
 - `wiki/order-execution/order-execution-state-model.md`.
 - `wiki/order-execution/order-execution-transition-gate-rules.md`.
 
-The pilot intentionally did not move `wiki/governance/agent-evaluation-fixtures.md`, because that page governs fixture and trace discipline across future workflows. It also did not move `wiki/sales/freight-install-quote-readiness.md`, because quote-readiness is still a sales readiness lane with only one compiled page.
+The pilot intentionally did not move `wiki/governance/agent-evaluation-fixtures.md`, because that page governs fixture and trace discipline across future workflows. It also did not move `wiki/sales/freight-install-quote-readiness.md` or `wiki/sales/proposal-package-readiness.md`, because quote/proposal readiness is still a sales readiness lane without enough validated page density for a new folder.
 
 ## Migration Triggers
 
@@ -407,7 +411,7 @@ Do not move folders just because a term repeats. Move only when the current stru
 | `wiki/agent-readiness/` or `wiki/agent-workflows/` | Multiple workflow pages become mature enough to need shared context contracts, build-readiness reviews, fixture/eval summaries, and human-boundary contracts. |
 | `wiki/operating-model/` | Lifecycle, roles, data-object spine, value streams, and cross-domain maps outgrow `company` and `knowledge-base`. |
 | `wiki/installed-base/` | Service, warranty, parts, replacement, asset lifecycle, and relationship-expansion pages become sourced enough to need a shared home. |
-| `wiki/quote-readiness/` or `wiki/pricing-readiness/` | Freight/install, tax, margin, financing, proposal package, pricing source freshness, and quote approval pages become validated enough that `sales` can no longer explain ownership, review, and source boundaries cleanly. |
+| `wiki/quote-readiness/`, `wiki/pricing-readiness/`, or `wiki/proposal-readiness/` | Freight/install, proposal package, tax, margin, financing, pricing source freshness, quote approval, and proposal-send review pages become validated enough that `sales` can no longer explain ownership, review, and source boundaries cleanly. |
 | `wiki/accounts-and-sites/` | Account, property, site, contact, management-company, buyer-path, and relationship-memory pages become cross-cutting enough that `sales`, `projects`, and `service` all depend on them. |
 
 ## Proposed Future Shape
@@ -441,7 +445,7 @@ The bounded order-execution pilot migration is complete:
 1. Use `wiki/order-execution/index.md` as the canonical home for post-close readiness, state, gate, delivery/install execution, and relationship-ready navigation.
 2. Keep all other physical folders stable until new evidence justifies a separate promotion decision.
 3. Keep `wiki/governance/agent-evaluation-fixtures.md` in governance.
-4. Keep `wiki/sales/freight-install-quote-readiness.md` in sales until quote-readiness has broader validated page density.
+4. Keep `wiki/sales/freight-install-quote-readiness.md` and `wiki/sales/proposal-package-readiness.md` in sales until quote/proposal readiness has broader validated page density.
 5. Use `wiki/index.md` as the root lens path before browsing domain folders.
 6. Use `wiki/knowledge-base/index.md` as the local hub for workflow, capability, structure, evaluation, and build-readiness lenses.
 7. Use this page and [[domain-model-review|Domain Model Review]] before adding or moving any top-level folder.

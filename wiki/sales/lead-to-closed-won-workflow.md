@@ -10,12 +10,15 @@ sources:
   - raw/imports/fast-os-capability-roadmap-source-inventory.md#fscr-007
   - raw/imports/fast-os-capability-roadmap/regency-lead-to-closed-won-work-unit-decomposition-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/regency-lead-to-closed-won-work-unit-decomposition-v1.md
+  - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/05-capability-roadmap/regency-proposal-workflow-cross-repo-synthesis-v1.md
+  - wiki/sales/proposal-package-readiness.md
 related:
   - [[../knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
   - [[../knowledge-base/agent-capability-map|Agent Capability Map]]
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[freight-install-quote-readiness|Freight And Install Quote Readiness]]
+  - [[proposal-package-readiness|Proposal Package Readiness]]
 agent_answerability:
   - What must happen between a campaign response or lead signal and closed-won before operations can safely act?
   - Which context must be captured before quote/proposal work becomes trustworthy?
@@ -25,7 +28,7 @@ tags:
   - case-backed
   - regency
   - roadmap-derived
-provenance_notes: Synthesized from sanitized Regency roadmap artifact FSCR-007. Case facts are evidence-backed where the source labels them as such; this page generalizes them into a target-state workflow.
+provenance_notes: Synthesized from sanitized Regency roadmap artifact FSCR-007. Case facts are evidence-backed where the source labels them as such; this page generalizes them into a target-state workflow. Updated 2026-06-27 to link FSCR-018 proposal package readiness as the deeper proposal assembly lens.
 ---
 
 # Lead To Closed Won Workflow
@@ -61,7 +64,7 @@ The Regency source artifact is sanitized. It does not copy raw customer emails, 
 | Qualification and route | Rep confirms whether the lead deserves site visit, quote prep, research, park, reject, or monitor. | The customer asked for replacement quote help and needed a site visit. |
 | Discovery and site visit | Physical room and project context become reusable structured context. | Measurements, photos, notes, flooring, trade-in, and procurement context mattered. |
 | Layout and product selection | Layout direction and product-selection rationale become quote input. | Layout came before final equipment selection. |
-| Quote/proposal readiness | Freight/install, trade-in, flooring, terms, specs, and proposal assets are checked before send. | QTE35768, F&I, trade-in, and proposal delivery were part of the case; the general F&I readiness pattern now lives in [[freight-install-quote-readiness|Freight And Install Quote Readiness]]. |
+| Quote/proposal readiness | Freight/install, trade-in, flooring, terms, specs, room/design assets, visuals, and proposal package are checked before send. | QTE35768, F&I, trade-in, and proposal delivery were part of the case; F&I readiness now lives in [[freight-install-quote-readiness|Freight And Install Quote Readiness]], while proposal package readiness now lives in [[proposal-package-readiness|Proposal Package Readiness]]. |
 | Follow-up and bid state | Waiting is made explicit as bid collection, no response, stalled, revision requested, won, lost, or parked. | Regency entered a three-bid collection state. |
 | Approval and closed-won | Approval proof and accepted quote version are confirmed before closing sales workflow. | Approved quote received and quote converted to closed won. |
 | Order-readiness boundary | Sales context is packaged for post-close review. | Source artifact treats closed-won as the start of order readiness, not as automatic execution readiness. |

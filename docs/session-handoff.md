@@ -34,11 +34,13 @@ The source-aware lead intake synthesis lane now exists under `sales` with one ta
 
 The freight/install quote-readiness synthesis lane now exists under `sales` with one target-state page for F&I requirement detection, quote context inheritance, missing-context blockers, routine/exception routing, freight mode selection, draft freight/install/extraction estimates, human review/provenance, handoff continuity, actuals learning, and stale freight monitoring. FSCR-017 was classified through the lifecycle, capability, readiness/state, evaluation/build-readiness, storage-domain, and domain-promotion lenses before synthesis. No raw NetSuite tasks, screenshots, quote PDFs, customer names, source amounts, pricing, or private logistics artifacts were imported.
 
+The proposal package readiness synthesis lane now exists under `sales` with one target-state page for project-context readiness, room context and uncertainty, existing equipment/trade-in capture, design asset readiness, ECDESIGN/rendering review, quote/proposal package alignment, vendor branches, interactive proposal parity, proposal delivery, and follow-up state. FSCR-018 was classified through the lifecycle, capability, readiness/state, evaluation/build-readiness, storage-domain, and domain-promotion lenses before synthesis. No raw customer folders, quote PDFs, photos, pricing, contact details, generated proposal assets, or presentation-builder source artifacts were imported.
+
 The hunter-sales / prospecting synthesis lane now exists under `sales` with one design-hypothesis page for existing multifamily policy, reactivation, and validation status. The 2026-06-27 validation-status checkpoint strengthens source-origin routing, service-to-sales replacement signals, grouped-property review, and active-workflow duplicate blocking. A dealer-backed Regency capture now anchors duplicate-outreach blocking once an outbound response becomes active site visit, proposal, bid-collection, approved quote, closed-won, or order-readiness work. A soft-negative split-candidate capture clarifies that negative replies need classification before hard suppression, while remaining policy probes stay provisional.
 
 The wiki-to-agent build bridge now exists under `knowledge-base` with one reference-pattern page for translating mature wiki knowledge into future build-facing agent requirements without opening product schema, agent architecture, live tooling, or implementation specs.
 
-The 2026-06-27 domain pressure recheck is recorded in `wiki/knowledge-base/domain-model-review.md`. It records the order-execution pilot promotion, keeps source-intelligence, lead-intake, hunter-sales, quote-readiness, and freight/install as sales sub-lanes, keeps agent-readiness/build-bridge material under `knowledge-base` or `governance`, and defers all broader lane-first folder moves.
+The 2026-06-27 domain pressure recheck is recorded in `wiki/knowledge-base/domain-model-review.md`. It records the order-execution pilot promotion, keeps source-intelligence, lead-intake, hunter-sales, quote-readiness, freight/install, and proposal-readiness as sales sub-lanes, keeps agent-readiness/build-bridge material under `knowledge-base` or `governance`, and defers all broader lane-first folder moves.
 
 The 2026-06-27 information-architecture pressure test is recorded in `wiki/knowledge-base/information-architecture-pressure-test.md`. It confirms Josh's concern that the starter department folders are not the whole target structure. The audit proposed a lane-first `v0.4` target structure, then the bounded pilot promoted only `order-execution`. Do not run the full `v0.4` migration yet.
 
@@ -71,19 +73,20 @@ The completed first import slice is:
 10. FSCR-013 synthesized into `wiki/knowledge-base/wiki-to-agent-build-bridge.md` as a reference-pattern page without creating product schema, agent architecture, live tooling, or implementation specs.
 11. FSCR-016 synthesized into `wiki/sales/source-aware-lead-intake-routing.md` as a target-state page without importing raw customer, pricing, quote, NetSuite, or source-feed artifacts; updated 2026-06-27 with a Bailey at Berkman formal-feed example capture and a Park at Rialto service-created replacement outcome capture.
 12. FSCR-017 synthesized into `wiki/sales/freight-install-quote-readiness.md` as a target-state page without importing raw NetSuite tasks, screenshots, quote PDFs, customer names, source amounts, pricing, or private logistics artifacts.
-13. FSCR-004 remains an upstream dependency owned by `fast-os-knowledge-base`.
+13. FSCR-018 synthesized into `wiki/sales/proposal-package-readiness.md` as a target-state page without importing raw customer folders, quote PDFs, photos, pricing, contact details, generated proposal assets, or presentation-builder source artifacts.
+14. FSCR-004 remains an upstream dependency owned by `fast-os-knowledge-base`.
 
 ## Recommended Next Action
 
-The order-execution pilot migration is complete. Use `wiki/order-execution/index.md` as the canonical home for post-close readiness/state/gate navigation. Keep `wiki/governance/agent-evaluation-fixtures.md` in governance, and keep F&I quote-readiness in sales until quote-readiness has enough pages to justify its own lane.
+The order-execution pilot migration is complete. Use `wiki/order-execution/index.md` as the canonical home for post-close readiness/state/gate navigation. Keep `wiki/governance/agent-evaluation-fixtures.md` in governance, and keep F&I quote-readiness plus proposal package readiness in sales until quote/proposal readiness has enough validated pages to justify its own lane.
 
 Do not run a full `v0.4` folder migration now. The next useful work should be one of these bounded moves:
 
-1. Continue another non-gated roadmap workflow family, classifying it against lifecycle, capability, readiness/state, evaluation/build-readiness, storage-domain, and domain-promotion lenses before adding pages.
-2. Add a real or sanitized sales-validation example for source-aware lead intake or hunter-sales without promoting provisional policy.
+1. Add a real or sanitized sales-validation example for source-aware lead intake or hunter-sales without promoting provisional policy.
+2. Continue another non-gated roadmap workflow family, classifying it against lifecycle, capability, readiness/state, evaluation/build-readiness, storage-domain, and domain-promotion lenses before adding pages.
 3. Revisit commercial equipment knowledge-layer outputs only after `fast-os-knowledge-base` has mature material worth evaluating here.
 
-For hunter-sales, the highest-value remaining dealer-backed examples are: a budget-window target or review list, prospecting no-response with touch and buyer-path context, manager-change signal quality, scoped hard stop, a real soft-negative response using the current split-candidate checklist, or sensitive-account review ownership. Do not treat the current validation-status checkpoint, Regency active-workflow capture, or soft-negative split capture as fixture promotion, dealer-approved policy, or build readiness. Do not treat freight/install quote-readiness as a live pricing engine, current rule source, customer-facing quote updater, or build-ready implementation spec.
+For hunter-sales, the highest-value remaining dealer-backed examples are: a budget-window target or review list, prospecting no-response with touch and buyer-path context, manager-change signal quality, scoped hard stop, a real soft-negative response using the current split-candidate checklist, or sensitive-account review ownership. Do not treat the current validation-status checkpoint, Regency active-workflow capture, or soft-negative split capture as fixture promotion, dealer-approved policy, or build readiness. Do not treat freight/install quote-readiness as a live pricing engine, current rule source, customer-facing quote updater, or build-ready implementation spec. Do not treat proposal package readiness as an autonomous proposal generator, visual generation pipeline, raw project-folder importer, customer-facing proposal sender, or build-ready implementation spec.
 
 The domain pressure decision is:
 
@@ -91,10 +94,10 @@ The domain pressure decision is:
 - Keep `operating-model` as a canonical lens in `company` for now.
 - Keep `agent-workflows` and `agent-readiness` as knowledge-base/governance answerability lenses for now.
 - Keep `source-intelligence`, `lead-intake`, `hunter-sales`, `lead-intelligence`, and `prospecting` as active `sales` sub-lanes for now.
-- Keep `quote-readiness`, `pricing-readiness`, and `freight-install` as active sales readiness sub-lanes for now; do not promote a new top-level domain from one F&I page.
+- Keep `quote-readiness`, `pricing-readiness`, `proposal-readiness`, and `freight-install` as active sales readiness sub-lanes for now; do not promote a new top-level domain from the F&I and proposal package pages alone.
 - Keep `agent evaluation fixtures` as a `governance` evaluation-readiness lens for now.
 - Treat domain folders as storage homes and lifecycle/capability/readiness maps as primary navigation lenses for cross-domain workflow content.
-- Defer `lead-intelligence`, `quote-readiness`, `agent-readiness`, `installed-base`, `accounts-and-sites`, and full `v0.4` migration until stronger compiled page density or validated examples support the move.
+- Defer `lead-intelligence`, `quote-readiness`, `proposal-readiness`, `agent-readiness`, `installed-base`, `accounts-and-sites`, and full `v0.4` migration until stronger compiled page density or validated examples support the move.
 
 Do not open commercial equipment catalog/schema or model-specific answerability work locally until `fast-os-knowledge-base` has mature outputs to evaluate.
 
@@ -112,4 +115,4 @@ At the end of a meaningful checkpoint:
 
 ## Restart Prompt
 
-Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, `wiki/order-execution/index.md`, and `docs/session-handoff.md`. Stay in wiki mode. Treat `order-execution` as the first promoted pilot domain, not as permission to run the full `v0.4` folder migration. Use the root and knowledge-base indexes before adding pages, classify new roadmap families against the lifecycle/capability/readiness lenses, and keep sales validation example-first. Do not import the upstream fixture bundle, raw F&I quote/task artifacts, private customer/pricing material, or product evaluator/pricing implementation unless Josh explicitly opens that scope. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.
+Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, `wiki/order-execution/index.md`, and `docs/session-handoff.md`. Stay in wiki mode. Treat `order-execution` as the first promoted pilot domain, not as permission to run the full `v0.4` folder migration. Use the root and knowledge-base indexes before adding pages, classify new roadmap families against the lifecycle/capability/readiness lenses, and keep sales validation example-first. Do not import the upstream fixture bundle, raw F&I quote/task artifacts, raw proposal/project folders, generated proposal assets, private customer/pricing material, or product evaluator/pricing/proposal implementation unless Josh explicitly opens that scope. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.

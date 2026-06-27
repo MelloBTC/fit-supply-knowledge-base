@@ -9,16 +9,19 @@ reviewed_by:
 sources:
   - schema.md
   - PROJECT_CONTEXT.md
+  - raw/imports/fast-os-capability-roadmap-source-inventory.md
+  - wiki/sales/proposal-package-readiness.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
+  - [[../sales/proposal-package-readiness|Proposal Package Readiness]]
 agent_answerability:
   - What belongs in the Design domain?
   - Which starter pages should be created first for this domain?
 tags:
   - domain-index
   - design
-provenance_notes: Starter domain index created during target-state skeleton setup; content areas are placeholders until source-backed pages are added.
+provenance_notes: Starter domain index created during target-state skeleton setup; updated 2026-06-27 to link proposal package readiness as a sales-stored workflow that depends on room context, design assets, and visual review.
 ---
 
 # Design
@@ -33,6 +36,10 @@ Design knowledge covers space planning, layouts, 2D/3D workflows, and the decisi
 - Equipment placement considerations
 - Design to sales and project handoffs
 - Agent-assisted layout support
+
+## Related Workflow Pages
+
+- [[../sales/proposal-package-readiness|Proposal Package Readiness]] remains stored in `sales`, but it depends on room context, layout/design assets, ECDESIGN or trusted design-tool outputs, visual review, and source-aligned proposal claims.
 
 ## Starter Pages To Add
 
