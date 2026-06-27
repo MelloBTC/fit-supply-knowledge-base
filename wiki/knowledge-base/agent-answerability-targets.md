@@ -19,6 +19,7 @@ sources:
   - wiki/projects/order-execution-readiness-agent-requirements.md
   - wiki/projects/order-execution-state-model.md
   - wiki/governance/order-execution-transition-gate-rules.md
+  - wiki/governance/agent-evaluation-fixtures.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[roadmap-import-plan|Roadmap Import Plan]]
@@ -37,6 +38,7 @@ related:
   - [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[../projects/order-execution-state-model|Order Execution State Model]]
   - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
 agent_answerability:
   - What should future agents be able to answer or do using this knowledge base?
   - Which wiki domains should be built first to support useful agent behavior?
@@ -136,6 +138,12 @@ The first roadmap synthesis pass adds these more specific answerability targets:
 - Identify when a missing fact blocks only the next unsafe action while safe parallel work can continue.
 - Explain which human review boundaries apply to approval proof, PO mismatch, contract terms, payment, vendor order, customer promise, install release, completion, exception closure, and relationship-ready status.
 - Explain when sales should be notified versus asked to make a customer-facing or trust-sensitive decision.
+
+### Agent Evaluation Fixtures
+
+- Explain how synthetic fixture families can test a future readiness evaluator before real customer data is loaded.
+- Identify whether a future evaluator correctly classifies the active gate, blocker/warning/monitor/hold result, owner routing, rep visibility, safe parallel progress, human review boundary, and required trace event.
+- Distinguish wiki-level evaluation discipline from product-side evaluator implementation, machine-readable fixture imports, schema, runners, and production traces.
 
 ### Upstream Dependency Boundary
 

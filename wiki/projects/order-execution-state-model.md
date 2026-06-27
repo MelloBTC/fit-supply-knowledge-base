@@ -17,6 +17,7 @@ related:
   - [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[../knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
   - [[../knowledge-base/domain-model-review|Domain Model Review]]
 agent_answerability:
@@ -164,6 +165,6 @@ This page defines the project-state lane. The gate policy lives in [[../governan
 As a rule of thumb:
 
 - `projects` explains the workflow state, owner handoffs, and business meaning.
-- `governance` explains blocker/warning policy, review boundaries, override records, and evaluation expectations.
+- `governance` explains blocker/warning policy, review boundaries, override records, evaluation expectations, and synthetic-fixture discipline through [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]].
 
 Do not promote `order-execution` into a new top-level domain yet. Use this page, the readiness requirements page, and the governance gate page as the compiled evidence for whether that future move is justified.

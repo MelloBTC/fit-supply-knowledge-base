@@ -19,6 +19,7 @@ related:
   - [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[source-manifest|Source Manifest]]
+  - [[agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[../knowledge-base/domain-model-review|Domain Model Review]]
 agent_answerability:
   - Which facts should block, warn, monitor, or inform an order-execution state transition?
@@ -190,7 +191,7 @@ Future implementation should be testable against:
 - Completion proof versus exception separation.
 - Installed-base truth after substitution.
 
-Minimum trace data should include input sources, extracted facts and confidence, active gate, blocker/warning decision, owner assignment, draft or recommendation, human review result, transition or hold reason, rep visibility event, and override reason.
+Minimum trace data should include input sources, extracted facts and confidence, active gate, blocker/warning decision, owner assignment, draft or recommendation, human review result, transition or hold reason, rep visibility event, and override reason. The broader synthetic-fixture and trace discipline is compiled in [[agent-evaluation-fixtures|Agent Evaluation Fixtures]].
 
 ## Open Validation Needs
 

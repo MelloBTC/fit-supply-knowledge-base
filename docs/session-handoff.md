@@ -36,7 +36,9 @@ The hunter-sales / prospecting synthesis lane now exists under `sales` with one 
 
 The wiki-to-agent build bridge now exists under `knowledge-base` with one reference-pattern page for translating mature wiki knowledge into future build-facing agent requirements without opening product schema, agent architecture, live tooling, or implementation specs.
 
-The 2026-06-27 domain pressure recheck is recorded in `wiki/knowledge-base/domain-model-review.md` and still keeps the top-level domain model stable, with source-intelligence, lead-intake, and hunter-sales kept as sales sub-lanes.
+The order-execution evaluation fixture discipline page now exists under `governance` with one target-state page for synthetic fixtures, policy parameters, trace expectations, human-review boundaries, and upstream fixture-bundle boundaries. FSCR-011 was synthesized locally without importing machine-readable fixture files or opening product evaluator implementation.
+
+The 2026-06-27 domain pressure recheck is recorded in `wiki/knowledge-base/domain-model-review.md` and still keeps the top-level domain model stable, with source-intelligence, lead-intake, hunter-sales, and order-execution evaluation kept inside existing domains.
 
 The 2026-06-27 information-architecture pressure test is recorded in `wiki/knowledge-base/information-architecture-pressure-test.md`. It confirms Josh's concern that the starter department folders are not the whole target structure. The decision is to keep folders stable for now, use lifecycle, capability, and readiness/state maps as the primary navigation lenses, and migrate folders only when evidence creates real navigation pressure.
 
@@ -64,10 +66,11 @@ The completed first import slice is:
 5. FSCR-008 imported to `raw/imports/fast-os-capability-roadmap/` and synthesized into `wiki/projects/close-won-to-delivery-workflow.md`.
 6. FSCR-009 synthesized into `wiki/projects/order-execution-readiness-agent-requirements.md`.
 7. FSCR-010 synthesized into `wiki/projects/order-execution-state-model.md` and `wiki/governance/order-execution-transition-gate-rules.md`.
-8. FSCR-012 synthesized into `wiki/sales/hunter-sales-existing-multifamily-pattern.md` as a design-hypothesis page and updated with a 2026-06-27 validation-status checkpoint from real/sanitized example pressure tests, provisional probe results, a soft-negative split-candidate capture, and a dealer-backed Regency active-workflow duplicate-block capture.
-9. FSCR-013 synthesized into `wiki/knowledge-base/wiki-to-agent-build-bridge.md` as a reference-pattern page without creating product schema, agent architecture, live tooling, or implementation specs.
-10. FSCR-016 synthesized into `wiki/sales/source-aware-lead-intake-routing.md` as a target-state page without importing raw customer, pricing, quote, NetSuite, or source-feed artifacts; updated 2026-06-27 with a Bailey at Berkman formal-feed example capture and a Park at Rialto service-created replacement outcome capture.
-11. FSCR-004 remains an upstream dependency owned by `fast-os-knowledge-base`.
+8. FSCR-011 synthesized into `wiki/governance/agent-evaluation-fixtures.md` as target-state governance; upstream machine-readable fixture files remain in `fast-os-capability-roadmap`.
+9. FSCR-012 synthesized into `wiki/sales/hunter-sales-existing-multifamily-pattern.md` as a design-hypothesis page and updated with a 2026-06-27 validation-status checkpoint from real/sanitized example pressure tests, provisional probe results, a soft-negative split-candidate capture, and a dealer-backed Regency active-workflow duplicate-block capture.
+10. FSCR-013 synthesized into `wiki/knowledge-base/wiki-to-agent-build-bridge.md` as a reference-pattern page without creating product schema, agent architecture, live tooling, or implementation specs.
+11. FSCR-016 synthesized into `wiki/sales/source-aware-lead-intake-routing.md` as a target-state page without importing raw customer, pricing, quote, NetSuite, or source-feed artifacts; updated 2026-06-27 with a Bailey at Berkman formal-feed example capture and a Park at Rialto service-created replacement outcome capture.
+12. FSCR-004 remains an upstream dependency owned by `fast-os-knowledge-base`.
 
 ## Recommended Next Action
 
@@ -80,8 +83,9 @@ The source-aware lead intake, hunter-sales, and order-execution lanes have been 
 - `wiki/sales/hunter-sales-existing-multifamily-pattern.md`.
 - `wiki/knowledge-base/wiki-to-agent-build-bridge.md`.
 - `wiki/knowledge-base/information-architecture-pressure-test.md`.
+- `wiki/governance/agent-evaluation-fixtures.md`.
 
-Recommended next action: review FSCR-011 if the next checkpoint is evaluation discipline for order-execution gates. If no new sales examples are available, use the information-architecture pressure test to run a navigation cleanup or a non-gated roadmap synthesis pass. Continue the example-first lane only when there is downstream research/outreach/park/quote outcome evidence for the formal-feed source-aware example, another explicit downstream lead-intake outcome, or the next dealer-backed hunter-sales example from the remaining open validation list.
+Recommended next action: FSCR-011 is now locally synthesized as evaluation governance. If no new sales examples are available, use the information-architecture pressure test to run a navigation cleanup or a non-gated roadmap synthesis pass. Continue the example-first lane only when there is downstream research/outreach/park/quote outcome evidence for the formal-feed source-aware example, another explicit downstream lead-intake outcome, or the next dealer-backed hunter-sales example from the remaining open validation list.
 
 For hunter-sales, the highest-value remaining dealer-backed examples are: a budget-window target or review list, prospecting no-response with touch and buyer-path context, manager-change signal quality, scoped hard stop, a real soft-negative response using the current split-candidate checklist, or sensitive-account review ownership. Do not treat the current validation-status checkpoint, Regency active-workflow capture, or soft-negative split capture as fixture promotion, dealer-approved policy, or build readiness.
 
@@ -92,6 +96,7 @@ The domain pressure decision is:
 - Keep `order-execution` as an active lane inside `projects` and `governance` for now.
 - Keep `source-intelligence`, `lead-intake`, `hunter-sales`, `lead-intelligence`, and `prospecting` as active `sales` sub-lanes for now.
 - Keep `wiki-to-agent build bridge` as a `knowledge-base` readiness lens for now.
+- Keep `agent evaluation fixtures` as a `governance` evaluation-readiness lens for now.
 - Treat domain folders as storage homes and lifecycle/capability/readiness maps as primary navigation lenses for cross-domain workflow content.
 - Defer `lead-intelligence`, `installed-base`, and a top-level `order-execution` domain until stronger compiled page density supports the move.
 
@@ -111,4 +116,4 @@ At the end of a meaningful checkpoint:
 
 ## Restart Prompt
 
-Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md`, `wiki/knowledge-base/information-architecture-pressure-test.md`, and `wiki/knowledge-base/wiki-to-agent-build-bridge.md` as the structure and build-readiness checkpoints. The current decision is to keep physical domain folders stable while using lifecycle, capability, and readiness/state maps as primary navigation lenses. The source-aware lead intake lane is synthesized inside `sales` and now includes a Bailey at Berkman formal-feed example capture plus a Park at Rialto service-created replacement outcome capture; the order-execution readiness/state lane is synthesized inside `projects` and `governance`; the hunter-sales existing multifamily lane is synthesized inside `sales` as a design-hypothesis page with a 2026-06-27 validation-status checkpoint, a dealer-backed Regency active-workflow duplicate-block capture, and a soft-negative split-candidate capture. Next, review FSCR-011 if evaluation discipline is the priority; if no new sales examples are available, use the IA pressure test to run navigation cleanup or non-gated roadmap synthesis before any folder migration. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.
+Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md`, `wiki/knowledge-base/information-architecture-pressure-test.md`, `wiki/knowledge-base/wiki-to-agent-build-bridge.md`, and `wiki/governance/agent-evaluation-fixtures.md` as the structure, build-readiness, and evaluation-readiness checkpoints. The current decision is to keep physical domain folders stable while using lifecycle, capability, readiness/state, and evaluation lenses as primary navigation. The source-aware lead intake lane is synthesized inside `sales` and now includes a Bailey at Berkman formal-feed example capture plus a Park at Rialto service-created replacement outcome capture; the order-execution readiness/state/evaluation lane is synthesized inside `projects` and `governance`; the hunter-sales existing multifamily lane is synthesized inside `sales` as a design-hypothesis page with a 2026-06-27 validation-status checkpoint, a dealer-backed Regency active-workflow duplicate-block capture, and a soft-negative split-candidate capture. FSCR-011 is locally synthesized; do not import the upstream fixture bundle or open product evaluator implementation unless Josh explicitly opens that scope. If no new sales examples are available, use the IA pressure test to run navigation cleanup or non-gated roadmap synthesis before any folder migration. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.

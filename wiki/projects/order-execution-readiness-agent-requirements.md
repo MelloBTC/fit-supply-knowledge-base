@@ -17,6 +17,7 @@ related:
   - [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[order-execution-state-model|Order Execution State Model]]
   - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[../knowledge-base/agent-capability-map|Agent Capability Map]]
   - [[../knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
 agent_answerability:
@@ -178,7 +179,7 @@ The near-term product step implied by the roadmap source is schema-shaped test d
 
 Useful fixture shapes include clean signed-quote order, PO mismatch order, non-standard contract terms, custom-option order, site-risk order, direct-to-site versus installer-warehouse fulfillment, delayed deposit, far-future install timing, backorder substitution, completion-proof delay, damage/missing-parts exception, relationship-ready clean closeout, and related flooring/extraction dependency.
 
-These fixtures should not be copied from raw customer files. They should test distinct gate behavior, owner boundary, evidence type, dealer policy, or review rule.
+These fixtures should not be copied from raw customer files. They should test distinct gate behavior, owner boundary, evidence type, dealer policy, or review rule. The compiled evaluation-governance pattern lives in [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]].
 
 ## Validation Needs
 

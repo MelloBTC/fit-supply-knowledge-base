@@ -12,6 +12,7 @@ sources:
   - wiki/knowledge-base/agent-answerability-targets.md
   - wiki/knowledge-base/agent-capability-map.md
   - wiki/knowledge-base/distributor-workflow-map.md
+  - wiki/governance/agent-evaluation-fixtures.md
 related:
   - [[agent-answerability-targets|Agent Answerability Targets]]
   - [[agent-capability-map|Agent Capability Map]]
@@ -22,6 +23,7 @@ related:
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
 agent_answerability:
   - How should compiled wiki knowledge eventually become build-ready agent requirements?
   - What must be true before a wiki workflow should be translated into implementation planning?
@@ -92,7 +94,7 @@ Before any compiled workflow is treated as ready for build-facing requirements, 
 | Human review | Are sensitive actions and approval points explicit? |
 | Data availability | Are required source records and context families known, even if final schema is not? |
 | Fixture path | Could a future builder create sanitized or synthetic test data before using real customer data? |
-| Evaluation | Are expected outputs, failure modes, and pass/fail signals understandable? |
+| Evaluation | Are expected outputs, failure modes, synthetic fixture families, and pass/fail signals understandable? |
 | Observability | Can sources, decisions, corrections, approvals, and overrides be traced? |
 | Boundary fit | Does the work belong in this wiki now, or is it upstream-owned by another repo? |
 
@@ -142,7 +144,7 @@ This bridge currently applies to the wiki at the pattern level:
 - [[agent-capability-map|Agent Capability Map]] keeps capability clusters separate from final product agent names.
 - [[distributor-workflow-map|Distributor Workflow Map]] identifies lifecycle stages and synthesis boundaries.
 - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] is a stronger candidate for future bridge use because it has a clear source event, route decision, owner/action state, and outcome loop.
-- [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]] and [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] are implementation-adjacent, so they need especially careful separation between wiki rules and future build specifications.
+- [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]], [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]], and [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]] are implementation-adjacent, so they need especially careful separation between wiki rules, synthetic fixture discipline, and future build specifications.
 - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] now has a validation-status checkpoint from real/sanitized examples, a dealer-backed Regency active-workflow duplicate-block capture, and a soft-negative split-candidate capture, but it should not move toward build requirements because remaining budget-window, no-response, manager-change, hard-stop, soft-negative, and sensitive-account probes are still provisional or split-required.
 
 The first production agent remains out of scope for this repo. The correct local move is to improve source-backed answerability until a future build lane can make implementation decisions from stronger evidence.

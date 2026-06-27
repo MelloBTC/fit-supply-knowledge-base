@@ -15,6 +15,7 @@ related:
   - [[domain-model-review|Domain Model Review]]
   - [[information-architecture-pressure-test|Information Architecture Pressure Test]]
   - [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]]
+  - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[distributor-workflow-map|Distributor Workflow Map]]
   - [[agent-capability-map|Agent Capability Map]]
 agent_answerability:
@@ -38,6 +39,7 @@ Knowledge Base pages explain how this wiki works, how to contribute to it, how i
 - Agent answerability targets
 - Information architecture and domain-model review
 - Wiki-to-agent build bridge patterns
+- Agent evaluation fixture discipline and build-readiness boundaries
 - Wiki maintenance routines
 - Context contracts for future agent roles
 
@@ -50,6 +52,10 @@ Knowledge Base pages explain how this wiki works, how to contribute to it, how i
 - [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]]
 - [[distributor-workflow-map|Distributor Workflow Map]]
 - [[agent-capability-map|Agent Capability Map]]
+
+## Related Governance Pages
+
+- [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
 
 ## Starter Pages To Add
 

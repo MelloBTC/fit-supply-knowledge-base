@@ -22,6 +22,7 @@ related:
   - [[projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[projects/order-execution-state-model|Order Execution State Model]]
   - [[governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[current-state/index|Current State]]
@@ -68,6 +69,7 @@ This is the root navigation page for the Fit Supply LLM Wiki. Start here when or
 - [[projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]] - Readiness coordinator behavior, human boundaries, rep visibility, and data shape implications.
 - [[projects/order-execution-state-model|Order Execution State Model]] - Target-state ladder from quote-ready through relationship-ready.
 - [[governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] - Gate behavior, blockers, warnings, review boundaries, overrides, and evaluation expectations.
+- [[governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]] - Synthetic-fixture, policy-parameter, trace, and review-boundary discipline for testing future readiness behavior before real customer data or product implementation work is opened.
 
 ## Working Notes
 

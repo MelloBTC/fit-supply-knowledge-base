@@ -15,6 +15,7 @@ related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../knowledge-base/domain-model-review|Domain Model Review]]
   - [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[agent-evaluation-fixtures|Agent Evaluation Fixtures]]
 agent_answerability:
   - What belongs in the Governance domain?
   - Which starter pages should be created first for this domain?
@@ -42,10 +43,13 @@ Governance covers the rules, review patterns, freshness expectations, source man
 
 - [[source-manifest|Source Manifest]]
 - [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+- [[agent-evaluation-fixtures|Agent Evaluation Fixtures]]
 
 ## Active Order-Execution Lens
 
-Order-execution governance currently lives in [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]. Keep broad review-process work separate from this lane until repeated patterns justify a more general human-review boundary page.
+Order-execution governance currently lives in [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] and [[agent-evaluation-fixtures|Agent Evaluation Fixtures]]. The first page owns blocker, warning, review, override, and transition policy. The second page owns synthetic-fixture and trace discipline for testing future readiness behavior before real customer data or product implementation work is opened.
+
+Keep broad review-process work separate from this lane until repeated patterns justify a more general human-review boundary page.
 
 ## Starter Pages To Add
 

@@ -15,6 +15,7 @@ sources:
   - wiki/knowledge-base/distributor-workflow-map.md
   - wiki/knowledge-base/agent-capability-map.md
   - wiki/knowledge-base/wiki-to-agent-build-bridge.md
+  - wiki/governance/agent-evaluation-fixtures.md
   - wiki/company/commercial-fitness-distributor-operating-model.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/macro-workflow-map-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/agent-candidate-inventory-v1.md
@@ -23,6 +24,7 @@ related:
   - [[distributor-workflow-map|Distributor Workflow Map]]
   - [[agent-capability-map|Agent Capability Map]]
   - [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]]
+  - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[roadmap-import-plan|Roadmap Import Plan]]
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
@@ -264,6 +266,7 @@ The current folders should be treated as storage domains, not as the complete in
 | Agent Capability Map | Primary agent-readiness navigation. Use before naming agents or build candidates. |
 | Order Execution State Model | Primary readiness-state example. Use as the anti-false-progress model. |
 | Domain Model Review | Records when a lane is or is not promoted into a domain. |
+| Agent Evaluation Fixtures | Records evaluation-fixture and trace discipline without creating an implementation or new domain. |
 | Information Architecture Pressure Test | Records the broader structure decision and migration criteria. |
 
 ## Migration Triggers
@@ -314,7 +317,7 @@ The next no-new-examples progress path is:
 
 The best next content slice without new examples is still open:
 
-- FSCR-011 if evaluation discipline for order-execution gates becomes the priority.
+- A navigation cleanup pass now that FSCR-011 evaluation discipline is synthesized in [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]].
 - Another non-gated roadmap workflow family if it strengthens the lifecycle or agent-readiness maps.
 - A navigation cleanup pass if the immediate goal is making the existing wiki easier to traverse.
 

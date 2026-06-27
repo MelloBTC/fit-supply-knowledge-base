@@ -18,6 +18,7 @@ related:
   - [[order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[order-execution-state-model|Order Execution State Model]]
   - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
 agent_answerability:
   - What belongs in the Projects domain?
   - Which starter pages should be created first for this domain?
@@ -48,7 +49,7 @@ Projects knowledge covers the target-state lifecycle after a sale becomes work t
 
 ## Active Lens
 
-`order-execution` is the active synthesis lens inside this domain. The first order-readiness and execution-state pages now live under `projects`, with governance-heavy gate policy linked from [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
+`order-execution` is the active synthesis lens inside this domain. The first order-readiness and execution-state pages now live under `projects`, with governance-heavy gate policy linked from [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] and evaluation discipline linked from [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]].
 
 Do not create a top-level `order-execution` domain yet. Reassess only after these pages and any next synthesis page create enough repeated navigation or ownership logic to justify the move.
 
