@@ -15,6 +15,7 @@ sources:
   - wiki/knowledge-base/distributor-workflow-map.md
   - wiki/knowledge-base/agent-capability-map.md
   - wiki/knowledge-base/wiki-to-agent-build-bridge.md
+  - wiki/knowledge-base/information-architecture-pressure-test.md
   - wiki/sales/source-aware-lead-intake-routing.md
   - wiki/sales/lead-to-closed-won-workflow.md
   - wiki/sales/hunter-sales-existing-multifamily-pattern.md
@@ -25,6 +26,7 @@ sources:
 related:
   - [[roadmap-import-plan|Roadmap Import Plan]]
   - [[agent-answerability-targets|Agent Answerability Targets]]
+  - [[information-architecture-pressure-test|Information Architecture Pressure Test]]
   - [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]]
   - [[distributor-workflow-map|Distributor Workflow Map]]
   - [[agent-capability-map|Agent Capability Map]]
@@ -60,6 +62,8 @@ Do not add new top-level wiki domains yet.
 The current schema is still structurally correct for the first synthesis pass: `sales`, `design`, `equipment`, `projects`, `service`, `company`, `governance`, and `knowledge-base` remain usable homes. Adding new folders now would create structure before there is enough compiled page density to justify the maintenance cost.
 
 The strongest domain-expansion signal is `order-execution`. The first compiled pages now live under `projects` and `governance` with clear `order-execution` tags and links. Reassess a dedicated `wiki/order-execution/` domain only after the new pages create enough repeated navigation, ownership, or state-boundary explanation to justify the maintenance cost.
+
+The broader structure review is recorded in [[information-architecture-pressure-test|Information Architecture Pressure Test]]. That page keeps the physical folders stable for now but changes the operating rule: use lifecycle, agent-capability, and readiness/state maps as primary navigation lenses, then land pages in the least-bad current storage folder until migration triggers are met.
 
 ## Candidate Decisions
 
@@ -126,10 +130,11 @@ This page strengthens the `agent-workflows` lens without creating a top-level do
 The domain-pressure recheck is complete for the current page set. The next coherent slice should choose between these options:
 
 1. Review FSCR-011 if the next priority is evaluation discipline for order-execution gates.
-2. Continue hunter-sales validation only by capturing or synthesizing the next real/sanitized dealer example from the remaining open list, especially budget-window target review, prospecting no-response, manager-change signal quality, scoped hard stops, soft-negative response, or sensitive-account review ownership.
-3. Validate source-aware lead intake with real or sanitized lead-source examples before moving it toward build-facing requirements.
-4. Continue the next non-gated roadmap workflow family if no dealer examples are available and evaluation discipline is not the priority.
-5. Use [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] only as a readiness lens; do not start implementation handoff until a workflow has stronger validation and a Josh-approved build lane.
+2. Use [[information-architecture-pressure-test|Information Architecture Pressure Test]] before any new folder or migration decision.
+3. Continue hunter-sales validation only by capturing or synthesizing the next real/sanitized dealer example from the remaining open list, especially budget-window target review, prospecting no-response, manager-change signal quality, scoped hard stops, soft-negative response, or sensitive-account review ownership.
+4. Validate source-aware lead intake with real or sanitized lead-source examples before moving it toward build-facing requirements.
+5. Continue the next non-gated roadmap workflow family if no dealer examples are available and evaluation discipline is not the priority.
+6. Use [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] only as a readiness lens; do not start implementation handoff until a workflow has stronger validation and a Josh-approved build lane.
 
 Do not re-open top-level domain promotion until new compiled pages or validation examples create fresh evidence.
 

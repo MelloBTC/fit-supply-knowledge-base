@@ -38,6 +38,8 @@ The wiki-to-agent build bridge now exists under `knowledge-base` with one refere
 
 The 2026-06-27 domain pressure recheck is recorded in `wiki/knowledge-base/domain-model-review.md` and still keeps the top-level domain model stable, with source-intelligence, lead-intake, and hunter-sales kept as sales sub-lanes.
 
+The 2026-06-27 information-architecture pressure test is recorded in `wiki/knowledge-base/information-architecture-pressure-test.md`. It confirms Josh's concern that the starter department folders are not the whole target structure. The decision is to keep folders stable for now, use lifecycle, capability, and readiness/state maps as the primary navigation lenses, and migrate folders only when evidence creates real navigation pressure.
+
 ## Current Boundaries
 
 - Stay in wiki mode.
@@ -77,8 +79,9 @@ The source-aware lead intake, hunter-sales, and order-execution lanes have been 
 - `wiki/governance/order-execution-transition-gate-rules.md`.
 - `wiki/sales/hunter-sales-existing-multifamily-pattern.md`.
 - `wiki/knowledge-base/wiki-to-agent-build-bridge.md`.
+- `wiki/knowledge-base/information-architecture-pressure-test.md`.
 
-Recommended next action: review FSCR-011 only if the next checkpoint is evaluation discipline for order-execution gates. Otherwise, continue the example-first lane: capture downstream research/outreach/park/quote outcome evidence for the formal-feed source-aware example, capture another explicit downstream lead-intake outcome, or capture the next dealer-backed hunter-sales example from the remaining open validation list before promoting policy defaults or moving either lane toward build-facing requirements.
+Recommended next action: review FSCR-011 if the next checkpoint is evaluation discipline for order-execution gates. If no new sales examples are available, use the information-architecture pressure test to run a navigation cleanup or a non-gated roadmap synthesis pass. Continue the example-first lane only when there is downstream research/outreach/park/quote outcome evidence for the formal-feed source-aware example, another explicit downstream lead-intake outcome, or the next dealer-backed hunter-sales example from the remaining open validation list.
 
 For hunter-sales, the highest-value remaining dealer-backed examples are: a budget-window target or review list, prospecting no-response with touch and buyer-path context, manager-change signal quality, scoped hard stop, a real soft-negative response using the current split-candidate checklist, or sensitive-account review ownership. Do not treat the current validation-status checkpoint, Regency active-workflow capture, or soft-negative split capture as fixture promotion, dealer-approved policy, or build readiness.
 
@@ -89,6 +92,7 @@ The domain pressure decision is:
 - Keep `order-execution` as an active lane inside `projects` and `governance` for now.
 - Keep `source-intelligence`, `lead-intake`, `hunter-sales`, `lead-intelligence`, and `prospecting` as active `sales` sub-lanes for now.
 - Keep `wiki-to-agent build bridge` as a `knowledge-base` readiness lens for now.
+- Treat domain folders as storage homes and lifecycle/capability/readiness maps as primary navigation lenses for cross-domain workflow content.
 - Defer `lead-intelligence`, `installed-base`, and a top-level `order-execution` domain until stronger compiled page density supports the move.
 
 Do not open commercial equipment catalog/schema or model-specific answerability work locally until `fast-os-knowledge-base` has mature outputs to evaluate.
@@ -107,4 +111,4 @@ At the end of a meaningful checkpoint:
 
 ## Restart Prompt
 
-Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md` plus `wiki/knowledge-base/wiki-to-agent-build-bridge.md` as the domain-structure and build-readiness checkpoints. The source-aware lead intake lane is synthesized inside `sales` and now includes a Bailey at Berkman formal-feed example capture plus a Park at Rialto service-created replacement outcome capture; the order-execution readiness/state lane is synthesized inside `projects` and `governance`; the hunter-sales existing multifamily lane is synthesized inside `sales` as a design-hypothesis page with a 2026-06-27 validation-status checkpoint, a dealer-backed Regency active-workflow duplicate-block capture, and a soft-negative split-candidate capture. Next, review FSCR-011 only if evaluation discipline is the priority; otherwise stay example-first by capturing downstream outcome evidence for the formal-feed example, another explicit downstream lead-intake outcome, or the next dealer-backed hunter-sales validation example from the remaining open list before moving either lane toward build-facing requirements. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.
+Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md`, `wiki/knowledge-base/information-architecture-pressure-test.md`, and `wiki/knowledge-base/wiki-to-agent-build-bridge.md` as the structure and build-readiness checkpoints. The current decision is to keep physical domain folders stable while using lifecycle, capability, and readiness/state maps as primary navigation lenses. The source-aware lead intake lane is synthesized inside `sales` and now includes a Bailey at Berkman formal-feed example capture plus a Park at Rialto service-created replacement outcome capture; the order-execution readiness/state lane is synthesized inside `projects` and `governance`; the hunter-sales existing multifamily lane is synthesized inside `sales` as a design-hypothesis page with a 2026-06-27 validation-status checkpoint, a dealer-backed Regency active-workflow duplicate-block capture, and a soft-negative split-candidate capture. Next, review FSCR-011 if evaluation discipline is the priority; if no new sales examples are available, use the IA pressure test to run navigation cleanup or non-gated roadmap synthesis before any folder migration. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.
