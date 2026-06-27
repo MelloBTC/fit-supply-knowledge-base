@@ -17,6 +17,9 @@ sources:
   - wiki/sales/lead-to-closed-won-workflow.md
   - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/projects/close-won-to-delivery-workflow.md
+  - wiki/projects/order-execution-readiness-agent-requirements.md
+  - wiki/projects/order-execution-state-model.md
+  - wiki/governance/order-execution-transition-gate-rules.md
 related:
   - [[roadmap-import-plan|Roadmap Import Plan]]
   - [[agent-answerability-targets|Agent Answerability Targets]]
@@ -37,14 +40,14 @@ tags:
   - domain-model
   - roadmap-derived
   - wiki-maintenance
-provenance_notes: Domain review checkpoint based on the first roadmap synthesis pass and source inventory. This page records wiki structure decisions, not current Fit Supply operating facts.
+provenance_notes: Domain review checkpoint based on the first roadmap synthesis pass and source inventory. Updated 2026-06-27 with a pressure recheck after order-execution and hunter-sales synthesis. This page records wiki structure decisions, not current Fit Supply operating facts.
 ---
 
 # Domain Model Review
 
-This page records the first domain model review after the initial roadmap synthesis pass.
+This page records the first domain model review after the initial roadmap synthesis pass, plus a pressure recheck after the order-execution and hunter-sales synthesis lanes were added.
 
-The review question is whether the starter wiki domains should expand before more roadmap artifacts are synthesized. The short answer is: keep the top-level domain model stable for now, but treat `order-execution` as the next active workflow lens.
+The review question is whether the starter wiki domains should expand before more roadmap artifacts are synthesized. The short answer is: keep the top-level domain model stable for now, treat `order-execution` as an active workflow lens, and treat `hunter-sales` as an active sales sub-lane.
 
 ## Decision Summary
 
@@ -63,6 +66,19 @@ The strongest domain-expansion signal is `order-execution`. The first compiled p
 | `agent-workflows` | Keep as a knowledge-base answerability lens. | `wiki/knowledge-base/agent-capability-map.md` and future knowledge-base pages about agent navigation, boundaries, and build bridges. | FSCR-006 identifies capability clusters across domains, but these are not final product agents and should not be named as a product surface too early. | Promote only after multiple compiled pages need a shared home for agent workflow contracts rather than domain workflow content. |
 | `lead-intelligence` or `prospecting` | Active sales sub-lane, but not a top-level domain yet. | `wiki/sales/lead-to-closed-won-workflow.md` and `wiki/sales/hunter-sales-existing-multifamily-pattern.md`. | FSCR-012 is now synthesized as a `design-hypothesis` page with provisional hunter-sales validation labels, so promoting it now would risk turning tentative policy into structure. | Reassess after lead qualification, source intelligence, and hunter-sales patterns have validated compiled pages and repeated navigation pressure. |
 | `installed-base` | Defer as a lifecycle lens across service, equipment, and sales. | `wiki/service/`, `wiki/equipment/`, and relationship-continuity sections until sourced service/warranty pages exist. | The operating model says installed assets matter, but the current compiled evidence is strategic rather than enough for durable rules. | Reassess after service, warranty, parts, replacement, or post-install relationship pages are sourced. |
+
+## Domain Pressure Recheck 2026-06-27
+
+Recheck result: no new top-level domain yet.
+
+The current pressure is real enough to preserve named lanes, but not strong enough to create new folders:
+
+- `order-execution` now has three compiled pages plus the close-won-to-delivery workflow. The split is still readable: `projects` owns state, readiness behavior, owners, and handoffs; `governance` owns blockers, warnings, review boundaries, overrides, and evaluation expectations.
+- `hunter-sales` has one compiled design-hypothesis page and no dealer-validated examples in this repo. A top-level `lead-intelligence` or `prospecting` domain would make provisional policy look more settled than it is.
+- `installed-base` appears as a relationship-ready and service-lifecycle concern, but the wiki does not yet have sourced warranty, parts, service, replacement, or post-install relationship pages. Keep it as a lifecycle lens until those pages exist.
+- `agent-workflows` and `operating-model` still work as lenses because the current pages are maps and capability summaries, not separate page families with their own maintenance needs.
+
+Promotion should require more than repeated tags. A new top-level domain should be created only when the current homes force repeated navigation explanations, unclear ownership boundaries, or multiple validated pages that need shared structure.
 
 ## Current Order-Execution Lane
 
@@ -87,13 +103,13 @@ This page strengthens prospecting and lead-intelligence answerability without cr
 
 ## Next Review Decision
 
-The next coherent slice should choose between three options:
+The domain-pressure recheck is complete for the current page set. The next coherent slice should choose between three options:
 
 1. Review FSCR-011 if the next priority is evaluation discipline for order-execution gates.
 2. Validate the hunter-sales sub-lane with real or sanitized dealer examples before promoting policy defaults or fixture expectations.
-3. Reassess the domain model if the new pages already create enough navigation pressure to justify a top-level `order-execution`, `lead-intelligence`, or `prospecting` domain.
+3. Continue the next roadmap workflow family if no dealer examples are available and evaluation discipline is not the priority.
 
-The current recommendation is to keep the top-level domain model stable through at least one follow-on review.
+Do not re-open top-level domain promotion until new compiled pages or validation examples create fresh evidence.
 
 ## Boundaries
 
@@ -106,4 +122,4 @@ The current recommendation is to keep the top-level domain model stable through 
 
 Use the smallest structure that preserves meaning.
 
-For the next pass, that means a named `order-execution` lens inside existing domains, not a new top-level domain. If the next order-execution pages repeat the same navigation, ownership, and state-boundary explanations, that repetition is the evidence needed to promote the lens into a first-class domain.
+For the next pass, that means named lenses inside existing domains, not new top-level domains. If future pages repeat the same navigation, ownership, and state-boundary explanations, that repetition is the evidence needed to promote a lens into a first-class domain.

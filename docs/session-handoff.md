@@ -32,7 +32,7 @@ The order-execution synthesis lane now exists under `projects` and `governance` 
 
 The hunter-sales / prospecting synthesis lane now exists under `sales` with one design-hypothesis page for existing multifamily policy and reactivation.
 
-The domain model review is current in `wiki/knowledge-base/domain-model-review.md` and still keeps the top-level domain model stable.
+The 2026-06-27 domain pressure recheck is recorded in `wiki/knowledge-base/domain-model-review.md` and still keeps the top-level domain model stable.
 
 ## Current Boundaries
 
@@ -70,9 +70,9 @@ The order-execution lane has been deepened without changing the top-level domain
 - `wiki/governance/order-execution-transition-gate-rules.md`.
 - `wiki/sales/hunter-sales-existing-multifamily-pattern.md`.
 
-Recommended next action: review FSCR-011 only if the next checkpoint is evaluation discipline for order-execution gates. Otherwise, validate the hunter-sales sub-lane with real or sanitized dealer examples before promoting policy defaults, reassess whether order-execution or hunter-sales creates enough navigation pressure for a future top-level domain, or continue the next roadmap workflow family.
+Recommended next action: review FSCR-011 only if the next checkpoint is evaluation discipline for order-execution gates. Otherwise, validate the hunter-sales sub-lane with real or sanitized dealer examples before promoting policy defaults, or continue the next roadmap workflow family.
 
-The domain model review decision is:
+The domain pressure decision is:
 
 - Keep `operating-model` as a canonical lens in `company` for now.
 - Keep `agent-workflows` as a `knowledge-base` answerability lens for now.
@@ -96,4 +96,4 @@ At the end of a meaningful checkpoint:
 
 ## Restart Prompt
 
-Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md` as the domain-structure checkpoint. The order-execution readiness/state lane is synthesized inside `projects` and `governance`; the hunter-sales existing multifamily lane is synthesized inside `sales` as a design-hypothesis page. Next, review FSCR-011 only if evaluation discipline is the priority; otherwise validate hunter-sales with real or sanitized dealer examples, reassess domain pressure, or continue the next roadmap workflow family. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.
+Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md` as the domain-structure checkpoint. The order-execution readiness/state lane is synthesized inside `projects` and `governance`; the hunter-sales existing multifamily lane is synthesized inside `sales` as a design-hypothesis page. Next, review FSCR-011 only if evaluation discipline is the priority; otherwise validate hunter-sales with real or sanitized dealer examples, or continue the next roadmap workflow family. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.
