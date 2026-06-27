@@ -12,6 +12,7 @@ sources:
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
+  - [[lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
 agent_answerability:
   - What belongs in the Sales domain?
   - Which starter pages should be created first for this domain?
@@ -33,6 +34,10 @@ Sales knowledge connects customer needs, qualification, quoting, proposals, fina
 - Financing and purchasing patterns
 - Sales to project handoff
 - Agent-assisted sales workflows
+
+## Current Pages
+
+- [[lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
 
 ## Starter Pages To Add
 

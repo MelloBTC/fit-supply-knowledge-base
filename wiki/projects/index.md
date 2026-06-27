@@ -12,6 +12,7 @@ sources:
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
+  - [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
 agent_answerability:
   - What belongs in the Projects domain?
   - Which starter pages should be created first for this domain?
@@ -33,6 +34,10 @@ Projects knowledge covers the target-state lifecycle after a sale becomes work t
 - Installation and closeout
 - Risk patterns and escalation points
 - Agent-assisted project coordination
+
+## Current Pages
+
+- [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
 
 ## Starter Pages To Add
 

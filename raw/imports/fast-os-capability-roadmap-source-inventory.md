@@ -22,7 +22,7 @@ This file does not import the source artifacts themselves. It records candidate 
 | ID | Source path | Summary | Recommended domain | Knowledge scope | Candidate wiki destination | Answerability supported | Sensitivity / review concerns | Import recommendation | Domain model notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | FSCR-001 | `docs/06-agent-workflow-decomposition/README.md` | Navigation surface for workflow decomposition artifacts and active/proposed near-term files. | `knowledge-base` | `reference-pattern` | `wiki/knowledge-base/roadmap-import-plan.md` | Helps agents understand which roadmap files matter and how work-unit catalogs relate. | Contains roadmap-specific references; should be summarized, not copied wholesale. | `governance-pattern` | Confirms this inventory should start in `docs/06-agent-workflow-decomposition/`. |
-| FSCR-002 | `docs/05-capability-roadmap/commercial-fitness-dealer-operating-model-v1.md` | Target-state dealer lifecycle, role map, value-stream decomposition, data object spine, and validation needs. | `knowledge-base`, `company` | `target-state` | `wiki/knowledge-base/commercial-fitness-distributor-operating-model.md` | What is the end-to-end operating model for an agent-ready commercial fitness distributor? | Some sections need Josh/Fit Supply validation; should not be treated as current-state. | `synthesize-wiki` | May justify new `operating-model` or `workflow-model` domain after review. |
+| FSCR-002 | `docs/05-capability-roadmap/commercial-fitness-dealer-operating-model-v1.md` | Target-state dealer lifecycle, role map, value-stream decomposition, data object spine, and validation needs. | `knowledge-base`, `company` | `target-state` | `wiki/company/commercial-fitness-distributor-operating-model.md` | What is the end-to-end operating model for an agent-ready commercial fitness distributor? | Some sections need Josh/Fit Supply validation; should not be treated as current-state. | `synthesize-wiki` | May justify new `operating-model` or `workflow-model` domain after review. |
 | FSCR-003 | `docs/06-agent-workflow-decomposition/macro-workflow-map-v1.md` | Macro lifecycle map across lead identification, qualification, discovery, site survey, design, equipment selection, quoting, close, delivery/install, service, and relationship expansion. | `knowledge-base`, `projects` | `target-state` | `wiki/knowledge-base/distributor-workflow-map.md` | What lifecycle stages should the wiki and future agents cover? | Large artifact with many roadmap links; import as structured map, not direct copy. | `synthesize-wiki` | Strong evidence the starter domains may expand into lifecycle or agent-workflow views. |
 | FSCR-004 | `docs/06-agent-workflow-decomposition/fast-os-commercial-equipment-knowledge-layer-options-memo-2026-06-20.md` | Catalog/schema risk, equipment answerability, source manifest pattern, validation gates, and repo-boundary options for commercial equipment knowledge. | `equipment`, `governance`, `knowledge-base` | `target-state` | Deferred; future adaptation from `fast-os-knowledge-base` when mature | What equipment questions can agents answer, what evidence is required, and when should they refuse/escalate? | Active work now belongs in `fast-os-knowledge-base`; do not duplicate in this repo. | `upstream-dependency` | Track as a boundary reference only; revisit after upstream maturity. |
 | FSCR-005 | `docs/06-agent-workflow-decomposition/fast-os-knowledge-layer-planning-checkpoint-2026-06-20.md` | Cross-repo knowledge-layer planning checkpoint around catalog/schema risk, answerability, provenance, validation gates, and next sequence. | `governance`, `knowledge-base` | `reference-pattern` | `wiki/knowledge-base/knowledge-layer-planning-checkpoint.md` | What sequence should this knowledge base follow before implementation or live retrieval? | Checkpoint may include repo-boundary context not needed in compiled pages. | `answerability-target` | Useful as planning context; likely not first compiled domain page. |
@@ -49,12 +49,25 @@ The starter skeleton is useful but incomplete. The roadmap inventory suggests th
 | `lead-intelligence` or `prospecting` | Hunter sales and source intelligence have their own policies, fixtures, and validation labels. | Defer until target-state sales workflow pages exist. |
 | `installed-base` | Service, warranty, lifecycle, replacement, and relationship expansion may need a durable domain later. | Defer until service/warranty pages are sourced. |
 
-## Recommended First Import Slice
+## Original Recommended First Import Slice
 
 1. Synthesize FSCR-002 and FSCR-003 into an operating model and macro workflow map.
 2. Synthesize FSCR-006 into an agent capability map and use it to refine answerability targets.
 3. Import raw copies of FSCR-007 and FSCR-008 only when ready to build the first case-backed workflow pages.
 4. Keep FSCR-004 as an `upstream-dependency` owned by `fast-os-knowledge-base`; revisit only after that repo's work is mature enough to evaluate for inclusion.
+
+## Initial Synthesis Progress
+
+Completed on 2026-06-27:
+
+| ID | Result |
+| --- | --- |
+| FSCR-002 | Synthesized into `wiki/company/commercial-fitness-distributor-operating-model.md`. |
+| FSCR-003 | Synthesized into `wiki/knowledge-base/distributor-workflow-map.md`. |
+| FSCR-006 | Synthesized into `wiki/knowledge-base/agent-capability-map.md`. |
+| FSCR-007 | Imported to `raw/imports/fast-os-capability-roadmap/regency-lead-to-closed-won-work-unit-decomposition-v1.md` and synthesized into `wiki/sales/lead-to-closed-won-workflow.md`. |
+| FSCR-008 | Imported to `raw/imports/fast-os-capability-roadmap/regency-close-won-to-delivery-workflow-decomposition-v1.md` and synthesized into `wiki/projects/close-won-to-delivery-workflow.md`. |
+| FSCR-004 | Preserved as an upstream dependency owned by `fast-os-knowledge-base`; not locally synthesized. |
 
 ## What Not To Do Yet
 

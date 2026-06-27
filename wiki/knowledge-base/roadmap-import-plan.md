@@ -74,9 +74,20 @@ If a roadmap artifact points into that active lane, classify it as `upstream-dep
 
 The first read-only inventory is recorded at `raw/imports/fast-os-capability-roadmap-source-inventory.md`.
 
-## Recommended First Slice
+## Initial Synthesis Progress
 
-1. Synthesize the dealer operating model and macro workflow map into target-state operating-model pages.
-2. Synthesize the agent candidate inventory into an agent capability map and refined answerability targets.
-3. Import raw copies of the Regency lead-to-closed-won and close-won-to-delivery workflow decompositions only when ready to build the first case-backed workflow pages.
-4. Track the commercial equipment knowledge-layer memo as an `upstream-dependency` owned by `fast-os-knowledge-base`, not as local synthesis work.
+Completed on 2026-06-27:
+
+- FSCR-002 was synthesized into [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]].
+- FSCR-003 was synthesized into [[distributor-workflow-map|Distributor Workflow Map]].
+- FSCR-006 was synthesized into [[agent-capability-map|Agent Capability Map]].
+- FSCR-007 was selectively imported to `raw/imports/fast-os-capability-roadmap/regency-lead-to-closed-won-work-unit-decomposition-v1.md` and synthesized into [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]].
+- FSCR-008 was selectively imported to `raw/imports/fast-os-capability-roadmap/regency-close-won-to-delivery-workflow-decomposition-v1.md` and synthesized into [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]].
+- FSCR-004 remains an `upstream-dependency` owned by `fast-os-knowledge-base`.
+
+## Recommended Next Slice
+
+1. Review the first synthesis pages for domain fit and terminology.
+2. Decide whether the next synthesis pass should deepen `projects` with order-readiness state, transition-gate, and evaluation-fixture patterns from FSCR-009 through FSCR-011.
+3. Consider whether an `order-execution`, `agent-workflows`, or `operating-model` lens has earned a top-level domain after the next pass.
+4. Continue tracking the commercial equipment knowledge-layer memo as an `upstream-dependency` owned by `fast-os-knowledge-base`, not as local synthesis work.

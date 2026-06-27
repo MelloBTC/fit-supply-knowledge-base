@@ -8,7 +8,7 @@ The goal is not just to collect documents or mirror current operations. The goal
 
 ## Current Phase
 
-**Phase**: Target-state skeleton and source-discovery setup
+**Phase**: Target-state skeleton and first roadmap synthesis
 
 The current work is focused on:
 
@@ -18,7 +18,7 @@ The current work is focused on:
 - Setting up agent instructions and wiki-mode behavior.
 - Framing the wiki as a target-state exemplar before importing roadmap material.
 - Incorporating completed work from `fast-os-capability-roadmap` without duplicating active work in `fast-os-knowledge-base`.
-- Avoiding premature content synthesis before source handling and knowledge scope are clear.
+- Maintaining the first roadmap-derived synthesis pages while preserving source handling and knowledge-scope discipline.
 
 ## Source Model
 
@@ -66,4 +66,6 @@ The other domains exist to connect equipment knowledge to real business workflow
 
 ## Near-Term Next Step
 
-The next durable step is to synthesize the strongest completed `fast-os-capability-roadmap` operating-model, macro-workflow, agent-candidate, and case-backed workflow artifacts into OKF/LLM Wiki pages. Treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.
+The first durable roadmap synthesis pass now exists in `wiki/company/commercial-fitness-distributor-operating-model.md`, `wiki/knowledge-base/distributor-workflow-map.md`, `wiki/knowledge-base/agent-capability-map.md`, `wiki/sales/lead-to-closed-won-workflow.md`, and `wiki/projects/close-won-to-delivery-workflow.md`.
+
+The next durable step is to review those pages for domain fit and terminology, then decide whether the next synthesis pass should deepen the `projects` order-execution lane from FSCR-009 through FSCR-011 or first create a dedicated `operating-model`, `agent-workflows`, or `order-execution` lens. Treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.

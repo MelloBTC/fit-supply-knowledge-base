@@ -13,6 +13,9 @@ related:
   - [[governance/index|Governance]]
   - [[equipment/index|Equipment]]
   - [[knowledge-base/index|Knowledge Base]]
+  - [[company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
+  - [[knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
+  - [[knowledge-base/agent-capability-map|Agent Capability Map]]
   - [[current-state/index|Current State]]
 agent_answerability:
   - Where should an agent start when navigating the target-state distributor knowledge base?
@@ -38,6 +41,14 @@ This is the root navigation page for the Fit Supply LLM Wiki. Start here when or
 - [[service/index|Service]] - Maintenance, support, service workflows, parts, and technician coordination.
 - [[current-state/index|Current State]] - Deferred lane for actual Fit Supply current-state notes.
 - [[knowledge-base/index|Knowledge Base]] - Instructions, answerability targets, contribution patterns, and meta knowledge about this wiki.
+
+## First-Pass Roadmap Synthesis Pages
+
+- [[company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]] - Parent lifecycle, roles, data-object spine, and validation posture.
+- [[knowledge-base/distributor-workflow-map|Distributor Workflow Map]] - Cross-domain workflow map and synthesis/defer boundaries.
+- [[knowledge-base/agent-capability-map|Agent Capability Map]] - Candidate capability clusters and human review boundaries.
+- [[sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]] - Case-backed sales workflow from lead signal to closed-won boundary.
+- [[projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]] - Case-backed project workflow from approval to delivery, completion, and relationship continuity.
 
 ## Working Notes
 

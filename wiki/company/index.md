@@ -12,6 +12,7 @@ sources:
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
+  - [[commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
 agent_answerability:
   - What belongs in the Company domain?
   - Which starter pages should be created first for this domain?
@@ -32,6 +33,10 @@ Company knowledge provides example-business context for Fit Supply, including st
 - Business model and differentiators
 - Stakeholder assumptions
 - Partner and vendor relationships
+
+## Current Pages
+
+- [[commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
 
 ## Starter Pages To Add
 

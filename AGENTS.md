@@ -18,11 +18,12 @@ When beginning work in this repo, read these files first:
 
 1. `AGENTS.md`
 2. `PROJECT_CONTEXT.md`
-3. `schema.md`
-4. `wiki/index.md`
-5. The relevant domain `index.md` files under `wiki/`
-6. `wiki/knowledge-base/agent-answerability-targets.md` when planning content or imports
-7. `wiki/knowledge-base/roadmap-import-plan.md` when working from `fast-os-capability-roadmap`
+3. `docs/session-handoff.md`
+4. `schema.md`
+5. `wiki/index.md`
+6. The relevant domain `index.md` files under `wiki/`
+7. `wiki/knowledge-base/agent-answerability-targets.md` when planning content or imports
+8. `wiki/knowledge-base/roadmap-import-plan.md` when working from `fast-os-capability-roadmap`
 
 ## Navigation
 
@@ -45,3 +46,11 @@ When beginning work in this repo, read these files first:
 ## Maintenance Mindset
 
 Act as a careful, long-term wiki maintainer. The goal is to make this target-state knowledge system more accurate, connected, useful, and agent-ready over time.
+
+## Session Closeout
+
+- Keep `docs/session-handoff.md` current as the compact restart surface.
+- Treat the handoff as a working cursor, not a running transcript or compiled wiki truth.
+- Update it when the active checkpoint, recommended next action, boundaries, or restart prompt changes.
+- Keep detailed source status in `raw/imports/` or relevant wiki pages rather than expanding the handoff.
+- End meaningful checkpoints with a short restart prompt or a pointer to `docs/session-handoff.md`.

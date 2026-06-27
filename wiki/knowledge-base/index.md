@@ -12,6 +12,8 @@ sources:
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
+  - [[distributor-workflow-map|Distributor Workflow Map]]
+  - [[agent-capability-map|Agent Capability Map]]
 agent_answerability:
   - What belongs in the Knowledge Base domain?
   - Which starter pages should be created first for this domain?
@@ -33,6 +35,13 @@ Knowledge Base pages explain how this wiki works, how to contribute to it, how i
 - Agent answerability targets
 - Wiki maintenance routines
 - Context contracts for future agent roles
+
+## Current Pages
+
+- [[agent-answerability-targets|Agent Answerability Targets]]
+- [[roadmap-import-plan|Roadmap Import Plan]]
+- [[distributor-workflow-map|Distributor Workflow Map]]
+- [[agent-capability-map|Agent Capability Map]]
 
 ## Starter Pages To Add
 

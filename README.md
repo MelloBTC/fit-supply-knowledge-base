@@ -4,7 +4,7 @@ Target-state LLM Wiki for a commercial fitness equipment distributor, using Fit 
 
 This repository contains the structured knowledge base for distributor operations, best practices, equipment knowledge, agentic workflow design, and future AI-agent support. It is designed to become a source-backed, agent-accessible wiki that can later be adapted for Fit Supply owner/staff contribution if the system becomes valuable to them.
 
-**Status**: Target-state skeleton and source-discovery setup. The structure, governance rules, and import process are being established before broad content synthesis.
+**Status**: Target-state skeleton and first roadmap synthesis. The structure, governance rules, import process, and first compiled roadmap-derived pages are now in place.
 
 ## Start Here
 
@@ -12,13 +12,15 @@ Read these files in order:
 
 1. [AGENTS.md](AGENTS.md) - Operating instructions for AI agents.
 2. [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) - Project purpose, phase, and current boundaries.
-3. [schema.md](schema.md) - Wiki structure, page conventions, scope labels, and governance rules.
-4. [wiki/index.md](wiki/index.md) - Root navigation for compiled wiki content.
+3. [docs/session-handoff.md](docs/session-handoff.md) - Compact restart surface and recommended next action.
+4. [schema.md](schema.md) - Wiki structure, page conventions, scope labels, and governance rules.
+5. [wiki/index.md](wiki/index.md) - Root navigation for compiled wiki content.
 
 ## Repository Structure
 
 ```text
 fit-supply-knowledge-base/
+|-- docs/                 # Compact handoff and future project operating notes
 |-- raw/                  # Original source material and import manifests
 |   |-- documents/        # Existing docs, PDFs, notes, exported documents
 |   |-- research/         # External research and manufacturer information
@@ -51,4 +53,4 @@ fit-supply-knowledge-base/
 
 ## Current Priority
 
-Build the target-state wiki foundation first: domain indexes, governance rules, provenance habits, answerability targets, roadmap import mapping, and equipment ontology foundations. Add business content after the source and classification pattern is clear enough to avoid false progress.
+Review the first roadmap-derived synthesis pages, then decide whether to deepen the `projects` order-execution lane from FSCR-009 through FSCR-011 or create a dedicated workflow lens. Treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.

@@ -9,12 +9,21 @@ reviewed_by:
 sources:
   - PROJECT_CONTEXT.md
   - schema.md
+  - raw/imports/fast-os-capability-roadmap-source-inventory.md
+  - wiki/company/commercial-fitness-distributor-operating-model.md
+  - wiki/knowledge-base/distributor-workflow-map.md
+  - wiki/knowledge-base/agent-capability-map.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[roadmap-import-plan|Roadmap Import Plan]]
   - [[../equipment/index|Equipment]]
   - [[../sales/index|Sales]]
   - [[../projects/index|Projects]]
+  - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
+  - [[distributor-workflow-map|Distributor Workflow Map]]
+  - [[agent-capability-map|Agent Capability Map]]
+  - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
+  - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
 agent_answerability:
   - What should future agents be able to answer or do using this knowledge base?
   - Which wiki domains should be built first to support useful agent behavior?
@@ -22,7 +31,7 @@ tags:
   - answerability
   - target-state
   - agent-design
-provenance_notes: Initial answerability scaffold. Targets should be refined after read-only inventory of fast-os-capability-roadmap.
+provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, and FSCR-008.
 ---
 
 # Agent Answerability Targets
@@ -67,6 +76,32 @@ A knowledge base that will power agents needs more than organized pages. It need
 - Connect equipment type, warranty/parts needs, and service workflow.
 - Identify when current-state or staff-validated information is required.
 
+## Roadmap-Derived Additions
+
+The first roadmap synthesis pass adds these more specific answerability targets:
+
+### Operating Model And Lifecycle
+
+- Explain the target-state distributor lifecycle from lead source through account expansion.
+- Identify which domain owns a workflow stage and when a workflow crosses domain boundaries.
+- Distinguish target-state operating design from current Fit Supply operations.
+
+### Agent Capability Boundaries
+
+- Explain why the first capability taxonomy should be source intelligence, research/enrichment, quote-readiness, follow-up state, site/project-context capture, approval/handoff readiness, order/install readiness, and completion/relationship continuity rather than generic sales, quote, install, or service agents.
+- Identify which actions AI can observe, prepare, draft, recommend, or route, and which actions require human review.
+- Surface schema families needed by a workflow without treating them as final implementation schema.
+
+### Case-Backed Workflows
+
+- Explain what must happen between a lead signal and closed-won before operations can safely act.
+- Explain why closed-won, order-ready, delivery-ready, install-complete, and relationship-ready are different states.
+- Identify what context must carry from sales into project execution so post-close work does not rediscover the same facts.
+
+### Upstream Dependency Boundary
+
+- Flag equipment catalog, model-specific specification, price freshness, product compatibility, and equipment answerability questions as upstream dependencies owned by `fast-os-knowledge-base` until mature outputs are available for local evaluation.
+
 ## Target Behavior Standard
 
 A future agent should be able to:
@@ -79,4 +114,4 @@ A future agent should be able to:
 
 ## Next Refinement Step
 
-After the `fast-os-capability-roadmap` inventory, update this page with specific answerability targets found in existing roadmap artifacts.
+After human review of the first synthesis pages, decide whether to deepen the `projects` order-execution lane with state-transition and gate-rule pages or first expand domain navigation with an `operating-model`, `agent-workflows`, or `order-execution` lens.
