@@ -12,6 +12,7 @@ sources:
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
+  - [[../knowledge-base/domain-model-review|Domain Model Review]]
   - [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
 agent_answerability:
   - What belongs in the Projects domain?
@@ -39,11 +40,17 @@ Projects knowledge covers the target-state lifecycle after a sale becomes work t
 
 - [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
 
+## Active Lens
+
+`order-execution` is the next active synthesis lens inside this domain. Keep the first order-readiness and execution-state pages under `projects`, link governance-heavy rules to `governance`, and reassess a top-level `order-execution` domain only after the compiled page density justifies it.
+
 ## Starter Pages To Add
 
 - `project-lifecycle.md`
 - `handoff-checklist.md`
 - `delivery-and-installation.md`
+- `order-execution-readiness-agent-requirements.md`
+- `order-execution-state-model.md`
 
 ## Maintenance Notes
 

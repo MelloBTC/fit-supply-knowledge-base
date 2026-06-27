@@ -12,6 +12,7 @@ sources:
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
+  - [[domain-model-review|Domain Model Review]]
   - [[distributor-workflow-map|Distributor Workflow Map]]
   - [[agent-capability-map|Agent Capability Map]]
 agent_answerability:
@@ -40,6 +41,7 @@ Knowledge Base pages explain how this wiki works, how to contribute to it, how i
 
 - [[agent-answerability-targets|Agent Answerability Targets]]
 - [[roadmap-import-plan|Roadmap Import Plan]]
+- [[domain-model-review|Domain Model Review]]
 - [[distributor-workflow-map|Distributor Workflow Map]]
 - [[agent-capability-map|Agent Capability Map]]
 

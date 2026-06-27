@@ -53,4 +53,4 @@ fit-supply-knowledge-base/
 
 ## Current Priority
 
-Review the first roadmap-derived synthesis pages, then decide whether to deepen the `projects` order-execution lane from FSCR-009 through FSCR-011 or create a dedicated workflow lens. Treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.
+The first domain model review is complete in `wiki/knowledge-base/domain-model-review.md`. Keep the top-level wiki domains stable for now, deepen `order-execution` as the next synthesis lane inside `projects` and `governance`, and revisit a dedicated top-level domain only after the next order-execution pages create enough compiled page density to justify it. Treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.

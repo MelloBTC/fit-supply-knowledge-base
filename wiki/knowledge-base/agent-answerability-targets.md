@@ -16,6 +16,7 @@ sources:
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[roadmap-import-plan|Roadmap Import Plan]]
+  - [[domain-model-review|Domain Model Review]]
   - [[../equipment/index|Equipment]]
   - [[../sales/index|Sales]]
   - [[../projects/index|Projects]]
@@ -112,6 +113,6 @@ A future agent should be able to:
 - Say when a question cannot yet be answered from available sources.
 - Recommend the next source or page needed to improve answerability.
 
-## Next Refinement Step
+## Domain Model Review Outcome
 
-After human review of the first synthesis pages, run a domain model review before the next synthesis pass. Decide whether concepts such as `order-execution`, `agent-workflows`, `operating-model`, `lead-intelligence`, and `installed-base` deserve first-class homes because the roadmap evidence supports them, rather than forcing them into the starter folder structure.
+The first domain model review is recorded in [[domain-model-review|Domain Model Review]]. It keeps the top-level schema stable for now, promotes `order-execution` as the next active synthesis lane inside `projects` and `governance`, and defers first-class domains for `agent-workflows`, `operating-model`, `lead-intelligence`, and `installed-base` until more compiled page density supports the move.

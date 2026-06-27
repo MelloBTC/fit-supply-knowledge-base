@@ -28,6 +28,8 @@ The project is in target-state skeleton and first roadmap synthesis.
 
 The first durable synthesis pass created compiled wiki pages for the distributor operating model, workflow map, agent capability map, lead-to-closed-won workflow, and close-won-to-delivery workflow.
 
+The first domain model review is complete in `wiki/knowledge-base/domain-model-review.md`.
+
 ## Current Boundaries
 
 - Stay in wiki mode.
@@ -54,7 +56,14 @@ The completed first import slice is:
 
 ## Recommended Next Action
 
-Run a domain model review before the next synthesis pass. Review the first synthesis pages and the roadmap inventory for domain fit, terminology, page granularity, and whether concepts such as `order-execution`, `agent-workflows`, `operating-model`, `lead-intelligence`, and `installed-base` deserve first-class homes because the roadmap evidence supports them.
+Deepen `order-execution` as the next synthesis lane without changing the top-level domain model yet. Review FSCR-009 and FSCR-010 from `raw/imports/fast-os-capability-roadmap-source-inventory.md`, then synthesize readiness/state material under `wiki/projects/` and governance-heavy gate/review material under `wiki/governance/`.
+
+The domain model review decision is:
+
+- Keep `operating-model` as a canonical lens in `company` for now.
+- Keep `agent-workflows` as a `knowledge-base` answerability lens for now.
+- Promote `order-execution` as the next active synthesis lane inside `projects` and `governance`.
+- Defer `lead-intelligence` and `installed-base` as first-class domains until stronger compiled pages exist.
 
 Do not open commercial equipment catalog/schema or model-specific answerability work locally until `fast-os-knowledge-base` has mature outputs to evaluate.
 
@@ -72,4 +81,4 @@ At the end of a meaningful checkpoint:
 
 ## Restart Prompt
 
-Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and run the next checkpoint as a domain model review: use the first roadmap-derived synthesis pages and roadmap inventory to decide whether `order-execution`, `agent-workflows`, `operating-model`, `lead-intelligence`, and `installed-base` deserve first-class homes before more synthesis. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.
+Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md` as the domain-structure checkpoint. Next, review FSCR-009 and FSCR-010 from the roadmap inventory and synthesize the order-execution readiness/state lane inside `projects` and `governance` without creating a new top-level domain yet. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.

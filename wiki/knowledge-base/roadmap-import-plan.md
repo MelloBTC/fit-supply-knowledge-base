@@ -11,6 +11,7 @@ sources:
   - schema.md
 related:
   - [[agent-answerability-targets|Agent Answerability Targets]]
+  - [[domain-model-review|Domain Model Review]]
   - [[../governance/source-manifest|Source Manifest]]
   - [[../index|Fit Supply Knowledge Base Index]]
 agent_answerability:
@@ -89,7 +90,11 @@ Completed on 2026-06-27:
 
 ## Recommended Next Slice
 
-1. Run a domain model review before the next synthesis pass.
-2. Use the first synthesis pages and roadmap inventory to decide whether `order-execution`, `agent-workflows`, `operating-model`, `lead-intelligence`, and `installed-base` deserve first-class homes.
-3. If the domain model is still unclear, keep new content under the best current domain but record the unresolved lens in `provenance_notes` or import notes.
-4. Continue tracking the commercial equipment knowledge-layer memo as an `upstream-dependency` owned by `fast-os-knowledge-base`, not as local synthesis work.
+The first domain model review is recorded in [[domain-model-review|Domain Model Review]].
+
+1. Keep the top-level wiki domain model unchanged for now.
+2. Deepen `order-execution` as the next active synthesis lane using FSCR-009 and FSCR-010.
+3. Put workflow-state and readiness pages under `wiki/projects/`; put review, gate, or evaluation policy pages under `wiki/governance/`.
+4. Use `order-execution` tags and wikilinks before creating a new top-level `order-execution` domain.
+5. Reassess domain promotion after the next one or two order-execution pages exist.
+6. Continue tracking the commercial equipment knowledge-layer memo as an `upstream-dependency` owned by `fast-os-knowledge-base`, not as local synthesis work.

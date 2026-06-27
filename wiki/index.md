@@ -13,6 +13,7 @@ related:
   - [[governance/index|Governance]]
   - [[equipment/index|Equipment]]
   - [[knowledge-base/index|Knowledge Base]]
+  - [[knowledge-base/domain-model-review|Domain Model Review]]
   - [[company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
   - [[knowledge-base/agent-capability-map|Agent Capability Map]]
@@ -49,6 +50,7 @@ This is the root navigation page for the Fit Supply LLM Wiki. Start here when or
 - [[knowledge-base/agent-capability-map|Agent Capability Map]] - Candidate capability clusters and human review boundaries.
 - [[sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]] - Case-backed sales workflow from lead signal to closed-won boundary.
 - [[projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]] - Case-backed project workflow from approval to delivery, completion, and relationship continuity.
+- [[knowledge-base/domain-model-review|Domain Model Review]] - First domain-structure checkpoint after roadmap synthesis, including the order-execution lens decision.
 
 ## Working Notes
 
