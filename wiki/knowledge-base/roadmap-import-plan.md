@@ -12,6 +12,7 @@ sources:
   - raw/imports/fast-os-capability-roadmap-source-inventory.md
   - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/governance/agent-evaluation-fixtures.md
+  - wiki/sales/freight-install-quote-readiness.md
 related:
   - [[agent-answerability-targets|Agent Answerability Targets]]
   - [[domain-model-review|Domain Model Review]]
@@ -20,6 +21,7 @@ related:
   - [[../governance/source-manifest|Source Manifest]]
   - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
+  - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
   - [[../index|Fit Supply Knowledge Base Index]]
 agent_answerability:
   - How should roadmap artifacts be evaluated before becoming wiki pages?
@@ -28,7 +30,7 @@ tags:
   - import-plan
   - roadmap
   - source-discovery
-provenance_notes: Initial process for read-only inventory of fast-os-capability-roadmap before importing or synthesizing content. Updated 2026-06-27 after the FSCR-012 hunter-sales validation-status checkpoint, dealer-backed Regency active-workflow capture, soft-negative split-candidate capture, and the FSCR-016 formal-feed plus service-created replacement example captures.
+provenance_notes: Initial process for read-only inventory of fast-os-capability-roadmap before importing or synthesizing content. Updated 2026-06-27 after the FSCR-017 freight/install quote-readiness synthesis without raw quote, pricing, task, or screenshot import.
 ---
 
 # Roadmap Import Plan
@@ -99,6 +101,7 @@ Completed on 2026-06-27:
 - FSCR-012 was synthesized into [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] as a `design-hypothesis` page without importing the machine-readable fixture bundle, then updated with a validation-status checkpoint from real/sanitized example pressure tests, provisional probe results, a dealer-backed Regency active-workflow duplicate-block capture, and a soft-negative split-candidate capture.
 - FSCR-013 was synthesized into [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] as a `reference-pattern` bridge without creating product schema, agent architecture, live tooling, or implementation specs.
 - FSCR-016 was classified from the roadmap lead-intake/source-routing artifact family and synthesized into [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] without importing raw customer, pricing, quote, or NetSuite artifacts; updated 2026-06-27 with a Bailey at Berkman formal-feed example capture and a Park at Rialto service-created replacement outcome capture.
+- FSCR-017 was classified from the roadmap freight/install quote-readiness family and synthesized into [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]] without importing raw NetSuite tasks, screenshots, quote PDFs, customer names, source amounts, pricing, or private logistics artifacts.
 - FSCR-004 remains an `upstream-dependency` owned by `fast-os-knowledge-base`.
 
 ## Current Order-Execution Synthesis Result
@@ -121,6 +124,16 @@ This page is `target-state` because it synthesizes a future-state source-aware l
 
 Treat `source-intelligence`, `lead-intake`, and `lead-research` as active sales sub-lanes for now. Do not create a top-level `lead-intelligence` domain until validated page density and navigation pressure justify it.
 
+## Current Freight And Install Quote-Readiness Result
+
+FSCR-017 now has one compiled sales page: [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]].
+
+This page is `target-state` because it synthesizes a future-state quote-readiness workflow from roadmap F&I capability, workflow decomposition, and lead-to-quote source artifacts. It classifies the family through lifecycle, capability, readiness/state, evaluation/build-readiness, storage-domain, and domain-promotion lenses before storing the result in `sales`.
+
+The page preserves the boundary that F&I readiness is not a live pricing engine. It can support future answerability around requirement detection, quote context inheritance, missing blockers, routine/exception routing, freight modes, draft estimates, review/provenance, handoff continuity, actuals, and stale freight monitoring, but current freight rules, installer rules, approval owners, thresholds, and actual-cost variance still need validation before build-facing policy.
+
+Keep `quote-readiness` as a sales sub-lane for now. Do not create a top-level `quote-readiness`, `pricing`, or `freight-install` domain until multiple validated quote readiness pages create real navigation pressure.
+
 ## Current Hunter-Sales Synthesis Result
 
 FSCR-012 now has one compiled sales page: [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]].
@@ -139,6 +152,6 @@ Treat `agent-workflows` as a knowledge-base answerability and bridge lens for no
 
 ## Recommended Next Slice
 
-FSCR-013 closes the governance bridge checkpoint without opening implementation scope.
+FSCR-017 closes the freight/install quote-readiness checkpoint without opening raw quote import, customer/pricing material, live pricing automation, customer-facing quote updates, or product implementation scope.
 
-FSCR-011 is now closed as a local governance synthesis page, not a fixture import. The next order-execution move should be navigation cleanup, dealer validation of unresolved policy thresholds, or future build-lane handoff only after Josh explicitly opens that scope. Otherwise, continue the example-first rule before build-facing requirements: capture downstream outcome evidence for the formal-feed source-aware example, capture another explicit downstream lead-intake outcome, or capture the next dealer-backed hunter-sales example from the remaining open validation list before promoting any remaining policy defaults. If no dealer examples are available, continue with a non-gated roadmap workflow family.
+FSCR-011 is now closed as a local governance synthesis page, not a fixture import. The next order-execution move should be navigation cleanup, dealer validation of unresolved policy thresholds, or future build-lane handoff only after Josh explicitly opens that scope. Otherwise, continue the example-first rule before build-facing requirements: capture downstream outcome evidence for the formal-feed source-aware example, capture another explicit downstream lead-intake outcome, or capture the next dealer-backed hunter-sales example from the remaining open validation list before promoting any remaining policy defaults. If no dealer examples are available, continue with another non-gated roadmap workflow family after classifying it through the lifecycle, capability, readiness/state, evaluation/build-readiness, storage-domain, and domain-promotion lenses.

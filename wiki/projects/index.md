@@ -10,6 +10,7 @@ sources:
   - schema.md
   - PROJECT_CONTEXT.md
   - raw/imports/fast-os-capability-roadmap-source-inventory.md
+  - wiki/sales/freight-install-quote-readiness.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
@@ -19,13 +20,14 @@ related:
   - [[order-execution-state-model|Order Execution State Model]]
   - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
   - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
+  - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
 agent_answerability:
   - What belongs in the Projects domain?
   - Which starter pages should be created first for this domain?
 tags:
   - domain-index
   - projects
-provenance_notes: Starter domain index created during target-state skeleton setup; content areas are placeholders until source-backed pages are added.
+provenance_notes: Starter domain index created during target-state skeleton setup; updated 2026-06-27 to link freight/install quote-readiness assumptions into the project/order-execution lane.
 ---
 
 # Projects
@@ -52,6 +54,8 @@ Projects knowledge covers the target-state lifecycle after a sale becomes work t
 `order-execution` is the active synthesis lens inside this domain. The first order-readiness and execution-state pages now live under `projects`, with governance-heavy gate policy linked from [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] and evaluation discipline linked from [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]].
 
 Do not create a top-level `order-execution` domain yet. Reassess only after these pages and any next synthesis page create enough repeated navigation or ownership logic to justify the move.
+
+[[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]] remains stored in `sales`, but project/order-execution pages should treat its approved F&I assumptions as part of the handoff context that prevents post-close reconstruction.
 
 ## Starter Pages To Add
 

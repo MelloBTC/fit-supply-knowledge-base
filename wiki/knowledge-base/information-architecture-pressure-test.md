@@ -19,6 +19,7 @@ sources:
   - wiki/index.md
   - wiki/knowledge-base/index.md
   - wiki/company/commercial-fitness-distributor-operating-model.md
+  - wiki/sales/freight-install-quote-readiness.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/macro-workflow-map-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/agent-candidate-inventory-v1.md
 related:
@@ -31,6 +32,7 @@ related:
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
+  - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
   - [[../projects/order-execution-state-model|Order Execution State Model]]
 agent_answerability:
   - Is the current wiki folder structure still fit for the target-state FAST OS knowledge objective?
@@ -41,7 +43,7 @@ tags:
   - domain-model
   - roadmap-derived
   - wiki-maintenance
-provenance_notes: Created as an information-architecture pressure test after the first roadmap synthesis pass. This page evaluates structure against fast-os-capability-roadmap evidence and records a navigation recommendation; it does not move folders or promote a new phase. Updated 2026-06-27 after the first IA-guided navigation cleanup made the lens path explicit in the root and knowledge-base indexes.
+provenance_notes: Created as an information-architecture pressure test after the first roadmap synthesis pass. This page evaluates structure against fast-os-capability-roadmap evidence and records a navigation recommendation; it does not move folders or promote a new phase. Updated 2026-06-27 after the first IA-guided navigation cleanup and the FSCR-017 freight/install quote-readiness classification pass.
 ---
 
 # Information Architecture Pressure Test
@@ -98,6 +100,7 @@ The weakness is that active roadmap knowledge does not fit neatly into one depar
 | Hunter sales | Lives in sales, but its real center is target coverage, policy validation, guardrails, and dealer judgment. |
 | Lead-to-closed-won | Crosses lead source, discovery, site visit, design, product selection, proposal, follow-up, approval, and order-readiness. |
 | Order execution | Starts after sales approval, but spans readiness state, vendor ordering, payment, site readiness, delivery, install, completion, and relationship continuity. |
+| Freight/install quote readiness | Lives before quote send, but depends on product handling, site context, freight/install rules, approval provenance, validity windows, and order-execution handoff. |
 | Agent capability map | Cuts across every department and is better understood as repeated work-unit clusters. |
 | Equipment knowledge | Needs its own ontology, but deep answerability and source-manifest work remain upstream-owned for now. |
 
@@ -283,6 +286,7 @@ Do not move folders just because a term repeats. Move only when the current stru
 | `wiki/agent-readiness/` or `wiki/agent-workflows/` | Multiple workflow pages become mature enough to need shared context contracts, build-readiness reviews, fixture/eval summaries, and human-boundary contracts. |
 | `wiki/operating-model/` | Lifecycle, roles, data-object spine, value streams, and cross-domain maps outgrow `company` and `knowledge-base`. |
 | `wiki/installed-base/` | Service, warranty, parts, replacement, asset lifecycle, and relationship-expansion pages become sourced enough to need a shared home. |
+| `wiki/quote-readiness/` or `wiki/pricing-readiness/` | Freight/install, tax, margin, financing, proposal package, pricing source freshness, and quote approval pages become validated enough that `sales` can no longer explain ownership, review, and source boundaries cleanly. |
 | `wiki/accounts-and-sites/` | Account, property, site, contact, management-company, buyer-path, and relationship-memory pages become cross-cutting enough that `sales`, `projects`, and `service` all depend on them. |
 
 ## Proposed Future Shape
@@ -316,8 +320,9 @@ The initial no-new-examples navigation cleanup is complete:
 2. Use `wiki/index.md` as the root lens path before browsing domain folders.
 3. Use `wiki/knowledge-base/index.md` as the local hub for workflow, capability, structure, evaluation, and build-readiness lenses.
 4. Use this page and [[domain-model-review|Domain Model Review]] before adding or moving any top-level folder.
-5. When synthesizing the next non-gated roadmap family, classify it against lifecycle, state/readiness, agent capability, evaluation/build-readiness, and storage-domain fit.
-6. Reassess folder migration only after at least one candidate lane meets its migration trigger.
+5. FSCR-017 freight/install quote readiness has now been synthesized as the first post-cleanup non-gated roadmap family and classified against lifecycle, state/readiness, agent capability, evaluation/build-readiness, storage-domain fit, and domain-promotion pressure.
+6. When synthesizing the next non-gated roadmap family, repeat that classification before adding pages or moving folders.
+7. Reassess folder migration only after at least one candidate lane meets its migration trigger.
 
 The best next content slice without new examples is now:
 

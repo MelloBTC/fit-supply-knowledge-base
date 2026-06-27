@@ -15,6 +15,7 @@ related:
   - [[../knowledge-base/agent-capability-map|Agent Capability Map]]
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+  - [[freight-install-quote-readiness|Freight And Install Quote Readiness]]
 agent_answerability:
   - What must happen between a campaign response or lead signal and closed-won before operations can safely act?
   - Which context must be captured before quote/proposal work becomes trustworthy?
@@ -60,7 +61,7 @@ The Regency source artifact is sanitized. It does not copy raw customer emails, 
 | Qualification and route | Rep confirms whether the lead deserves site visit, quote prep, research, park, reject, or monitor. | The customer asked for replacement quote help and needed a site visit. |
 | Discovery and site visit | Physical room and project context become reusable structured context. | Measurements, photos, notes, flooring, trade-in, and procurement context mattered. |
 | Layout and product selection | Layout direction and product-selection rationale become quote input. | Layout came before final equipment selection. |
-| Quote/proposal readiness | Freight/install, trade-in, flooring, terms, specs, and proposal assets are checked before send. | QTE35768, F&I, trade-in, and proposal delivery were part of the case. |
+| Quote/proposal readiness | Freight/install, trade-in, flooring, terms, specs, and proposal assets are checked before send. | QTE35768, F&I, trade-in, and proposal delivery were part of the case; the general F&I readiness pattern now lives in [[freight-install-quote-readiness|Freight And Install Quote Readiness]]. |
 | Follow-up and bid state | Waiting is made explicit as bid collection, no response, stalled, revision requested, won, lost, or parked. | Regency entered a three-bid collection state. |
 | Approval and closed-won | Approval proof and accepted quote version are confirmed before closing sales workflow. | Approved quote received and quote converted to closed won. |
 | Order-readiness boundary | Sales context is packaged for post-close review. | Source artifact treats closed-won as the start of order readiness, not as automatic execution readiness. |
@@ -73,7 +74,7 @@ The Regency source artifact is sanitized. It does not copy raw customer emails, 
 | Site visit and discovery capture | LCW-04 to LCW-07 | Is onsite discovery required, and what project context must be captured? | Scope, site visit, room facts, photos, measurements, procurement context, rep memory. | `SiteVisitEvent`, `SiteVisitSummary`, `RoomContext`, `ProcurementContext`. | Prepare checklist, capture context, ask debrief questions, draft summary. | Rep confirms facts before downstream use. |
 | Trade-in, flooring, and project branches | LCW-08 to LCW-09 | Which adjacent scopes affect quote, proposal, or handoff? | Existing equipment, extraction, trade-in value path, flooring vendor quote, flooring customer quote. | `ExistingEquipmentInventory`, `TradeInPacket`, `FlooringScope`. | Prepare packets and track dependencies. | Rep, vendor, or trade-in owner confirms scope and numbers. |
 | Layout and product-fit reasoning | LCW-10 to LCW-12 | What layout and equipment package fit the property, room, and customer need? | Room context, layout direction, property tier, budget absence, multifamily fit, product catalog context. | `LayoutPlan`, `ProductSelectionRationale`, `ProposalPositioningNote`. | Recommend with rationale and expose assumptions. | Rep owns product and customer recommendation. |
-| Quote and proposal readiness | LCW-13 to LCW-15 | Is the proposal package complete and safe to send? | Quote, F&I, trade-in, flooring, specs, layout, terms, recipient, message. | `QuoteReadinessChecklist`, `Quote`, `ProposalPackage`, `ProposalDeliveryEvent`. | Prepare checklist, assemble package, draft send message. | Rep approves customer-facing output. |
+| Quote and proposal readiness | LCW-13 to LCW-15 | Is the proposal package complete and safe to send? | Quote, F&I, trade-in, flooring, specs, layout, terms, recipient, message. | `QuoteReadinessChecklist`, `Quote`, `FreightInstallInputPacket`, `ProposalPackage`, `ProposalDeliveryEvent`. | Prepare checklist, assemble package, draft send message. | Rep approves customer-facing output. |
 | Follow-up and decision state | LCW-16 | What is happening after proposal delivery? | Customer response, bid collection, follow-up touches, decision timing, stalled/no-response state. | `FollowUpState`, `FollowUpTask`, `BidCollectionStatus`. | Track state, remind, draft, and suggest next action. | Rep owns relationship-sensitive follow-up. |
 | Approval and handoff readiness | LCW-17 to LCW-19 | Is approval real enough to mark closed-won, and what must carry forward? | Approval proof, quote version, site context, layout, trade-in, flooring, F&I, procurement notes. | `ApprovalProof`, `ClosedWonEvent`, `OrderReadinessInputState`. | Detect likely approval and prepare handoff context. | Rep/order owner confirms commitment and readiness boundary. |
 

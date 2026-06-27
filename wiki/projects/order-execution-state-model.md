@@ -13,11 +13,13 @@ sources:
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-state-transition-model-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-transition-gate-rules-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-readiness-agent-requirements-v1.md
+  - wiki/sales/freight-install-quote-readiness.md
 related:
   - [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
   - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
+  - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
   - [[../knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
   - [[../knowledge-base/domain-model-review|Domain Model Review]]
 agent_answerability:
@@ -76,7 +78,7 @@ Some states can progress in parallel. Payment setup, site survey collection, ven
 
 | State | Business Meaning | Primary Owner | Required Evidence | Typical Blockers |
 | --- | --- | --- | --- | --- |
-| `quote-ready` | Quote can be sent or presented with known scope, pricing, F&I, and customer-facing assumptions. | Sales rep | Quote version, customer/account, line items, pricing/F&I status, known warnings. | Missing required F&I, missing custom options, unapproved customer-facing estimate, unresolved quote-critical site risk. |
+| `quote-ready` | Quote can be sent or presented with known scope, pricing, F&I, and customer-facing assumptions. | Sales rep | Quote version, customer/account, line items, pricing/F&I status, known warnings. | Missing required F&I, missing custom options, unapproved customer-facing estimate, unresolved quote-critical site risk; see [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]. |
 | `approval-proof-ready` | A candidate signed quote, customer PO, or approval artifact may prove commitment. | Sales rep / order owner | Signed quote, PO, or source message linking to accepted quote version. | Missing formal approval artifact, unclear signer, quote version mismatch. |
 | `customer-committed / closed-won` | Customer commitment is confirmed, but operational readiness is not assumed. | Sales rep / order owner | Confirmed approval proof, accepted quote version, customer commitment event. | PO mismatch, non-standard contract terms, missing approval review. |
 | `order-ready` | Sold scope is complete enough for internal handoff and order coordination to begin. | Project manager / order owner | Order readiness state, billing/install contacts, quote scope, site/project context, payment terms, readiness gap review. | Missing billing/payment facts, missing install address/site contact when needed, unresolved PO mismatch, unresolved contract issue. |

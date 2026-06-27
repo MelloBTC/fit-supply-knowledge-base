@@ -12,6 +12,7 @@ sources:
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/regency-close-won-to-delivery-workflow-decomposition-v1.md
 related:
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
+  - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
   - [[../knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
   - [[../knowledge-base/agent-capability-map|Agent Capability Map]]
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
@@ -95,7 +96,7 @@ approval proof arrives
 
 - Approval artifact, signer/customer, accepted quote version, and approval date.
 - PO or contract terms and mismatches against accepted quote.
-- Quote/sold scope, revision history, exclusions, and exceptions.
+- Quote/sold scope, revision history, exclusions, exceptions, and reviewed freight/install/extraction assumptions.
 - Payment terms, invoice milestones, deposit/payment status, and accounting policy.
 - Vendor split, POs, acknowledgments, lead times, backorders, substitutions, and shipments.
 - Site survey, access path, room readiness, customer contacts, and installer requirements.

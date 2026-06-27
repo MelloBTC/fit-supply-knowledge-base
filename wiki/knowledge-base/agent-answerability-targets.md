@@ -16,6 +16,7 @@ sources:
   - wiki/knowledge-base/agent-capability-map.md
   - wiki/knowledge-base/wiki-to-agent-build-bridge.md
   - wiki/sales/hunter-sales-existing-multifamily-pattern.md
+  - wiki/sales/freight-install-quote-readiness.md
   - wiki/projects/order-execution-readiness-agent-requirements.md
   - wiki/projects/order-execution-state-model.md
   - wiki/governance/order-execution-transition-gate-rules.md
@@ -34,6 +35,7 @@ related:
   - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
+  - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
   - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[../projects/order-execution-state-model|Order Execution State Model]]
@@ -46,7 +48,7 @@ tags:
   - answerability
   - target-state
   - agent-design
-provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, FSCR-012, FSCR-013, and FSCR-016. Updated 2026-06-27 after the FSCR-012 hunter-sales validation-status checkpoint.
+provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, FSCR-012, FSCR-013, FSCR-016, and FSCR-017. Updated 2026-06-27 after the FSCR-017 freight/install quote-readiness synthesis.
 ---
 
 # Agent Answerability Targets
@@ -130,6 +132,14 @@ The first roadmap synthesis pass adds these more specific answerability targets:
 - Explain what the current real/sanitized hunter-sales examples validate: source-origin routing, service-created replacement signals, grouped-property review, and active-workflow duplicate blocking.
 - Flag budget-window, prospecting no-response, manager-change, hard-stop scope, soft-negative response, and sensitive-account review rules as provisional until real or sanitized dealer examples promote, split, or correct them.
 - Distinguish explicit hard stops from soft negative responses before suppression, nurture, or contact-correction behavior is inferred.
+
+### Freight And Install Quote Readiness
+
+- Explain what must be known before freight, install, or extraction values are safe to include in a customer-facing quote.
+- Distinguish quote context inheritance, missing-context blockers, routine/exception routing, freight mode selection, draft estimates, approval, provenance, handoff, actuals learning, and stale freight monitoring.
+- Explain why a freight/install number is not enough without source, assumptions, confidence, quote version, validity window, reviewer, and override history.
+- Identify which F&I actions a future agent can prepare versus which customer-facing financial, quote-update, rule-change, or exception decisions require human approval.
+- Preserve the boundary that current freight rules, installer rules, approval ownership, thresholds, and actual-cost variance still need validation before build-facing policy.
 
 ### Order-Execution Readiness And State
 

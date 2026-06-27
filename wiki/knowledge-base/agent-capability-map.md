@@ -12,11 +12,13 @@ sources:
   - raw/imports/fast-os-capability-roadmap/regency-lead-to-closed-won-work-unit-decomposition-v1.md
   - raw/imports/fast-os-capability-roadmap/regency-close-won-to-delivery-workflow-decomposition-v1.md
   - wiki/sales/source-aware-lead-intake-routing.md
+  - wiki/sales/freight-install-quote-readiness.md
 related:
   - [[distributor-workflow-map|Distributor Workflow Map]]
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
+  - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
   - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[agent-answerability-targets|Agent Answerability Targets]]
 agent_answerability:
@@ -46,7 +48,7 @@ The clusters below are not final agent names. They are capability boundaries tha
 | ACI-04 | Site-visit capture and debrief | Discovery / site survey | Strong | Guide capture, extract context, ask debrief questions, and prepare reviewed summary. | Rep confirms facts before downstream design, quote, or handoff use. |
 | ACI-05 | Project-context readiness | Site survey / design / quote / handoff | Strong | Assemble structured context and blocker checks. | Humans validate sensitive commercial facts and readiness blockers. |
 | ACI-06 | Solution design support | Layout / equipment selection | Medium | Recommend options with rationale and assumptions. | Rep owns final product, layout, and customer recommendation. |
-| ACI-07 | Quote and proposal readiness | Pricing / quote / proposal | Strong | Prepare package, checklist, assets, and draft message. | Rep approves customer-facing price, scope, and promise. |
+| ACI-07 | Quote and proposal readiness | Pricing / quote / proposal | Strong | Prepare package, checklist, assets, draft message, and freight/install readiness packet. | Rep approves customer-facing price, scope, F&I values, and promise. |
 | ACI-08 | Follow-up and decision-state | Follow-up / objection / close | Strong | Track state, draft reminders, detect stalls, and suggest purposeful next touch. | Rep owns relationship-sensitive pressure, tone, and outcome reason. |
 | ACI-09 | Approval and handoff readiness | Close / procurement boundary | Strong | Detect approval, compare terms, prepare handoff packet, and surface gaps. | Human confirms commitment, commercial/legal mismatch, and handoff release. |
 | ACI-10 | Order coordination | Procurement / vendor / payment | Medium | Track vendor/payment/shipment status and prepare packets or updates. | Accounting, purchasing, PM, or sales approves financial, vendor, and customer commitments. |
@@ -73,6 +75,12 @@ Order coordination, install readiness, completion, service, warranty, and relati
 
 The practical rule for future agents is: classify the source event and quote-readiness distance before choosing the first output. A service-created replacement signal, owner-forwarded project-intelligence item, inbound bid request, and formal project-intelligence feed should not all receive the same lead brief, research depth, or quote-prep treatment.
 
+## Current Freight And Install Quote-Readiness Lane
+
+[[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]] is now the compiled wiki home for the F&I portion of ACI-07 quote and proposal readiness, with connections to ACI-05 project-context readiness, ACI-09 approval and handoff readiness, ACI-10 order coordination, and ACI-11 install readiness.
+
+The practical rule for future agents is: prepare freight/install/extraction readiness, estimates, exception routes, provenance, validity, and handoff assumptions, but require human approval before any customer-facing financial value or quote resend.
+
 ## Boundary Rules
 
 | Boundary | Rule |
@@ -96,7 +104,7 @@ The practical rule for future agents is: classify the source event and quote-rea
 | Site-visit capture and debrief | `SiteVisitEvent`, `SiteVisitSummary`, `RoomContext`, `MeasurementSet`, `PhotoSet`, `ProcurementContext` |
 | Project-context readiness | `ProjectContextPacket`, `QuoteBlocker`, `OrderBlocker`, `ExtractionInstruction`, `FlooringScope`, `TradeInPacket` |
 | Solution design support | `LayoutPlan`, `ProductSelectionRationale`, `ProductOptionSet`, `ProposalPositioningNote` |
-| Quote and proposal readiness | `Quote`, `QuoteVersion`, `PriceFreshnessCheck`, `FreightEstimate`, `InstallEstimate`, `ProposalPackage`, `ProposalDeliveryEvent` |
+| Quote and proposal readiness | `Quote`, `QuoteVersion`, `PriceFreshnessCheck`, `QuoteReadinessChecklist`, `FreightInstallInputPacket`, `FreightEstimate`, `FreightEstimateMode`, `FreightValidityWindow`, `InstallEstimate`, `ExtractionLine`, `EstimateReviewEvent`, `ProposalPackage`, `ProposalDeliveryEvent` |
 | Follow-up and decision-state | `FollowUpState`, `FollowUpTask`, `BidCollectionStatus`, `Interaction`, `ConversionStatus`, `WinLossReason` |
 | Approval and handoff readiness | `ApprovalProof`, `PurchaseOrderReview`, `ContractReviewHighlight`, `CustomerCommitmentEvent`, `ClosedWonEvent`, `OrderReadinessState`, `OrderReadinessChecklist`, `OrderHandoffReviewEvent` |
 | Order coordination | `InvoiceMilestonePlan`, `VendorPurchaseOrder`, `VendorAcknowledgmentEvent`, `LeadTimeStatus`, `ReceivingEvent`, `CustomerStatusUpdateEvent` |
@@ -118,7 +126,7 @@ Likely early surfaces include a source review queue, research brief workspace, s
 
 - Validate lead source priority and frequency before hard-coding source-intelligence routes.
 - Validate Josh's actual research steps before productizing research/enrichment.
-- Define minimum quote-readiness and order-readiness blockers versus warnings.
+- Define minimum quote-readiness and order-readiness blockers versus warnings, including freight/install/extraction blockers and review thresholds.
 - Unpack product-fit rationale across more cases before making recommendation logic feel objective.
 - Define follow-up states that support the rep without creating shame or busywork.
 - Validate handoff ownership across sales, project management, accounting, purchasing, and order teams.
