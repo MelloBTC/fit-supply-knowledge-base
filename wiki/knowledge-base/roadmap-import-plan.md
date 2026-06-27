@@ -12,6 +12,7 @@ sources:
 related:
   - [[agent-answerability-targets|Agent Answerability Targets]]
   - [[domain-model-review|Domain Model Review]]
+  - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[../governance/source-manifest|Source Manifest]]
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[../index|Fit Supply Knowledge Base Index]]
@@ -90,6 +91,7 @@ Completed on 2026-06-27:
 - FSCR-009 was synthesized into [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]].
 - FSCR-010 was synthesized into [[../projects/order-execution-state-model|Order Execution State Model]] and [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
 - FSCR-012 was synthesized into [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] as a `design-hypothesis` page without importing the machine-readable fixture bundle.
+- FSCR-016 was classified from the roadmap lead-intake/source-routing artifact family and synthesized into [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] without importing raw customer, pricing, quote, or NetSuite artifacts.
 - FSCR-004 remains an `upstream-dependency` owned by `fast-os-knowledge-base`.
 
 ## Current Order-Execution Synthesis Result
@@ -103,6 +105,14 @@ The first domain model review is recorded in [[domain-model-review|Domain Model 
 5. Use [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] for blocker, warning, review, override, and evaluation policy.
 6. Continue tracking the commercial equipment knowledge-layer memo as an `upstream-dependency` owned by `fast-os-knowledge-base`, not as local synthesis work.
 
+## Current Source-Aware Lead Intake Result
+
+FSCR-016 now has one compiled sales page: [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]].
+
+This page is `target-state` because it synthesizes a future-state source-aware lead intake workflow from roadmap capability, taxonomy, data-model, research/enrichment, and case-study artifacts. It preserves customer/source evidence as source labels and workflow patterns without importing raw customer emails, quote PDFs, pricing, NetSuite exports, source-feed records, or private attachments.
+
+Treat `source-intelligence`, `lead-intake`, and `lead-research` as active sales sub-lanes for now. Do not create a top-level `lead-intelligence` domain until validated page density and navigation pressure justify it.
+
 ## Current Hunter-Sales Synthesis Result
 
 FSCR-012 now has one compiled sales page: [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]].
@@ -113,4 +123,4 @@ Treat `hunter-sales` as a sales sub-lane for now. Do not create a top-level `lea
 
 ## Recommended Next Slice
 
-If evaluation discipline becomes the priority, review FSCR-011 for order-execution gate fixtures or the FSCR-012 fixture bundle for hunter-sales policy evaluation. Otherwise, keep validating the hunter-sales sub-lane through real or sanitized dealer examples before promoting policy defaults, or continue to the next roadmap workflow family.
+If evaluation discipline becomes the priority, review FSCR-011 for order-execution gate fixtures or the FSCR-012 fixture bundle for hunter-sales policy evaluation. Otherwise, continue with a non-gated workflow family. After FSCR-016, the strongest next candidates are selective case-backed validation of source-aware lead intake with additional sanitized examples, or a governance bridge from wiki knowledge to future agent build requirements if no new examples are available.

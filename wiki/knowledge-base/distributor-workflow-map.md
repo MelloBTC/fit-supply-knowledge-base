@@ -10,9 +10,11 @@ sources:
   - raw/imports/fast-os-capability-roadmap-source-inventory.md#fscr-003
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/macro-workflow-map-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/05-capability-roadmap/commercial-fitness-dealer-operating-model-v1.md
+  - wiki/sales/source-aware-lead-intake-routing.md
 related:
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[agent-capability-map|Agent Capability Map]]
+  - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[roadmap-import-plan|Roadmap Import Plan]]
@@ -57,8 +59,8 @@ Real workflows can loop backward. Site survey can change qualification, layout c
 
 | Stage | Business Question | Current Wiki Home | Synthesis Status | Notes |
 | --- | --- | --- | --- | --- |
-| Lead Identification | Where does possible demand come from? | `sales`, `knowledge-base` | Strong source layer exists upstream; first compiled cross-domain pages now created. | Hunter-sales provisional scenarios remain deferred until validation labels support synthesis. |
-| Qualification | Is the lead worth action, and what route should it take? | `sales` | Partly covered through source intelligence and agent capability map. | Research/enrichment still needs direct validation against actual dealer steps. |
+| Lead Identification | Where does possible demand come from? | `sales`, `knowledge-base` | Synthesized in [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]. | Lead-source type, provenance, first route, owner, and outcome state now have a compiled wiki home. |
+| Qualification | Is the lead worth action, and what route should it take? | `sales` | Covered at source-routing level in [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] and downstream in [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]. | Research/enrichment remains source-backed but needs validation against more actual dealer steps. |
 | Discovery | Is this a real project, who is involved, and what needs to be learned? | `sales`, `company` | Case-backed through Regency lead-to-closed-won. | More cases should refine buyer and discovery decision inventories. |
 | Site Survey | What must be captured about the space before design, quote, delivery, and install? | `design`, `projects` | Strong evidence from Regency, but field thresholds need validation. | Site capture should feed design, quote, handoff, and install readiness. |
 | Layout and Design | How does room context become a usable layout and design direction? | `design` | Strong case signal, not yet a standalone design workflow page. | Create a design workflow page only when layout/design decomposition needs its own canonical home. |
@@ -75,7 +77,7 @@ Real workflows can loop backward. Site survey can change qualification, layout c
 
 | Boundary | Why It Matters | Current Read |
 | --- | --- | --- |
-| Source intelligence vs research/enrichment | Not every lead deserves research; source type and quote-readiness distance should decide route. | Strong. Lenox should accelerate toward quote readiness, while Bailey and TSU need more research or pursuit planning. |
+| Source intelligence vs research/enrichment | Not every lead deserves research; source type and quote-readiness distance should decide route. | Strong. [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] now preserves this as the compiled intake rule. |
 | Site capture vs project-context readiness | Capture is how facts enter the system; readiness decides whether downstream work has enough validated context. | Strong. Regency shows both are needed. |
 | Solution design vs quote/proposal readiness | Product/layout judgment is different from customer-facing package assembly. | Strong. The rep owns the recommendation and customer-facing approval. |
 | Follow-up state vs relationship action | The system can prevent silent stalls, but the rep owns tone, pressure, and relationship judgment. | Strong. Park and Regency both show follow-up leakage or ambiguity. |
@@ -97,6 +99,7 @@ Real workflows can loop backward. Site survey can change qualification, layout c
 1. Use [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]] as the parent lifecycle map.
 2. Use this page as the cross-domain workflow navigation layer.
 3. Use [[agent-capability-map|Agent Capability Map]] to keep AI support framed as capability clusters, not premature product agents.
-4. Use [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]] and [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]] as the first case-backed workflow pages.
-5. Defer deep equipment/catalog answerability until `fast-os-knowledge-base` has mature outputs to evaluate.
-6. Consider a later `order-execution` domain only after order-readiness, state-transition, and gate-rule pages become dense enough to outgrow `projects`.
+4. Use [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] to classify lead signals before routing into quote readiness, research/enrichment, pursuit planning, or follow-up.
+5. Use [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]] and [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]] as the first case-backed workflow pages.
+6. Defer deep equipment/catalog answerability until `fast-os-knowledge-base` has mature outputs to evaluate.
+7. Consider a later `order-execution` domain only after order-readiness, state-transition, and gate-rule pages become dense enough to outgrow `projects`.

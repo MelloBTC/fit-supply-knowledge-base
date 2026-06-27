@@ -20,6 +20,7 @@ related:
   - [[projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[projects/order-execution-state-model|Order Execution State Model]]
   - [[governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[current-state/index|Current State]]
 agent_answerability:
@@ -52,6 +53,7 @@ This is the root navigation page for the Fit Supply LLM Wiki. Start here when or
 - [[company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]] - Parent lifecycle, roles, data-object spine, and validation posture.
 - [[knowledge-base/distributor-workflow-map|Distributor Workflow Map]] - Cross-domain workflow map and synthesis/defer boundaries.
 - [[knowledge-base/agent-capability-map|Agent Capability Map]] - Candidate capability clusters and human review boundaries.
+- [[sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] - Source-aware workflow for preserving lead provenance, routing first action, and tracking outcomes.
 - [[sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]] - Case-backed sales workflow from lead signal to closed-won boundary.
 - [[sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] - Design-hypothesis sales pattern for existing multifamily prospecting, reactivation, nurture, and human-reviewed outreach policy.
 - [[projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]] - Case-backed project workflow from approval to delivery, completion, and relationship continuity.

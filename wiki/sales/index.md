@@ -9,9 +9,11 @@ reviewed_by:
 sources:
   - schema.md
   - PROJECT_CONTEXT.md
+  - raw/imports/fast-os-capability-roadmap-source-inventory.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
+  - [[source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
 agent_answerability:
@@ -38,10 +40,13 @@ Sales knowledge connects customer needs, qualification, quoting, proposals, fina
 
 ## Current Pages
 
+- [[source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
 - [[lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
 - [[hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
 
 ## Active Lanes
+
+`source-intelligence` and `lead-intake` are active sales sub-lanes for preserving lead source events, classifying source type, routing first workflow, assigning reviewed action, and tracking outcomes. Keep these inside `sales` for now. Do not promote a top-level `lead-intelligence` domain until more validated compiled pages create enough repeated navigation or ownership pressure.
 
 `hunter-sales` is an active sales sub-lane for target discovery, prospecting policy, reactivation, nurture, and human-reviewed outreach. Keep it inside `sales` for now. Do not promote a top-level `lead-intelligence` or `prospecting` domain until validated pages create enough repeated navigation or ownership pressure.
 

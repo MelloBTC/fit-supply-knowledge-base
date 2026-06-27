@@ -10,6 +10,7 @@ sources:
   - PROJECT_CONTEXT.md
   - schema.md
   - raw/imports/fast-os-capability-roadmap-source-inventory.md
+  - wiki/sales/source-aware-lead-intake-routing.md
   - wiki/company/commercial-fitness-distributor-operating-model.md
   - wiki/knowledge-base/distributor-workflow-map.md
   - wiki/knowledge-base/agent-capability-map.md
@@ -27,6 +28,7 @@ related:
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[distributor-workflow-map|Distributor Workflow Map]]
   - [[agent-capability-map|Agent Capability Map]]
+  - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
@@ -40,7 +42,7 @@ tags:
   - answerability
   - target-state
   - agent-design
-provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, and FSCR-012.
+provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, FSCR-012, and FSCR-016.
 ---
 
 # Agent Answerability Targets
@@ -106,6 +108,14 @@ The first roadmap synthesis pass adds these more specific answerability targets:
 - Explain what must happen between a lead signal and closed-won before operations can safely act.
 - Explain why closed-won, order-ready, delivery-ready, install-complete, and relationship-ready are different states.
 - Identify what context must carry from sales into project execution so post-close work does not rediscover the same facts.
+
+### Source-Aware Lead Intake And Routing
+
+- Explain why lead source type should determine the first workflow route instead of treating every lead as the same CRM record.
+- Distinguish service-created replacement signals, owner-forwarded project intelligence, inbound bid requests, formal project-intelligence feeds, referrals, lifecycle triggers, and low-confidence inquiries.
+- Identify whether a lead is quote-ready, quote-plausible but incomplete, pursuit-worthy but not quote-ready, or low-confidence.
+- Explain why source event, human curation, route decision, owner, next action, review event, outcome, and source-quality signal must be preserved separately.
+- Route formal-feed and project-intelligence leads into research/enrichment when amenity relevance, buyer path, timing, or source confidence is not strong enough for outreach.
 
 ### Hunter Sales And Prospecting Policy
 

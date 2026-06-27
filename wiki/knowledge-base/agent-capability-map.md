@@ -11,9 +11,11 @@ sources:
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/agent-candidate-inventory-v1.md
   - raw/imports/fast-os-capability-roadmap/regency-lead-to-closed-won-work-unit-decomposition-v1.md
   - raw/imports/fast-os-capability-roadmap/regency-close-won-to-delivery-workflow-decomposition-v1.md
+  - wiki/sales/source-aware-lead-intake-routing.md
 related:
   - [[distributor-workflow-map|Distributor Workflow Map]]
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
+  - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[agent-answerability-targets|Agent Answerability Targets]]
@@ -64,6 +66,12 @@ The roadmap inventory identifies these as the strongest early clusters because t
 6. Approval and handoff readiness.
 
 Order coordination, install readiness, completion, service, warranty, and relationship expansion matter, but they depend on clean upstream quote, approval, site, and handoff context. Building those downstream workflows before the upstream model is stable would create false progress.
+
+## Current Source-Aware Lead Intake Lane
+
+[[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] is now the compiled wiki home for ACI-01 source intelligence and the intake-side boundary between ACI-02 research/enrichment and ACI-03 inbound quote-readiness.
+
+The practical rule for future agents is: classify the source event and quote-readiness distance before choosing the first output. A service-created replacement signal, owner-forwarded project-intelligence item, inbound bid request, and formal project-intelligence feed should not all receive the same lead brief, research depth, or quote-prep treatment.
 
 ## Boundary Rules
 

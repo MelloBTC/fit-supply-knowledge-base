@@ -30,9 +30,11 @@ The first durable synthesis pass created compiled wiki pages for the distributor
 
 The order-execution synthesis lane now exists under `projects` and `governance` with readiness requirements, state model, and transition gate rules.
 
+The source-aware lead intake synthesis lane now exists under `sales` with one target-state page for source event preservation, source-type routing, quote-readiness distance, source-specific first outputs, human review boundaries, research/enrichment, and outcome tracking.
+
 The hunter-sales / prospecting synthesis lane now exists under `sales` with one design-hypothesis page for existing multifamily policy and reactivation.
 
-The 2026-06-27 domain pressure recheck is recorded in `wiki/knowledge-base/domain-model-review.md` and still keeps the top-level domain model stable.
+The 2026-06-27 domain pressure recheck is recorded in `wiki/knowledge-base/domain-model-review.md` and still keeps the top-level domain model stable, with source-intelligence, lead-intake, and hunter-sales kept as sales sub-lanes.
 
 ## Current Boundaries
 
@@ -59,25 +61,27 @@ The completed first import slice is:
 6. FSCR-009 synthesized into `wiki/projects/order-execution-readiness-agent-requirements.md`.
 7. FSCR-010 synthesized into `wiki/projects/order-execution-state-model.md` and `wiki/governance/order-execution-transition-gate-rules.md`.
 8. FSCR-012 synthesized into `wiki/sales/hunter-sales-existing-multifamily-pattern.md` as a design-hypothesis page.
-9. FSCR-004 remains an upstream dependency owned by `fast-os-knowledge-base`.
+9. FSCR-016 synthesized into `wiki/sales/source-aware-lead-intake-routing.md` as a target-state page without importing raw customer, pricing, quote, NetSuite, or source-feed artifacts.
+10. FSCR-004 remains an upstream dependency owned by `fast-os-knowledge-base`.
 
 ## Recommended Next Action
 
-The order-execution lane has been deepened without changing the top-level domain model. The current pages are:
+The source-aware lead intake and order-execution lanes have been deepened without changing the top-level domain model. The current pages are:
 
+- `wiki/sales/source-aware-lead-intake-routing.md`.
 - `wiki/projects/order-execution-readiness-agent-requirements.md`.
 - `wiki/projects/order-execution-state-model.md`.
 - `wiki/governance/order-execution-transition-gate-rules.md`.
 - `wiki/sales/hunter-sales-existing-multifamily-pattern.md`.
 
-Recommended next action: review FSCR-011 only if the next checkpoint is evaluation discipline for order-execution gates. Otherwise, validate the hunter-sales sub-lane with real or sanitized dealer examples before promoting policy defaults, or continue the next roadmap workflow family.
+Recommended next action: review FSCR-011 only if the next checkpoint is evaluation discipline for order-execution gates. Otherwise, validate source-aware lead intake or hunter-sales with real or sanitized dealer examples before promoting policy defaults, or continue the next non-gated roadmap workflow family.
 
 The domain pressure decision is:
 
 - Keep `operating-model` as a canonical lens in `company` for now.
 - Keep `agent-workflows` as a `knowledge-base` answerability lens for now.
 - Keep `order-execution` as an active lane inside `projects` and `governance` for now.
-- Keep `hunter-sales`, `lead-intelligence`, and `prospecting` as active `sales` sub-lanes for now.
+- Keep `source-intelligence`, `lead-intake`, `hunter-sales`, `lead-intelligence`, and `prospecting` as active `sales` sub-lanes for now.
 - Defer `lead-intelligence`, `installed-base`, and a top-level `order-execution` domain until stronger compiled page density supports the move.
 
 Do not open commercial equipment catalog/schema or model-specific answerability work locally until `fast-os-knowledge-base` has mature outputs to evaluate.
@@ -96,4 +100,4 @@ At the end of a meaningful checkpoint:
 
 ## Restart Prompt
 
-Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md` as the domain-structure checkpoint. The order-execution readiness/state lane is synthesized inside `projects` and `governance`; the hunter-sales existing multifamily lane is synthesized inside `sales` as a design-hypothesis page. Next, review FSCR-011 only if evaluation discipline is the priority; otherwise validate hunter-sales with real or sanitized dealer examples, or continue the next roadmap workflow family. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.
+Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md` as the domain-structure checkpoint. The source-aware lead intake lane is synthesized inside `sales`; the order-execution readiness/state lane is synthesized inside `projects` and `governance`; the hunter-sales existing multifamily lane is synthesized inside `sales` as a design-hypothesis page. Next, review FSCR-011 only if evaluation discipline is the priority; otherwise validate source-aware lead intake or hunter-sales with real or sanitized dealer examples, or continue the next non-gated roadmap workflow family. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.
