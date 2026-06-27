@@ -56,7 +56,7 @@ This is the root navigation page for the Fit Supply LLM Wiki. Start here when or
 - [[knowledge-base/agent-capability-map|Agent Capability Map]] - Candidate capability clusters and human review boundaries.
 - [[sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] - Source-aware workflow for preserving lead provenance, routing first action, and tracking outcomes.
 - [[sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]] - Case-backed sales workflow from lead signal to closed-won boundary.
-- [[sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] - Design-hypothesis sales pattern for existing multifamily prospecting, reactivation, nurture, and human-reviewed outreach policy.
+- [[sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] - Design-hypothesis sales pattern and validation-status checkpoint for existing multifamily prospecting, reactivation, source-origin routing, provisional probes, and human-reviewed outreach policy.
 - [[projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]] - Case-backed project workflow from approval to delivery, completion, and relationship continuity.
 - [[knowledge-base/domain-model-review|Domain Model Review]] - First domain-structure checkpoint after roadmap synthesis, including the order-execution lens decision.
 - [[knowledge-base/wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] - Reference-pattern bridge for translating mature wiki knowledge into future build-facing agent requirements without creating product schema or architecture.

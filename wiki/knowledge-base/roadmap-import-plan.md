@@ -9,6 +9,8 @@ reviewed_by:
 sources:
   - PROJECT_CONTEXT.md
   - schema.md
+  - raw/imports/fast-os-capability-roadmap-source-inventory.md
+  - wiki/sales/hunter-sales-existing-multifamily-pattern.md
 related:
   - [[agent-answerability-targets|Agent Answerability Targets]]
   - [[domain-model-review|Domain Model Review]]
@@ -24,7 +26,7 @@ tags:
   - import-plan
   - roadmap
   - source-discovery
-provenance_notes: Initial process for read-only inventory of fast-os-capability-roadmap before importing or synthesizing content.
+provenance_notes: Initial process for read-only inventory of fast-os-capability-roadmap before importing or synthesizing content. Updated 2026-06-27 after the FSCR-012 hunter-sales validation-status checkpoint.
 ---
 
 # Roadmap Import Plan
@@ -91,7 +93,7 @@ Completed on 2026-06-27:
 - FSCR-008 was selectively imported to `raw/imports/fast-os-capability-roadmap/regency-close-won-to-delivery-workflow-decomposition-v1.md` and synthesized into [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]].
 - FSCR-009 was synthesized into [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]].
 - FSCR-010 was synthesized into [[../projects/order-execution-state-model|Order Execution State Model]] and [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
-- FSCR-012 was synthesized into [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] as a `design-hypothesis` page without importing the machine-readable fixture bundle.
+- FSCR-012 was synthesized into [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] as a `design-hypothesis` page without importing the machine-readable fixture bundle, then updated with a validation-status checkpoint from real/sanitized example pressure tests and provisional probe results.
 - FSCR-013 was synthesized into [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] as a `reference-pattern` bridge without creating product schema, agent architecture, live tooling, or implementation specs.
 - FSCR-016 was classified from the roadmap lead-intake/source-routing artifact family and synthesized into [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] without importing raw customer, pricing, quote, or NetSuite artifacts.
 - FSCR-004 remains an `upstream-dependency` owned by `fast-os-knowledge-base`.
@@ -119,9 +121,9 @@ Treat `source-intelligence`, `lead-intake`, and `lead-research` as active sales 
 
 FSCR-012 now has one compiled sales page: [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]].
 
-This page is intentionally `design-hypothesis`, not `target-state`, because the source family contains candidate policy defaults, synthetic scenarios, provisional validation labels, and fixture-readiness notes. Keep the machine-readable evaluator fixtures upstream unless evaluation discipline becomes the active local checkpoint.
+This page is intentionally `design-hypothesis`, not `target-state`, because the source family contains candidate policy defaults, synthetic scenarios, provisional validation labels, and fixture-readiness notes. The 2026-06-27 validation-status checkpoint strengthens source-origin routing, service-created replacement signal handling, grouped-property review, and active-workflow duplicate blocking from real/sanitized examples. It also confirms that the remaining budget-window, no-response, manager-change, hard-stop scope, soft-negative, and sensitive-account probes remain provisional or split-required.
 
-Treat `hunter-sales` as a sales sub-lane for now. Do not create a top-level `lead-intelligence` or `prospecting` domain until validated compiled pages create stronger navigation pressure.
+Keep the machine-readable evaluator fixtures upstream unless evaluation discipline becomes the active local checkpoint. Treat `hunter-sales` as a sales sub-lane for now. Do not create a top-level `lead-intelligence` or `prospecting` domain until validated compiled pages create stronger navigation pressure.
 
 ## Current Wiki-To-Agent Build Bridge Result
 
@@ -135,4 +137,4 @@ Treat `agent-workflows` as a knowledge-base answerability and bridge lens for no
 
 FSCR-013 closes the governance bridge checkpoint without opening implementation scope.
 
-If evaluation discipline becomes the priority, review FSCR-011 for order-execution gate fixtures or the FSCR-012 fixture bundle for hunter-sales policy evaluation. Otherwise, continue with a non-gated workflow family or validate source-aware lead intake or hunter-sales with real or sanitized dealer examples before moving either lane toward build-facing requirements.
+If evaluation discipline becomes the priority, review FSCR-011 for order-execution gate fixtures or the FSCR-012 fixture bundle for hunter-sales policy evaluation. Otherwise, the next hunter-sales move should capture one real or sanitized dealer example from the open validation list before promoting any remaining policy defaults. Source-aware lead intake should follow the same example-first rule before build-facing requirements. If no dealer examples are available, continue with a non-gated roadmap workflow family.

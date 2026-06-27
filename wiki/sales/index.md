@@ -10,6 +10,7 @@ sources:
   - schema.md
   - PROJECT_CONTEXT.md
   - raw/imports/fast-os-capability-roadmap-source-inventory.md
+  - wiki/sales/hunter-sales-existing-multifamily-pattern.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
@@ -22,7 +23,7 @@ agent_answerability:
 tags:
   - domain-index
   - sales
-provenance_notes: Starter domain index created during target-state skeleton setup; content areas are placeholders until source-backed pages are added.
+provenance_notes: Starter domain index created during target-state skeleton setup; updated 2026-06-27 to reflect the hunter-sales validation-status checkpoint.
 ---
 
 # Sales
@@ -48,7 +49,7 @@ Sales knowledge connects customer needs, qualification, quoting, proposals, fina
 
 `source-intelligence` and `lead-intake` are active sales sub-lanes for preserving lead source events, classifying source type, routing first workflow, assigning reviewed action, and tracking outcomes. Keep these inside `sales` for now. Do not promote a top-level `lead-intelligence` domain until more validated compiled pages create enough repeated navigation or ownership pressure.
 
-`hunter-sales` is an active sales sub-lane for target discovery, prospecting policy, reactivation, nurture, and human-reviewed outreach. Keep it inside `sales` for now. Do not promote a top-level `lead-intelligence` or `prospecting` domain until validated pages create enough repeated navigation or ownership pressure.
+`hunter-sales` is an active sales sub-lane for target discovery, prospecting policy, reactivation, nurture, and human-reviewed outreach. Keep it inside `sales` for now. The current validation-status checkpoint strengthens source-origin routing, service-to-sales replacement signals, grouped-property review, and active-workflow duplicate blocking, but budget-window, no-response, manager-change, hard-stop scope, soft-negative, and sensitive-account rules remain provisional. Do not promote a top-level `lead-intelligence` or `prospecting` domain until validated pages create enough repeated navigation or ownership pressure.
 
 ## Starter Pages To Add
 

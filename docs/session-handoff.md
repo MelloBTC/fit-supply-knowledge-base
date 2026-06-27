@@ -32,7 +32,7 @@ The order-execution synthesis lane now exists under `projects` and `governance` 
 
 The source-aware lead intake synthesis lane now exists under `sales` with one target-state page for source event preservation, source-type routing, quote-readiness distance, source-specific first outputs, human review boundaries, research/enrichment, and outcome tracking.
 
-The hunter-sales / prospecting synthesis lane now exists under `sales` with one design-hypothesis page for existing multifamily policy and reactivation.
+The hunter-sales / prospecting synthesis lane now exists under `sales` with one design-hypothesis page for existing multifamily policy, reactivation, and validation status. The 2026-06-27 validation-status checkpoint strengthens source-origin routing, service-to-sales replacement signals, grouped-property review, and active-workflow duplicate blocking while keeping remaining policy probes provisional.
 
 The wiki-to-agent build bridge now exists under `knowledge-base` with one reference-pattern page for translating mature wiki knowledge into future build-facing agent requirements without opening product schema, agent architecture, live tooling, or implementation specs.
 
@@ -62,7 +62,7 @@ The completed first import slice is:
 5. FSCR-008 imported to `raw/imports/fast-os-capability-roadmap/` and synthesized into `wiki/projects/close-won-to-delivery-workflow.md`.
 6. FSCR-009 synthesized into `wiki/projects/order-execution-readiness-agent-requirements.md`.
 7. FSCR-010 synthesized into `wiki/projects/order-execution-state-model.md` and `wiki/governance/order-execution-transition-gate-rules.md`.
-8. FSCR-012 synthesized into `wiki/sales/hunter-sales-existing-multifamily-pattern.md` as a design-hypothesis page.
+8. FSCR-012 synthesized into `wiki/sales/hunter-sales-existing-multifamily-pattern.md` as a design-hypothesis page and updated with a 2026-06-27 validation-status checkpoint from real/sanitized example pressure tests and provisional probe results.
 9. FSCR-013 synthesized into `wiki/knowledge-base/wiki-to-agent-build-bridge.md` as a reference-pattern page without creating product schema, agent architecture, live tooling, or implementation specs.
 10. FSCR-016 synthesized into `wiki/sales/source-aware-lead-intake-routing.md` as a target-state page without importing raw customer, pricing, quote, NetSuite, or source-feed artifacts.
 11. FSCR-004 remains an upstream dependency owned by `fast-os-knowledge-base`.
@@ -78,7 +78,9 @@ The source-aware lead intake and order-execution lanes have been deepened withou
 - `wiki/sales/hunter-sales-existing-multifamily-pattern.md`.
 - `wiki/knowledge-base/wiki-to-agent-build-bridge.md`.
 
-Recommended next action: review FSCR-011 only if the next checkpoint is evaluation discipline for order-execution gates. Otherwise, validate source-aware lead intake or hunter-sales with real or sanitized dealer examples before promoting policy defaults or moving either lane toward build-facing requirements, or continue the next non-gated roadmap workflow family.
+Recommended next action: review FSCR-011 only if the next checkpoint is evaluation discipline for order-execution gates. Otherwise, capture or synthesize the next real/sanitized dealer example for hunter-sales or source-aware lead intake before promoting policy defaults or moving either lane toward build-facing requirements, or continue the next non-gated roadmap workflow family.
+
+For hunter-sales, the highest-value next examples are: a budget-window target or review list, prospecting no-response with touch and buyer-path context, manager-change signal quality, scoped hard stop, soft negative response, or sensitive-account review ownership. Do not treat the current validation-status checkpoint as fixture promotion, dealer-approved policy, or build readiness.
 
 The domain pressure decision is:
 
@@ -105,4 +107,4 @@ At the end of a meaningful checkpoint:
 
 ## Restart Prompt
 
-Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md` plus `wiki/knowledge-base/wiki-to-agent-build-bridge.md` as the domain-structure and build-readiness checkpoints. The source-aware lead intake lane is synthesized inside `sales`; the order-execution readiness/state lane is synthesized inside `projects` and `governance`; the hunter-sales existing multifamily lane is synthesized inside `sales` as a design-hypothesis page. Next, review FSCR-011 only if evaluation discipline is the priority; otherwise validate source-aware lead intake or hunter-sales with real or sanitized dealer examples before moving either lane toward build-facing requirements, or continue the next non-gated roadmap workflow family. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.
+Continue in `C:\Users\joshm\projects\fit-supply-knowledge-base` from `AGENTS.md`, `PROJECT_CONTEXT.md`, `schema.md`, `wiki/index.md`, and `docs/session-handoff.md`. Stay in wiki mode and use `wiki/knowledge-base/domain-model-review.md` plus `wiki/knowledge-base/wiki-to-agent-build-bridge.md` as the domain-structure and build-readiness checkpoints. The source-aware lead intake lane is synthesized inside `sales`; the order-execution readiness/state lane is synthesized inside `projects` and `governance`; the hunter-sales existing multifamily lane is synthesized inside `sales` as a design-hypothesis page with a 2026-06-27 validation-status checkpoint. Next, review FSCR-011 only if evaluation discipline is the priority; otherwise capture or synthesize the next real/sanitized dealer example for hunter-sales or source-aware lead intake before moving either lane toward build-facing requirements, or continue the next non-gated roadmap workflow family. Keep commercial equipment knowledge-layer work upstream in `fast-os-knowledge-base` until mature enough to evaluate.

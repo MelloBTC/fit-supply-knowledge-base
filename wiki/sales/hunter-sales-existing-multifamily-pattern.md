@@ -12,6 +12,11 @@ sources:
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-policy-validation-matrix-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-segment-policy-validation-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-policy-profile-and-synthetic-scenarios-v1.md
+  - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-real-example-policy-pressure-test-v1.md
+  - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-provisional-example-validation-pass-v1.md
+  - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-provisional-sanitized-example-probes-v1.md
+  - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-provisional-probe-validation-results-v1.md
+  - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/hunter-sales-existing-multifamily-provisional-example-reasoning-notes-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/fixtures/hunter-sales-existing-multifamily-policy-evaluator-v1/README.md
 related:
   - [[lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
@@ -28,7 +33,7 @@ tags:
   - existing-multifamily
   - policy-validation
   - roadmap-derived
-provenance_notes: Synthesized from roadmap FSCR-012 as a design-hypothesis sales pattern. The source family includes candidate policy defaults and synthetic fixture labels, so this page must not be treated as approved dealer policy or current Fit Supply operations.
+provenance_notes: Synthesized from roadmap FSCR-012 as a design-hypothesis sales pattern. Updated 2026-06-27 with a validation-status checkpoint from real/sanitized example pressure tests and provisional probe results. The source family includes candidate policy defaults and synthetic fixture labels, so this page must not be treated as approved dealer policy, current Fit Supply operations, or build-ready evaluator behavior.
 ---
 
 # Hunter Sales Existing Multifamily Pattern
@@ -129,6 +134,52 @@ The wiki should preserve this distinction:
 - Fixture answer keys should not be treated as dealer-approved policy.
 - A future evaluator should produce decision packages with evidence, guardrail results, required reviews, blocked actions, prepared artifacts, and learning signals.
 
+## Validation Checkpoint - 2026-06-27
+
+The next smallest durable checkpoint after FSCR-013 is a hunter-sales validation-status pass, not a build-readiness handoff.
+
+The roadmap source family now includes real/sanitized pressure tests and provisional probe validation results. Those sources strengthen the pattern, but they do not promote the page out of `design-hypothesis` and do not make the fixture bundle dealer-approved.
+
+### Real/Sanitized Example Read
+
+| Example Evidence | What It Validates | What It Does Not Validate |
+| --- | --- | --- |
+| Regency outbound campaign response became site visit, proposal, approved quote, closed-won, and active workflow. | Approved outreach can convert to opportunity review; active proposal, bid, closed-won, order-readiness, or delivery/install states should block duplicate hunter outreach. | It does not prove budget-window reactivation, prospecting no-response thresholds, manager-change timing, or sensitive-account policy. |
+| Lenox Park direct inbound bid request asked for specific equipment. | A high-intent quote request can originate outside an approved outbound sequence and should preserve `source_origin` before routing. | It does not validate manager-change reactivation, because the manager context belongs to an inbound quote request. |
+| Park at Rialto service-created replacement signal became quote work. | Service or installed-base replacement demand needs service-to-sales review, replacement opportunity context, and quote-readiness preparation. | Its post-quote silence should not be reused as proof for pre-opportunity prospecting no-response policy. |
+| Regency and Madison shared relationship context but stayed separate workflows. | Related-property or shared-management context should produce grouped review and relationship awareness without merging quotes, approvals, or outcomes. | It does not prove that management-company change alone should trigger outreach. |
+
+### Current Policy Corrections
+
+| Correction | Wiki Meaning |
+| --- | --- |
+| A reply or quote request is not automatically quote-ready. | Opportunity conversion should preserve quote-readiness distance and next route, such as discovery, site visit, quote-readiness review, or quote prep. |
+| Source origin changes the first useful package. | Approved outbound reply, direct inbound request, relationship-forwarded request, service-created signal, and formal-feed response should not collapse into one generic reactivation path. |
+| Service-created replacement demand is its own route. | It should prepare a replacement opportunity brief, related history, and quote-readiness checklist before any customer-facing action. |
+| Shared relationship context does not merge outcomes. | Related properties need grouped context and separate target or opportunity states unless a rep intentionally links them. |
+| Active workflow beats new hunter motion. | Proposal, bid collection, approved quote, closed-won, order-readiness, delivery/install, and unresolved service handoff states should route context to the active owner instead of starting hunter outreach. |
+
+### Provisional Status Retained
+
+The provisional probe results did not promote any remaining synthetic probe to `real_example_backed_candidate`, and they did not recommend JSON fixture answer-key changes.
+
+| Provisional Area | Current Decision |
+| --- | --- |
+| Budget-window target review | Keep provisional; budget timing is leverage for review, not permission to send or queue every target. |
+| Prospecting no-response | Keep provisional; touch count, silence age, contact quality, and next trigger are dealer-specific. |
+| Manager-change or management-company-change signals | Keep provisional; role level and source reliability probably need splits. |
+| Explicit hard stops | Keep provisional until a scoped dealer example clarifies stop type, suppression scope, and override owner. |
+| Soft negative responses | Split required; "not now", bounce, wrong person, or vendor selected should not inherit hard suppression by default. |
+| Strategic or sensitive accounts | Keep provisional; sensitivity reason, review owner, and allowed preparation must remain policy data. |
+
+The strongest current validation result is the distinction between useful candidate policy and dealer-confirmed policy:
+
+```text
+real/sanitized pressure test
+-> better guardrail language
+-> no fixture promotion without matching dealer judgment
+```
+
 ## Data Shape Implications
 
 This pattern implies these reusable objects or events:
@@ -145,6 +196,12 @@ This pattern implies these reusable objects or events:
 | `RepReviewDecision` | Captures accept, edit, reject, defer, suppress, override, or convert decisions. |
 | `PolicyEvaluationRun` | Produces traceable input, policy version, guardrail, route, review, and target-state results. |
 | `PolicyLearningRecommendation` | Suggests source, play, timing, buyer-path, or cadence changes for human approval. |
+| `ResponseSignal` | Classifies negative, soft-negative, hard-stop, bounce, wrong-person, and vendor-selected responses before suppression or nurture changes. |
+| `SuppressionRecord` | Preserves stop type, scope, source evidence, override owner, and audit trace for explicit or policy-confirmed stops. |
+| `SensitiveAccountReviewPackage` | Routes strategic, house-owned, commercial-risk, complaint-risk, or active-owner-sensitive accounts to the right review owner before outreach. |
+| `ReplacementOpportunityBrief` | Carries service-created or installed-base replacement demand into service-to-sales review and quote-readiness work. |
+| `QuoteReadinessAccelerationPackage` | Helps direct inbound or high-intent quote requests move faster without pretending they came from outbound reactivation. |
+| `RelatedTargetGroupMap` | Keeps shared ownership, management, or relationship context visible while preserving separate target, quote, and outcome states. |
 
 ## Wiki And Domain Implications
 
@@ -156,11 +213,10 @@ For now, the sales index should treat hunter sales as an active sub-lane with pr
 
 ## Open Validation Needs
 
-- Confirm exact existing multifamily budget-review timing and prep lead time.
-- Validate which source signals are reliable enough to trigger rep review.
-- Validate buyer-path patterns for existing multifamily and compare them with new construction, schools, hospitality, and public-sector paths.
-- Tune no-response thresholds, long-tail nurture intervals, and competitor-cycle treatment.
-- Decide which soft negative responses should split from hard do-not-contact suppression.
-- Confirm sensitive-account review ownership and escalation path.
-- Validate cadence, channels, sender identity, quiet windows, stop rules, and override permissions.
-- Decide which outcome evidence is strong enough to recommend future policy changes.
+- Capture a real or sanitized budget-window target or review list with amenity confidence, buyer-path confidence, and rep decision.
+- Capture a prospecting no-response case with touch count, last touch date, channels, contact confidence, and next meaningful trigger.
+- Capture a manager-change or management-company-change signal with role level, source reliability, fitness relevance, and rep judgment.
+- Capture an explicit hard-stop example with stop type, suppression scope, source evidence, override owner, and future queue rule.
+- Capture a soft negative response that is not a hard stop, such as "not now", wrong person, bounce, or vendor selected.
+- Capture a strategic or sensitive account example where a normal target signal changes the review owner or allowed preparation.
+- Keep cadence, channels, sender identity, quiet windows, stop rules, override permissions, and learning thresholds as dealer-policy parameters until validated.

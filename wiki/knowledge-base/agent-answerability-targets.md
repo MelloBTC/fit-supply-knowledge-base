@@ -44,7 +44,7 @@ tags:
   - answerability
   - target-state
   - agent-design
-provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, FSCR-012, FSCR-013, and FSCR-016.
+provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, FSCR-012, FSCR-013, and FSCR-016. Updated 2026-06-27 after the FSCR-012 hunter-sales validation-status checkpoint.
 ---
 
 # Agent Answerability Targets
@@ -125,7 +125,9 @@ The first roadmap synthesis pass adds these more specific answerability targets:
 - Identify when budget windows, manager changes, amenity clues, service signals, or source-origin events should create review packages rather than automatic outreach.
 - Distinguish hard suppression, retirement, deprioritization, long-tail nurture, active reactivation review, and downstream conversion states.
 - Explain why dealer prospecting policy should be stored as data with versioning, approvals, guardrails, audit, and human override records.
-- Flag synthetic hunter-sales fixture labels as provisional until real or sanitized dealer examples promote, split, or correct them.
+- Explain what the current real/sanitized hunter-sales examples validate: source-origin routing, service-created replacement signals, grouped-property review, and active-workflow duplicate blocking.
+- Flag budget-window, prospecting no-response, manager-change, hard-stop scope, soft-negative response, and sensitive-account review rules as provisional until real or sanitized dealer examples promote, split, or correct them.
+- Distinguish explicit hard stops from soft negative responses before suppression, nurture, or contact-correction behavior is inferred.
 
 ### Order-Execution Readiness And State
 
