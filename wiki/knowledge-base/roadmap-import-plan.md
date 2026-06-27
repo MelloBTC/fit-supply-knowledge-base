@@ -13,6 +13,7 @@ related:
   - [[agent-answerability-targets|Agent Answerability Targets]]
   - [[domain-model-review|Domain Model Review]]
   - [[../governance/source-manifest|Source Manifest]]
+  - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[../index|Fit Supply Knowledge Base Index]]
 agent_answerability:
   - How should roadmap artifacts be evaluated before becoming wiki pages?
@@ -88,6 +89,7 @@ Completed on 2026-06-27:
 - FSCR-008 was selectively imported to `raw/imports/fast-os-capability-roadmap/regency-close-won-to-delivery-workflow-decomposition-v1.md` and synthesized into [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]].
 - FSCR-009 was synthesized into [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]].
 - FSCR-010 was synthesized into [[../projects/order-execution-state-model|Order Execution State Model]] and [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
+- FSCR-012 was synthesized into [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] as a `design-hypothesis` page without importing the machine-readable fixture bundle.
 - FSCR-004 remains an `upstream-dependency` owned by `fast-os-knowledge-base`.
 
 ## Current Order-Execution Synthesis Result
@@ -101,6 +103,14 @@ The first domain model review is recorded in [[domain-model-review|Domain Model 
 5. Use [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] for blocker, warning, review, override, and evaluation policy.
 6. Continue tracking the commercial equipment knowledge-layer memo as an `upstream-dependency` owned by `fast-os-knowledge-base`, not as local synthesis work.
 
+## Current Hunter-Sales Synthesis Result
+
+FSCR-012 now has one compiled sales page: [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]].
+
+This page is intentionally `design-hypothesis`, not `target-state`, because the source family contains candidate policy defaults, synthetic scenarios, provisional validation labels, and fixture-readiness notes. Keep the machine-readable evaluator fixtures upstream unless evaluation discipline becomes the active local checkpoint.
+
+Treat `hunter-sales` as a sales sub-lane for now. Do not create a top-level `lead-intelligence` or `prospecting` domain until validated compiled pages create stronger navigation pressure.
+
 ## Recommended Next Slice
 
-Review FSCR-011 only if the next checkpoint is evaluation discipline for the order-execution gate lane. Otherwise, pause to reassess whether the new order-execution pages create enough navigation pressure for a future top-level domain, or whether the wiki should continue with the next roadmap workflow family.
+If evaluation discipline becomes the priority, review FSCR-011 for order-execution gate fixtures or the FSCR-012 fixture bundle for hunter-sales policy evaluation. Otherwise, keep validating the hunter-sales sub-lane through real or sanitized dealer examples before promoting policy defaults, or continue to the next roadmap workflow family.

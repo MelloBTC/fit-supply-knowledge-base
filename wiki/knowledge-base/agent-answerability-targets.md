@@ -13,6 +13,7 @@ sources:
   - wiki/company/commercial-fitness-distributor-operating-model.md
   - wiki/knowledge-base/distributor-workflow-map.md
   - wiki/knowledge-base/agent-capability-map.md
+  - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/projects/order-execution-readiness-agent-requirements.md
   - wiki/projects/order-execution-state-model.md
   - wiki/governance/order-execution-transition-gate-rules.md
@@ -27,6 +28,7 @@ related:
   - [[distributor-workflow-map|Distributor Workflow Map]]
   - [[agent-capability-map|Agent Capability Map]]
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
+  - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[../projects/order-execution-state-model|Order Execution State Model]]
@@ -38,7 +40,7 @@ tags:
   - answerability
   - target-state
   - agent-design
-provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, and FSCR-010.
+provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, and FSCR-012.
 ---
 
 # Agent Answerability Targets
@@ -105,6 +107,14 @@ The first roadmap synthesis pass adds these more specific answerability targets:
 - Explain why closed-won, order-ready, delivery-ready, install-complete, and relationship-ready are different states.
 - Identify what context must carry from sales into project execution so post-close work does not rediscover the same facts.
 
+### Hunter Sales And Prospecting Policy
+
+- Explain why target-account coverage is broader than lead or opportunity workflow.
+- Identify when budget windows, manager changes, amenity clues, service signals, or source-origin events should create review packages rather than automatic outreach.
+- Distinguish hard suppression, retirement, deprioritization, long-tail nurture, active reactivation review, and downstream conversion states.
+- Explain why dealer prospecting policy should be stored as data with versioning, approvals, guardrails, audit, and human override records.
+- Flag synthetic hunter-sales fixture labels as provisional until real or sanitized dealer examples promote, split, or correct them.
+
 ### Order-Execution Readiness And State
 
 - Explain what an order-execution readiness coordinator should detect, classify, route, draft, preserve, monitor, recommend, request for review, and record.
@@ -129,4 +139,4 @@ A future agent should be able to:
 
 ## Domain Model Review Outcome
 
-The first domain model review is recorded in [[domain-model-review|Domain Model Review]]. It keeps the top-level schema stable for now, treats `order-execution` as an active lane inside `projects` and `governance`, and defers first-class domains for `agent-workflows`, `operating-model`, `lead-intelligence`, `installed-base`, and `order-execution` until more compiled page density supports the move.
+The first domain model review is recorded in [[domain-model-review|Domain Model Review]]. It keeps the top-level schema stable for now, treats `order-execution` as an active lane inside `projects` and `governance`, treats `hunter-sales` as an active sales sub-lane, and defers first-class domains for `agent-workflows`, `operating-model`, `lead-intelligence`, `installed-base`, and `order-execution` until more compiled page density supports the move.

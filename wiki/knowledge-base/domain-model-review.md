@@ -15,6 +15,7 @@ sources:
   - wiki/knowledge-base/distributor-workflow-map.md
   - wiki/knowledge-base/agent-capability-map.md
   - wiki/sales/lead-to-closed-won-workflow.md
+  - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/projects/close-won-to-delivery-workflow.md
 related:
   - [[roadmap-import-plan|Roadmap Import Plan]]
@@ -23,6 +24,7 @@ related:
   - [[agent-capability-map|Agent Capability Map]]
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
+  - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
   - [[../projects/order-execution-state-model|Order Execution State Model]]
@@ -59,7 +61,7 @@ The strongest domain-expansion signal is `order-execution`. The first compiled p
 | `order-execution` | Active synthesis lane, but not a top-level domain yet. | `wiki/projects/` for order-readiness and execution workflow pages; `wiki/governance/` for gate rules, human review boundaries, and evaluation patterns. | FSCR-008 shows closed-won, order-ready, delivery-ready, install-complete, and relationship-ready as distinct states. FSCR-009 and FSCR-010 are now synthesized into readiness, state-model, and gate-rule pages. FSCR-011 remains the evaluation-fixture follow-on. | Create `wiki/order-execution/` only if the new pages make `projects` and `governance` navigation too broad or force repeated cross-domain explanations. |
 | `operating-model` | Keep as a canonical lens, not a new domain. | `wiki/company/commercial-fitness-distributor-operating-model.md`, linked from root and workflow pages. | FSCR-002 and FSCR-003 establish the parent lifecycle and data-object spine, but the current page works as the parent map without a new folder. | Promote only if separate lifecycle, role, value-stream, and data-object pages become hard to maintain inside `company` and `knowledge-base`. |
 | `agent-workflows` | Keep as a knowledge-base answerability lens. | `wiki/knowledge-base/agent-capability-map.md` and future knowledge-base pages about agent navigation, boundaries, and build bridges. | FSCR-006 identifies capability clusters across domains, but these are not final product agents and should not be named as a product surface too early. | Promote only after multiple compiled pages need a shared home for agent workflow contracts rather than domain workflow content. |
-| `lead-intelligence` or `prospecting` | Defer as a sales sub-lane. | `wiki/sales/` when target-state sales pages are mature enough. | FSCR-012 is useful but includes provisional hunter-sales validation labels, so promoting it now would risk turning tentative policy into structure. | Reassess after lead qualification, source intelligence, and hunter-sales patterns have validated compiled pages. |
+| `lead-intelligence` or `prospecting` | Active sales sub-lane, but not a top-level domain yet. | `wiki/sales/lead-to-closed-won-workflow.md` and `wiki/sales/hunter-sales-existing-multifamily-pattern.md`. | FSCR-012 is now synthesized as a `design-hypothesis` page with provisional hunter-sales validation labels, so promoting it now would risk turning tentative policy into structure. | Reassess after lead qualification, source intelligence, and hunter-sales patterns have validated compiled pages and repeated navigation pressure. |
 | `installed-base` | Defer as a lifecycle lens across service, equipment, and sales. | `wiki/service/`, `wiki/equipment/`, and relationship-continuity sections until sourced service/warranty pages exist. | The operating model says installed assets matter, but the current compiled evidence is strategic rather than enough for durable rules. | Reassess after service, warranty, parts, replacement, or post-install relationship pages are sourced. |
 
 ## Current Order-Execution Lane
@@ -75,12 +77,21 @@ These pages preserve the domain split:
 - `projects` explains workflow state, readiness behavior, owners, and handoffs.
 - `governance` explains blocker/warning policy, review boundaries, overrides, and evaluation expectations.
 
+## Current Hunter-Sales Lane
+
+The hunter-sales lane now has one compiled design-hypothesis page under `sales`:
+
+- [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]].
+
+This page strengthens prospecting and lead-intelligence answerability without creating a top-level domain. Its source family includes candidate defaults, synthetic scenarios, and provisional fixture labels, so the correct domain decision is still to keep the lane inside `sales` until validated examples create stronger structure pressure.
+
 ## Next Review Decision
 
-The next coherent slice should choose between two options:
+The next coherent slice should choose between three options:
 
 1. Review FSCR-011 if the next priority is evaluation discipline for order-execution gates.
-2. Reassess the domain model if the new pages already create enough navigation pressure to justify a top-level `order-execution` domain.
+2. Validate the hunter-sales sub-lane with real or sanitized dealer examples before promoting policy defaults or fixture expectations.
+3. Reassess the domain model if the new pages already create enough navigation pressure to justify a top-level `order-execution`, `lead-intelligence`, or `prospecting` domain.
 
 The current recommendation is to keep the top-level domain model stable through at least one follow-on review.
 

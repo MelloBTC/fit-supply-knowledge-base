@@ -69,6 +69,7 @@ Completed on 2026-06-27:
 | FSCR-008 | Imported to `raw/imports/fast-os-capability-roadmap/regency-close-won-to-delivery-workflow-decomposition-v1.md` and synthesized into `wiki/projects/close-won-to-delivery-workflow.md`. |
 | FSCR-009 | Synthesized into `wiki/projects/order-execution-readiness-agent-requirements.md`. |
 | FSCR-010 | Synthesized into `wiki/projects/order-execution-state-model.md` and `wiki/governance/order-execution-transition-gate-rules.md`. |
+| FSCR-012 | Synthesized into `wiki/sales/hunter-sales-existing-multifamily-pattern.md` as a `design-hypothesis` page; machine-readable fixture bundle remains upstream. |
 | FSCR-004 | Preserved as an upstream dependency owned by `fast-os-knowledge-base`; not locally synthesized. |
 
 ## What Not To Do Yet

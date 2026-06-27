@@ -13,6 +13,7 @@ related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
   - [[lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
+  - [[hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
 agent_answerability:
   - What belongs in the Sales domain?
   - Which starter pages should be created first for this domain?
@@ -38,6 +39,11 @@ Sales knowledge connects customer needs, qualification, quoting, proposals, fina
 ## Current Pages
 
 - [[lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
+- [[hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
+
+## Active Lanes
+
+`hunter-sales` is an active sales sub-lane for target discovery, prospecting policy, reactivation, nurture, and human-reviewed outreach. Keep it inside `sales` for now. Do not promote a top-level `lead-intelligence` or `prospecting` domain until validated pages create enough repeated navigation or ownership pressure.
 
 ## Starter Pages To Add
 

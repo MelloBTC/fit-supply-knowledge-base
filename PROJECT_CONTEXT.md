@@ -74,6 +74,8 @@ The first durable roadmap synthesis pass now exists in `wiki/company/commercial-
 
 The order-execution synthesis lane now exists in `wiki/projects/order-execution-readiness-agent-requirements.md`, `wiki/projects/order-execution-state-model.md`, and `wiki/governance/order-execution-transition-gate-rules.md`.
 
+The first hunter-sales / prospecting synthesis lane now exists in `wiki/sales/hunter-sales-existing-multifamily-pattern.md`. It is intentionally a `design-hypothesis` page because the source family contains candidate policy defaults, provisional scenario labels, and fixture-readiness notes that still need dealer validation.
+
 The domain model review now exists in `wiki/knowledge-base/domain-model-review.md`. It keeps the top-level schema stable, treats `order-execution` as an active lens inside `projects` and `governance`, and defers top-level domains for `agent-workflows`, `operating-model`, `lead-intelligence`, `installed-base`, and `order-execution` until compiled page density supports the move.
 
-The next durable step is to review FSCR-011 only if evaluation discipline for order-execution gates is the priority; otherwise reassess whether the new order-execution pages create enough domain pressure for a future top-level domain or continue the next roadmap workflow family. Treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.
+The next durable step is to review FSCR-011 only if evaluation discipline for order-execution gates is the priority. Otherwise, validate the hunter-sales sub-lane with real or sanitized dealer examples before promoting policy defaults, reassess domain pressure, or continue the next roadmap workflow family. Treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.
