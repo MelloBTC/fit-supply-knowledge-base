@@ -1,7 +1,7 @@
 ---
 title: Order Execution Readiness Agent Requirements
 type: Workflow
-domain: projects
+domain: order-execution
 knowledge_scope: target-state
 status: Draft
 last_reviewed:
@@ -9,14 +9,14 @@ reviewed_by:
 sources:
   - raw/imports/fast-os-capability-roadmap-source-inventory.md#fscr-009
   - raw/imports/fast-os-capability-roadmap-source-inventory.md#fscr-010
-  - wiki/projects/close-won-to-delivery-workflow.md
+  - wiki/order-execution/close-won-to-delivery-workflow.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-readiness-agent-requirements-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-state-transition-model-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-transition-gate-rules-v1.md
 related:
   - [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[order-execution-state-model|Order Execution State Model]]
-  - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
   - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[../knowledge-base/agent-capability-map|Agent Capability Map]]
   - [[../knowledge-base/distributor-workflow-map|Distributor Workflow Map]]

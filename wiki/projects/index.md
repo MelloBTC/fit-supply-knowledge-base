@@ -10,58 +10,58 @@ sources:
   - schema.md
   - PROJECT_CONTEXT.md
   - raw/imports/fast-os-capability-roadmap-source-inventory.md
+  - wiki/order-execution/index.md
   - wiki/sales/freight-install-quote-readiness.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
+  - [[../order-execution/index|Order Execution]]
   - [[../governance/index|Governance]]
   - [[../knowledge-base/domain-model-review|Domain Model Review]]
-  - [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
-  - [[order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
-  - [[order-execution-state-model|Order Execution State Model]]
-  - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
-  - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
 agent_answerability:
   - What belongs in the Projects domain?
-  - Which starter pages should be created first for this domain?
+  - Which project-lifecycle pages still belong outside the Order Execution domain?
 tags:
   - domain-index
   - projects
-provenance_notes: Starter domain index created during target-state skeleton setup; updated 2026-06-27 to link freight/install quote-readiness assumptions into the project/order-execution lane.
+provenance_notes: Starter domain index created during target-state skeleton setup; updated 2026-06-27 after the bounded order-execution pilot migration moved post-close readiness, state, and gate pages into wiki/order-execution/.
 ---
 
 # Projects
 
-Projects knowledge covers the target-state lifecycle after a sale becomes work to deliver, including handoffs, scheduling, risk points, and completion patterns.
+Projects knowledge covers broader project lifecycle, handoffs, scheduling, risk points, and delivery coordination patterns that are not yet specific enough to belong in the promoted Order Execution domain.
 
 ## Focus Areas
 
-- Project lifecycle
-- Sales to project handoff
+- Project lifecycle beyond the current order-execution lane
+- Sales to project handoff patterns
 - Scheduling and delivery coordination
-- Installation and closeout
+- Installation and closeout patterns
 - Risk patterns and escalation points
 - Agent-assisted project coordination
 
 ## Current Pages
 
-- [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
-- [[order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
-- [[order-execution-state-model|Order Execution State Model]]
+No standalone project-domain pages exist yet after the bounded order-execution pilot migration.
 
-## Active Lens
+## Related Order Execution Pages
 
-`order-execution` is the active synthesis lens inside this domain. The first order-readiness and execution-state pages now live under `projects`, with governance-heavy gate policy linked from [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] and evaluation discipline linked from [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]].
+The first post-close project workflow pages now live in [[../order-execution/index|Order Execution]]:
 
-Do not create a top-level `order-execution` domain yet. Reassess only after these pages and any next synthesis page create enough repeated navigation or ownership logic to justify the move.
+- [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+- [[../order-execution/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
+- [[../order-execution/order-execution-state-model|Order Execution State Model]]
+- [[../order-execution/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
 
-[[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]] remains stored in `sales`, but project/order-execution pages should treat its approved F&I assumptions as part of the handoff context that prevents post-close reconstruction.
+[[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]] remains stored in `sales`, but order-execution pages should treat its reviewed F&I assumptions as part of the handoff context that prevents post-close reconstruction.
 
 ## Starter Pages To Add
 
 - `project-lifecycle.md`
 - `handoff-checklist.md`
 - `delivery-and-installation.md`
+
+Add these only when a source-backed or answerability-driven project page does not already belong in `order-execution`, `sales`, `service`, or another stronger lane.
 
 ## Maintenance Notes
 

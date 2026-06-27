@@ -8,18 +8,18 @@ last_reviewed:
 reviewed_by:
 sources:
   - raw/imports/fast-os-capability-roadmap-source-inventory.md#fscr-011
-  - wiki/projects/order-execution-readiness-agent-requirements.md
-  - wiki/projects/order-execution-state-model.md
-  - wiki/governance/order-execution-transition-gate-rules.md
+  - wiki/order-execution/order-execution-readiness-agent-requirements.md
+  - wiki/order-execution/order-execution-state-model.md
+  - wiki/order-execution/order-execution-transition-gate-rules.md
   - wiki/knowledge-base/wiki-to-agent-build-bridge.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-gate-evaluation-checklist-and-eval-spec-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-gate-evaluation-synthetic-test-suite-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/fixtures/order-execution-gate-evaluation-v1/README.md
 related:
-  - [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
-  - [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
-  - [[../projects/order-execution-state-model|Order Execution State Model]]
-  - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+  - [[../order-execution/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[../order-execution/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
+  - [[../order-execution/order-execution-state-model|Order Execution State Model]]
+  - [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[../knowledge-base/wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]]
   - [[../knowledge-base/agent-answerability-targets|Agent Answerability Targets]]
   - [[../knowledge-base/information-architecture-pressure-test|Information Architecture Pressure Test]]
@@ -188,10 +188,10 @@ The wiki should not:
 
 Use this page before moving any workflow toward build-facing requirements. It is especially relevant when a page claims that AI can classify, route, recommend, monitor, draft, or evaluate a transition.
 
-For now, this page strengthens the existing order-execution lane without changing the top-level folder structure:
+For now, this page supports the promoted order-execution domain while staying in governance:
 
-- `projects` continues to own order-execution state and readiness behavior.
-- `governance` owns gate rules, human review boundaries, overrides, and evaluation discipline.
+- `order-execution` owns post-close workflow state, readiness behavior, and lane-specific transition gate rules.
+- `governance` owns fixture discipline, human review boundaries, override expectations, trace expectations, and cross-workflow evaluation patterns.
 - `knowledge-base` owns the bridge from mature wiki knowledge to future build-facing requirements.
 
-Do not create a top-level `order-execution` or `agent-workflows` folder from this page alone. Reassess only when repeated navigation, ownership, or page-density pressure makes the current homes hard to maintain.
+Do not create an `agent-workflows` or `agent-readiness` folder from this page alone. Reassess only when repeated navigation, ownership, or page-density pressure makes the current homes hard to maintain.

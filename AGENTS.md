@@ -29,7 +29,7 @@ When beginning work in this repo, read these files first:
 
 - Start with `wiki/index.md` and the relevant domain index.
 - Use wikilinks and the defined taxonomy to traverse related concepts.
-- The `equipment/` domain is especially important and should have strong ontology and relationships.
+- The `equipment/` domain is especially important and should have strong ontology and relationships. The `order-execution/` domain is the first promoted workflow lane and should own post-close readiness state, transition gates, and delivery/install execution pages.
 - Treat `current-state/` as a quiet lane for actual Fit Supply current-state notes, not the main workstream.
 - When a domain page does not exist yet, add it only if there is a clear source-backed or answerability-driven reason.
 - Expand the domain model when roadmap inventory shows important workflow areas that do not fit the starter skeleton.

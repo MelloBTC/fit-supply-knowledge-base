@@ -13,16 +13,17 @@ related:
   - [[../knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
   - [[../knowledge-base/agent-capability-map|Agent Capability Map]]
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
-  - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+  - [[../order-execution/index|Order Execution]]
+  - [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
 agent_answerability:
   - What is the target-state operating model for a commercial fitness equipment distributor?
   - Which lifecycle stages should future workflow and agent pages map back to?
-  - Which data object families need to persist across sales, design, projects, service, and relationship growth?
+  - Which data object families need to persist across sales, design, order-execution, service, and relationship growth?
 tags:
   - operating-model
   - distributor-lifecycle
   - roadmap-derived
-provenance_notes: Synthesized from FSCR-002 as target-state design. This is not a claim about current Fit Supply operations.
+provenance_notes: Synthesized from FSCR-002 as target-state design. This is not a claim about current Fit Supply operations. Updated 2026-06-27 after order-execution became the first promoted workflow domain.
 ---
 
 # Commercial Fitness Distributor Operating Model
@@ -60,9 +61,9 @@ The first product wedge can stay sales-first, but the knowledge model cannot sto
 | 5. Site, room, and project context capture | What must be true about the space before design, quote, or install? | `design`, `projects`, `equipment` | Site, room, measurements, photos, constraints, access, existing equipment, and customer goals. |
 | 6. Solution design and product selection | What equipment solution fits the customer, space, budget, timeline, and distributor strategy? | `design`, `equipment`, `sales` | Layouts, product options, manufacturer fit, warranty/availability, substitutes, and product-selection rationale. |
 | 7. Quote, pricing, margin, and proposal | Can the solution become an accurate, profitable, persuasive offer? | `sales`, `equipment`, `governance` | Quote lines, pricing provenance, freight/install estimates, tax, margin, terms, proposal assets, and review events. |
-| 8. Close, approval, and quote-to-order handoff | What happens when the customer says yes, and what must not be lost? | `sales`, `projects` | Approval proof, accepted quote version, PO or signed quote, handoff checklist, order-readiness input, and customer confirmation. |
-| 9. Procurement, vendor, freight, and order coordination | How does the right equipment get ordered, confirmed, shipped, and tracked? | `projects` | Vendor POs, acknowledgments, lead times, shipment status, payment milestones, customer updates, and exceptions. |
-| 10. Delivery, installation, and project completion | How does the equipment arrive, get installed, and become a completed customer outcome? | `projects`, `service` | Site readiness, delivery constraints, installer schedule, punch list, completion photos, signoff, and installed-product records. |
+| 8. Close, approval, and quote-to-order handoff | What happens when the customer says yes, and what must not be lost? | `sales`, `order-execution` | Approval proof, accepted quote version, PO or signed quote, handoff checklist, order-readiness input, and customer confirmation. |
+| 9. Procurement, vendor, freight, and order coordination | How does the right equipment get ordered, confirmed, shipped, and tracked? | `order-execution` | Vendor POs, acknowledgments, lead times, shipment status, payment milestones, customer updates, and exceptions. |
+| 10. Delivery, installation, and project completion | How does the equipment arrive, get installed, and become a completed customer outcome? | `order-execution`, `service` | Site readiness, delivery constraints, installer schedule, punch list, completion photos, signoff, and installed-product records. |
 | 11. Warranty, service, preventive maintenance, and installed-base lifecycle | How does sold equipment become durable account knowledge? | `service`, `equipment` | Installed assets, serials, warranty, service requests, work orders, PM schedules, lifecycle status, and replacement triggers. |
 | 12. Account expansion, renewal, replacement, and future demand | How does completed work create future revenue? | `sales`, `service`, `company` | Lifecycle signals, service history, satisfaction, replacement opportunities, referrals, and relationship memory. |
 
@@ -118,4 +119,4 @@ This operating model is a useful parent map, but several assumptions still need 
 
 ## Wiki Use
 
-Use this page as the parent map when deciding where new pages belong. Domain pages should make their lifecycle position explicit and should link back to this operating model when their scope crosses sales, design, projects, equipment, service, or governance.
+Use this page as the parent map when deciding where new pages belong. Domain pages should make their lifecycle position explicit and should link back to this operating model when their scope crosses sales, design, order-execution, projects, equipment, service, or governance.

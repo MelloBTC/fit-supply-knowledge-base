@@ -13,13 +13,15 @@ sources:
   - raw/imports/fast-os-capability-roadmap/regency-close-won-to-delivery-workflow-decomposition-v1.md
   - wiki/sales/source-aware-lead-intake-routing.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/order-execution/index.md
 related:
   - [[distributor-workflow-map|Distributor Workflow Map]]
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
-  - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+  - [[../order-execution/index|Order Execution]]
+  - [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[agent-answerability-targets|Agent Answerability Targets]]
 agent_answerability:
   - Which agent capability clusters should the wiki support before productized agents are named?
@@ -29,7 +31,7 @@ tags:
   - agent-capabilities
   - answerability
   - roadmap-derived
-provenance_notes: Synthesized from FSCR-006. Cluster names are candidate capability boundaries, not final product agent names.
+provenance_notes: Synthesized from FSCR-006. Cluster names are candidate capability boundaries, not final product agent names. Updated 2026-06-27 after order-execution became the first promoted workflow domain.
 ---
 
 # Agent Capability Map

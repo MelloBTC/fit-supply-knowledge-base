@@ -12,13 +12,14 @@ sources:
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/05-capability-roadmap/commercial-fitness-dealer-operating-model-v1.md
   - wiki/sales/source-aware-lead-intake-routing.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/order-execution/index.md
 related:
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
   - [[agent-capability-map|Agent Capability Map]]
   - [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
-  - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+  - [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[roadmap-import-plan|Roadmap Import Plan]]
 agent_answerability:
   - Which lifecycle stage does a workflow, source artifact, or agent candidate belong to?
@@ -28,7 +29,7 @@ tags:
   - workflow-map
   - lifecycle
   - roadmap-derived
-provenance_notes: Synthesized from FSCR-003 as a wiki navigation layer, not copied as the full roadmap artifact table of contents.
+provenance_notes: Synthesized from FSCR-003 as a wiki navigation layer, not copied as the full roadmap artifact table of contents. Updated 2026-06-27 after the bounded order-execution pilot migration.
 ---
 
 # Distributor Workflow Map
@@ -70,8 +71,8 @@ Real workflows can loop backward. Site survey can change qualification, layout c
 | Pricing and Quote Creation | Can the offer be priced accurately, profitably, and with correct freight/install assumptions? | `sales`, `governance` | Freight/install quote readiness is now synthesized in [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]; full quote/pricing policy remains deferred. | Avoid confident product/pricing claims without source/freshness controls; customer-facing F&I values require review. |
 | Proposal Assembly | How does the quote become a persuasive, reviewed customer-facing package? | `sales` | Covered in lead-to-closed-won workflow at a case-backed level. | Deeper proposal assembly decomposition only if implementation needs it. |
 | Follow-Up and Objection Handling | What happens after the proposal is sent, and how does the system prevent silent stalls? | `sales` | Covered in lead-to-closed-won and agent capability map. | Follow-up state should distinguish bid collection from no response. |
-| Close and Procurement | What proves the customer commitment, and what must be complete before operations acts? | `sales`, `projects` | Strong boundary established. | Closed-won and order-ready must remain separate states. |
-| Delivery and Install | How does equipment get received, scheduled, installed, accepted, and documented? | `projects`, `service` | Covered in close-won-to-delivery workflow at a case-backed level. | Order-execution gates and fixture artifacts can be synthesized in a later pass. |
+| Close and Procurement | What proves the customer commitment, and what must be complete before operations acts? | `sales`, `order-execution` | Strong boundary established. | Closed-won and order-ready must remain separate states. |
+| Delivery and Install | How does equipment get received, scheduled, installed, accepted, and documented? | `order-execution`, `service` | Covered in [[../order-execution/index|Order Execution]] through the close-won workflow, readiness requirements, state model, and transition gate rules. | Evaluation fixture discipline remains in governance. |
 | Service and Warranty | How does installed equipment become serviceable account knowledge? | `service`, `equipment` | Parent model only. | Defer deep service/warranty detail until a real case or upstream source work supports it. |
 | Relationship Expansion | How does completed work create repeat revenue and future demand? | `sales`, `service`, `company` | Strategic direction only. | Needs account lifecycle trigger cases before durable rules are created. |
 
@@ -104,6 +105,6 @@ Real workflows can loop backward. Site survey can change qualification, layout c
 3. Use [[agent-capability-map|Agent Capability Map]] to keep AI support framed as capability clusters, not premature product agents.
 4. Use [[../sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]] to classify lead signals before routing into quote readiness, research/enrichment, pursuit planning, or follow-up.
 5. Use [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]] when quote completeness depends on freight, install, extraction, review/provenance, or downstream handoff assumptions.
-6. Use [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]] and [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]] as the first case-backed workflow pages.
+6. Use [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]] and [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]] as the first case-backed workflow pages.
 7. Defer deep equipment/catalog answerability until `fast-os-knowledge-base` has mature outputs to evaluate.
-8. Consider a later `order-execution` domain only after order-readiness, state-transition, and gate-rule pages become dense enough to outgrow `projects`.
+8. Use [[../order-execution/index|Order Execution]] for post-close readiness, state-transition, gate-rule, delivery/install, completion, and relationship-ready navigation; do not extend the broader folder migration without new evidence and approval.

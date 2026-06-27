@@ -14,7 +14,7 @@ related:
   - [[../knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
   - [[../knowledge-base/agent-capability-map|Agent Capability Map]]
   - [[../company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]]
-  - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+  - [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[freight-install-quote-readiness|Freight And Install Quote Readiness]]
 agent_answerability:
   - What must happen between a campaign response or lead signal and closed-won before operations can safely act?
@@ -32,7 +32,7 @@ provenance_notes: Synthesized from sanitized Regency roadmap artifact FSCR-007. 
 
 This page captures the target-state workflow from a qualified lead signal through approved quote and closed-won. The first case-backed source is the Regency at Dell Ranch workflow, which began as an outbound campaign response and ended at the order-readiness boundary.
 
-This is not the post-close delivery workflow. Post-close work continues in [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]].
+This is not the post-close delivery workflow. Post-close work continues in [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]].
 
 ## Business Outcome
 

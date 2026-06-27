@@ -17,9 +17,9 @@ sources:
   - wiki/knowledge-base/wiki-to-agent-build-bridge.md
   - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/sales/freight-install-quote-readiness.md
-  - wiki/projects/order-execution-readiness-agent-requirements.md
-  - wiki/projects/order-execution-state-model.md
-  - wiki/governance/order-execution-transition-gate-rules.md
+  - wiki/order-execution/order-execution-readiness-agent-requirements.md
+  - wiki/order-execution/order-execution-state-model.md
+  - wiki/order-execution/order-execution-transition-gate-rules.md
   - wiki/governance/agent-evaluation-fixtures.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
@@ -36,10 +36,10 @@ related:
   - [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
-  - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
-  - [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
-  - [[../projects/order-execution-state-model|Order Execution State Model]]
-  - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+  - [[../order-execution/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
+  - [[../order-execution/order-execution-state-model|Order Execution State Model]]
+  - [[../order-execution/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
   - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
 agent_answerability:
   - What should future agents be able to answer or do using this knowledge base?
@@ -48,7 +48,7 @@ tags:
   - answerability
   - target-state
   - agent-design
-provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, FSCR-012, FSCR-013, FSCR-016, and FSCR-017. Updated 2026-06-27 after the FSCR-017 freight/install quote-readiness synthesis.
+provenance_notes: Initial scaffold refined after first roadmap synthesis pass from FSCR-002, FSCR-003, FSCR-006, FSCR-007, FSCR-008, FSCR-009, FSCR-010, FSCR-012, FSCR-013, FSCR-016, and FSCR-017. Updated 2026-06-27 after the FSCR-017 freight/install quote-readiness synthesis and bounded order-execution pilot migration.
 ---
 
 # Agent Answerability Targets
@@ -178,4 +178,4 @@ A future agent should be able to:
 
 ## Domain Model Review Outcome
 
-The first domain model review is recorded in [[domain-model-review|Domain Model Review]]. It keeps the top-level schema stable for now, treats `order-execution` as an active lane inside `projects` and `governance`, treats `hunter-sales` as an active sales sub-lane, and defers first-class domains for `agent-workflows`, `operating-model`, `lead-intelligence`, `installed-base`, and `order-execution` until more compiled page density supports the move.
+The first domain model review is recorded in [[domain-model-review|Domain Model Review]]. It records `order-execution` as the first bounded promoted workflow domain, treats `hunter-sales`, `source-intelligence`, `lead-intake`, and `quote-readiness` as active sales sub-lanes, and defers first-class domains for `agent-workflows`, `agent-readiness`, `operating-model`, `lead-intelligence`, `quote-readiness`, `installed-base`, and `accounts-and-sites` until more compiled page density supports the move.

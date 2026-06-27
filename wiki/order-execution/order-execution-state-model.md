@@ -1,7 +1,7 @@
 ---
 title: Order Execution State Model
 type: Workflow
-domain: projects
+domain: order-execution
 knowledge_scope: target-state
 status: Draft
 last_reviewed:
@@ -9,7 +9,7 @@ reviewed_by:
 sources:
   - raw/imports/fast-os-capability-roadmap-source-inventory.md#fscr-010
   - raw/imports/fast-os-capability-roadmap-source-inventory.md#fscr-009
-  - wiki/projects/close-won-to-delivery-workflow.md
+  - wiki/order-execution/close-won-to-delivery-workflow.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-state-transition-model-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-transition-gate-rules-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-readiness-agent-requirements-v1.md
@@ -17,7 +17,7 @@ sources:
 related:
   - [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
   - [[order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
-  - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
   - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
   - [[../knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
@@ -38,7 +38,7 @@ provenance_notes: Synthesized from roadmap FSCR-010. This is a target-state stat
 
 This page defines the target-state state model for order execution. It exists to prevent false progress between customer approval, order handoff, vendor ordering, site readiness, delivery/install, completion, and relationship follow-up.
 
-The model should be read with [[order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]] and [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
+The model should be read with [[order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]] and [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
 
 ## Core Principle
 
@@ -162,11 +162,11 @@ This is not final implementation schema. It is the minimum event shape implied b
 
 ## Governance Relationship
 
-This page defines the project-state lane. The gate policy lives in [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
+This page defines the order-execution state lane. The lane-specific gate policy lives in [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
 
 As a rule of thumb:
 
-- `projects` explains the workflow state, owner handoffs, and business meaning.
-- `governance` explains blocker/warning policy, review boundaries, override records, evaluation expectations, and synthetic-fixture discipline through [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]].
+- `order-execution` explains post-close workflow state, owner handoffs, gate behavior, and business meaning.
+- `governance` explains cross-workflow blocker/warning discipline, review boundaries, override records, evaluation expectations, and synthetic-fixture discipline through [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]].
 
-Do not promote `order-execution` into a new top-level domain yet. Use this page, the readiness requirements page, and the governance gate page as the compiled evidence for whether that future move is justified.
+Do not treat the promoted `order-execution` domain as approval for a broader `v0.4` migration. Use this page, the readiness requirements page, the gate rules page, and the domain review pages as the model for how future lane promotions should prove themselves.

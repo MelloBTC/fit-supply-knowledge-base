@@ -1,7 +1,7 @@
 ---
 title: Close Won To Delivery Workflow
 type: Workflow
-domain: projects
+domain: order-execution
 knowledge_scope: target-state
 status: Draft
 last_reviewed:
@@ -125,7 +125,7 @@ This workflow supports these capability clusters:
 - Customer communication and rep visibility.
 - Completion and relationship continuity.
 
-It also supports a future `order-execution` domain or lens if the project/order pages become too dense for `projects` alone.
+It now lives inside the promoted `order-execution` domain, which is the pilot home for post-close readiness, state, gate, delivery/install, completion, and relationship-ready navigation.
 
 ## Schema Implications
 

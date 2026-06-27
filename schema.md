@@ -19,7 +19,7 @@ The knowledge base will catalogue distributor systems, operating patterns, best 
 - Compiled wiki pages should be easy for both humans and agents to navigate.
 - Equipment knowledge needs strong taxonomy, compatibility, and freshness discipline.
 - Governance should prevent false confidence, stale specs, and duplicated pages.
-- The starter domain model is provisional and should expand when source inventory shows missing workflow areas.
+- The starter domain model is provisional and should expand when source inventory shows missing workflow areas; `order-execution` is the first bounded promoted lane after the 2026-06-27 structure audit.
 
 ## 1. LLM Wiki Architecture
 
@@ -36,7 +36,8 @@ fit-supply-knowledge-base/
 |   |-- sales/                    # Sales processes and customer types
 |   |-- design/                   # Space planning and layout workflows
 |   |-- equipment/                # Equipment taxonomy and specs
-|   |-- projects/                 # Project lifecycle and handoffs
+|   |-- projects/                 # Broader project lifecycle and handoffs
+|   |-- order-execution/          # Post-close readiness state, gates, and delivery/install execution
 |   |-- service/                  # Maintenance and support
 |   |-- current-state/            # Deferred lane for actual current-state notes
 |   `-- knowledge-base/           # Meta knowledge about this wiki
@@ -62,7 +63,8 @@ fit-supply-knowledge-base/
 | `sales` | Lead qualification, customer personas, quoting, financing, proposals | High |
 | `design` | Space planning, 2D/3D workflows, common layouts by facility type | High |
 | `equipment` | Taxonomy, specifications, condition, compatibility, model knowledge | Highest |
-| `projects` | End-to-end project lifecycle, handoffs, timelines, risk patterns | High |
+| `projects` | Broader project lifecycle, handoffs, timelines, risk patterns | High |
+| `order-execution` | Post-close readiness state, transition gates, vendor order, site readiness, delivery/install execution, completion, relationship-ready handoff | High |
 | `service` | Maintenance contracts, service workflows, parts, technician coordination | High |
 | `current-state` | Actual Fit Supply current-state notes, deferred until needed | Low |
 | `governance` | Knowledge operations, review process, freshness, conflict boundaries | High |
@@ -91,7 +93,7 @@ Use this frontmatter for compiled wiki pages:
 ---
 title:
 type:                  # Concept | Process | Equipment | Customer-Persona | Workflow | Governance | Index | Answerability-Target
-domain:               # company | sales | design | equipment | projects | service | current-state | governance | knowledge-base
+domain:               # company | sales | design | equipment | projects | order-execution | service | current-state | governance | knowledge-base
 knowledge_scope:       # target-state | reference-pattern | design-hypothesis | current-state
 status:                # Draft | Reviewed | Approved | Deprecated
 last_reviewed:

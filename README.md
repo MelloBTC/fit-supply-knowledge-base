@@ -32,7 +32,8 @@ fit-supply-knowledge-base/
 |   |-- sales/            # Sales processes, customer types, quoting
 |   |-- design/           # Space planning and design workflows
 |   |-- equipment/        # Equipment taxonomy and specs
-|   |-- projects/         # Project lifecycle and handoffs
+|   |-- projects/         # Broader project lifecycle and handoffs
+|   |-- order-execution/  # Post-close readiness state, gates, delivery/install execution
 |   |-- service/          # Service, support, maintenance, parts
 |   |-- current-state/    # Deferred lane for actual Fit Supply current-state notes
 |   `-- knowledge-base/   # Meta knowledge about this wiki
@@ -53,4 +54,4 @@ fit-supply-knowledge-base/
 
 ## Current Priority
 
-The first domain model review is complete in `wiki/knowledge-base/domain-model-review.md`. Keep the top-level wiki domains stable for now, deepen `order-execution` as the next synthesis lane inside `projects` and `governance`, and revisit a dedicated top-level domain only after the next order-execution pages create enough compiled page density to justify it. Treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.
+The order-execution pilot migration is complete. Use `wiki/order-execution/index.md` as the home for post-close readiness, transition gates, delivery/install execution, completion, and relationship-ready handoff. Keep broader `v0.4` migration gated, and treat commercial equipment knowledge-layer work as an upstream dependency to revisit after `fast-os-knowledge-base` reaches a useful maturity point.

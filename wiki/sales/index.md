@@ -12,9 +12,11 @@ sources:
   - raw/imports/fast-os-capability-roadmap-source-inventory.md
   - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/order-execution/index.md
 related:
   - [[../index|Fit Supply Knowledge Base Index]]
   - [[../governance/index|Governance]]
+  - [[../order-execution/index|Order Execution]]
   - [[source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
   - [[hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
@@ -25,7 +27,7 @@ agent_answerability:
 tags:
   - domain-index
   - sales
-provenance_notes: Starter domain index created during target-state skeleton setup; updated 2026-06-27 to reflect the hunter-sales validation-status checkpoint, source-aware lead-intake example-first outcome capture, and freight/install quote-readiness synthesis.
+provenance_notes: Starter domain index created during target-state skeleton setup; updated 2026-06-27 to reflect the hunter-sales validation-status checkpoint, source-aware lead-intake example-first outcome capture, freight/install quote-readiness synthesis, and order-execution pilot migration.
 ---
 
 # Sales
@@ -54,7 +56,7 @@ Sales knowledge connects customer needs, qualification, quoting, proposals, fina
 
 `hunter-sales` is an active sales sub-lane for target discovery, prospecting policy, reactivation, nurture, and human-reviewed outreach. Keep it inside `sales` for now. The current validation-status checkpoint strengthens source-origin routing, service-to-sales replacement signals, grouped-property review, and active-workflow duplicate blocking. A dealer-backed Regency capture now anchors the active-workflow duplicate-block guardrail after outbound response, site visit, proposal, bid collection, approved quote, and closed-won states. A soft-negative split-candidate capture clarifies that negative replies need classification before hard suppression, but budget-window, no-response, manager-change, hard-stop scope, soft-negative, and sensitive-account rules still remain provisional until dealer examples validate them. Do not promote a top-level `lead-intelligence` or `prospecting` domain until validated pages create enough repeated navigation or ownership pressure.
 
-`quote-readiness` is now an active sales sub-lane for customer-facing quote completeness, especially freight, install, and extraction/removal assumptions. Keep [[freight-install-quote-readiness|Freight And Install Quote Readiness]] inside `sales` while linking it to `projects`, `governance`, and `equipment`. Do not promote a top-level `quote-readiness`, `pricing`, or `freight-install` domain until quote readiness pages multiply beyond this first compiled F&I page.
+`quote-readiness` is now an active sales sub-lane for customer-facing quote completeness, especially freight, install, and extraction/removal assumptions. Keep [[freight-install-quote-readiness|Freight And Install Quote Readiness]] inside `sales` while linking it to `order-execution`, `governance`, and `equipment`. Do not promote a top-level `quote-readiness`, `pricing`, or `freight-install` domain until quote readiness pages multiply beyond this first compiled F&I page.
 
 ## Starter Pages To Add
 

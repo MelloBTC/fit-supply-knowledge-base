@@ -1,7 +1,7 @@
 ---
 title: Order Execution Transition Gate Rules
 type: Governance
-domain: governance
+domain: order-execution
 knowledge_scope: target-state
 status: Draft
 last_reviewed:
@@ -9,17 +9,17 @@ reviewed_by:
 sources:
   - raw/imports/fast-os-capability-roadmap-source-inventory.md#fscr-010
   - raw/imports/fast-os-capability-roadmap-source-inventory.md#fscr-009
-  - wiki/projects/order-execution-state-model.md
-  - wiki/projects/order-execution-readiness-agent-requirements.md
+  - wiki/order-execution/order-execution-state-model.md
+  - wiki/order-execution/order-execution-readiness-agent-requirements.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-transition-gate-rules-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-state-transition-model-v1.md
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/06-agent-workflow-decomposition/order-execution-readiness-agent-requirements-v1.md
 related:
-  - [[../projects/order-execution-state-model|Order Execution State Model]]
-  - [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
-  - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
-  - [[source-manifest|Source Manifest]]
-  - [[agent-evaluation-fixtures|Agent Evaluation Fixtures]]
+  - [[order-execution-state-model|Order Execution State Model]]
+  - [[order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
+  - [[close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+  - [[../governance/source-manifest|Source Manifest]]
+  - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[../knowledge-base/domain-model-review|Domain Model Review]]
 agent_answerability:
   - Which facts should block, warn, monitor, or inform an order-execution state transition?
@@ -191,7 +191,7 @@ Future implementation should be testable against:
 - Completion proof versus exception separation.
 - Installed-base truth after substitution.
 
-Minimum trace data should include input sources, extracted facts and confidence, active gate, blocker/warning decision, owner assignment, draft or recommendation, human review result, transition or hold reason, rep visibility event, and override reason. The broader synthetic-fixture and trace discipline is compiled in [[agent-evaluation-fixtures|Agent Evaluation Fixtures]].
+Minimum trace data should include input sources, extracted facts and confidence, active gate, blocker/warning decision, owner assignment, draft or recommendation, human review result, transition or hold reason, rep visibility event, and override reason. The broader synthetic-fixture and trace discipline is compiled in [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]].
 
 ## Open Validation Needs
 

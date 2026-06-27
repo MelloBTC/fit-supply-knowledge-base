@@ -13,6 +13,8 @@ sources:
   - wiki/sales/hunter-sales-existing-multifamily-pattern.md
   - wiki/governance/agent-evaluation-fixtures.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/order-execution/index.md
+  - wiki/knowledge-base/information-architecture-pressure-test.md
 related:
   - [[agent-answerability-targets|Agent Answerability Targets]]
   - [[domain-model-review|Domain Model Review]]
@@ -22,6 +24,8 @@ related:
   - [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
   - [[../sales/freight-install-quote-readiness|Freight And Install Quote Readiness]]
+  - [[../order-execution/index|Order Execution]]
+  - [[information-architecture-pressure-test|Information Architecture Pressure Test]]
   - [[../index|Fit Supply Knowledge Base Index]]
 agent_answerability:
   - How should roadmap artifacts be evaluated before becoming wiki pages?
@@ -30,7 +34,7 @@ tags:
   - import-plan
   - roadmap
   - source-discovery
-provenance_notes: Initial process for read-only inventory of fast-os-capability-roadmap before importing or synthesizing content. Updated 2026-06-27 after the FSCR-017 freight/install quote-readiness synthesis without raw quote, pricing, task, or screenshot import.
+provenance_notes: Initial process for read-only inventory of fast-os-capability-roadmap before importing or synthesizing content. Updated 2026-06-27 after the FSCR-017 freight/install quote-readiness synthesis and bounded order-execution pilot migration.
 ---
 
 # Roadmap Import Plan
@@ -94,9 +98,9 @@ Completed on 2026-06-27:
 - FSCR-003 was synthesized into [[distributor-workflow-map|Distributor Workflow Map]].
 - FSCR-006 was synthesized into [[agent-capability-map|Agent Capability Map]].
 - FSCR-007 was selectively imported to `raw/imports/fast-os-capability-roadmap/regency-lead-to-closed-won-work-unit-decomposition-v1.md` and synthesized into [[../sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]].
-- FSCR-008 was selectively imported to `raw/imports/fast-os-capability-roadmap/regency-close-won-to-delivery-workflow-decomposition-v1.md` and synthesized into [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]].
-- FSCR-009 was synthesized into [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]].
-- FSCR-010 was synthesized into [[../projects/order-execution-state-model|Order Execution State Model]] and [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
+- FSCR-008 was selectively imported to `raw/imports/fast-os-capability-roadmap/regency-close-won-to-delivery-workflow-decomposition-v1.md` and synthesized into [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]].
+- FSCR-009 was synthesized into [[../order-execution/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]].
+- FSCR-010 was synthesized into [[../order-execution/order-execution-state-model|Order Execution State Model]] and [[../order-execution/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]].
 - FSCR-011 was synthesized into [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]] as target-state governance without importing the upstream machine-readable fixture bundle or opening product evaluator implementation.
 - FSCR-012 was synthesized into [[../sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] as a `design-hypothesis` page without importing the machine-readable fixture bundle, then updated with a validation-status checkpoint from real/sanitized example pressure tests, provisional probe results, a dealer-backed Regency active-workflow duplicate-block capture, and a soft-negative split-candidate capture.
 - FSCR-013 was synthesized into [[wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] as a `reference-pattern` bridge without creating product schema, agent architecture, live tooling, or implementation specs.
@@ -106,15 +110,16 @@ Completed on 2026-06-27:
 
 ## Current Order-Execution Synthesis Result
 
-The first domain model review is recorded in [[domain-model-review|Domain Model Review]].
+The first domain model review is recorded in [[domain-model-review|Domain Model Review]], and the structure decision is recorded in [[information-architecture-pressure-test|Information Architecture Pressure Test]].
 
-1. Keep the top-level wiki domain model unchanged for now.
-2. Treat `order-execution` as an active lens spanning `projects` and `governance`, not as a new domain.
-3. Use [[../projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]] for coordinator behavior and human-boundary expectations.
-4. Use [[../projects/order-execution-state-model|Order Execution State Model]] for state definitions and transition concepts.
-5. Use [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] for blocker, warning, review, override, and transition policy.
-6. Use [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]] for synthetic-fixture, policy-parameter, trace, and build-readiness evaluation discipline.
+1. Treat `order-execution` as the first bounded promoted workflow domain.
+2. Use [[../order-execution/index|Order Execution]] as the index for post-close readiness, state, gate, delivery/install, completion, and relationship-ready navigation.
+3. Use [[../order-execution/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]] for coordinator behavior and human-boundary expectations.
+4. Use [[../order-execution/order-execution-state-model|Order Execution State Model]] for state definitions and transition concepts.
+5. Use [[../order-execution/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] for blocker, warning, review, override, and transition policy.
+6. Use [[../governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]] for synthetic-fixture, policy-parameter, trace, and build-readiness evaluation discipline; keep it in governance unless an `agent-readiness` migration is separately approved.
 7. Continue tracking the commercial equipment knowledge-layer memo as an `upstream-dependency` owned by `fast-os-knowledge-base`, not as local synthesis work.
+8. Do not run the full `v0.4` folder migration from the order-execution pilot alone.
 
 ## Current Source-Aware Lead Intake Result
 
@@ -154,4 +159,4 @@ Treat `agent-workflows` as a knowledge-base answerability and bridge lens for no
 
 FSCR-017 closes the freight/install quote-readiness checkpoint without opening raw quote import, customer/pricing material, live pricing automation, customer-facing quote updates, or product implementation scope.
 
-FSCR-011 is now closed as a local governance synthesis page, not a fixture import. The next order-execution move should be navigation cleanup, dealer validation of unresolved policy thresholds, or future build-lane handoff only after Josh explicitly opens that scope. Otherwise, continue the example-first rule before build-facing requirements: capture downstream outcome evidence for the formal-feed source-aware example, capture another explicit downstream lead-intake outcome, or capture the next dealer-backed hunter-sales example from the remaining open validation list before promoting any remaining policy defaults. If no dealer examples are available, continue with another non-gated roadmap workflow family after classifying it through the lifecycle, capability, readiness/state, evaluation/build-readiness, storage-domain, and domain-promotion lenses.
+FSCR-011 is now closed as a local governance synthesis page, not a fixture import. The order-execution pilot migration is also complete, so the next move should not be another folder migration unless fresh evidence and Josh approval open that scope. Otherwise, continue the example-first rule before build-facing requirements: capture downstream outcome evidence for the formal-feed source-aware example, capture another explicit downstream lead-intake outcome, or capture the next dealer-backed hunter-sales example from the remaining open validation list before promoting any remaining policy defaults. If no dealer examples are available, continue with another non-gated roadmap workflow family after classifying it through the lifecycle, capability, readiness/state, evaluation/build-readiness, storage-domain, and domain-promotion lenses.

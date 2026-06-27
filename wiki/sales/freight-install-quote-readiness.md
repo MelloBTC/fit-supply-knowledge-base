@@ -13,14 +13,14 @@ sources:
   - C:/Users/joshm/projects/fast-os-capability-roadmap/docs/05-capability-roadmap/lead-to-quote-workflow-decomposition-example-v1.md
   - wiki/sales/source-aware-lead-intake-routing.md
   - wiki/sales/lead-to-closed-won-workflow.md
-  - wiki/projects/close-won-to-delivery-workflow.md
-  - wiki/projects/order-execution-state-model.md
+  - wiki/order-execution/close-won-to-delivery-workflow.md
+  - wiki/order-execution/order-execution-state-model.md
 related:
   - [[source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
-  - [[../projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
-  - [[../projects/order-execution-state-model|Order Execution State Model]]
-  - [[../governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[../order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+  - [[../order-execution/order-execution-state-model|Order Execution State Model]]
+  - [[../order-execution/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
   - [[../knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
   - [[../knowledge-base/agent-capability-map|Agent Capability Map]]
   - [[../knowledge-base/domain-model-review|Domain Model Review]]
@@ -147,7 +147,7 @@ Approved F&I assumptions should carry into:
 - extraction/removal sequencing
 - completion and actual-cost variance review
 
-This page therefore links sales quote readiness to [[../projects/order-execution-state-model|Order Execution State Model]].
+This page therefore links sales quote readiness to [[../order-execution/order-execution-state-model|Order Execution State Model]].
 
 Working rule:
 

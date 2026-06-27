@@ -10,11 +10,13 @@ sources:
   - schema.md
   - PROJECT_CONTEXT.md
   - raw/imports/fast-os-capability-roadmap-source-inventory.md
+  - wiki/order-execution/index.md
 related:
   - [[../knowledge-base/index|Knowledge Base]]
   - [[../index|Fit Supply Knowledge Base Index]]
+  - [[../order-execution/index|Order Execution]]
+  - [[../order-execution/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
   - [[../knowledge-base/domain-model-review|Domain Model Review]]
-  - [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
   - [[agent-evaluation-fixtures|Agent Evaluation Fixtures]]
 agent_answerability:
   - What belongs in the Governance domain?
@@ -22,7 +24,7 @@ agent_answerability:
 tags:
   - domain-index
   - governance
-provenance_notes: Starter domain index created during target-state skeleton setup; content areas are placeholders until source-backed pages are added.
+provenance_notes: Starter domain index created during target-state skeleton setup; updated 2026-06-27 after order-execution transition gate rules moved into the promoted order-execution domain while evaluation fixture discipline stayed in governance.
 ---
 
 # Governance
@@ -38,18 +40,18 @@ Governance covers the rules, review patterns, freshness expectations, source man
 - Freshness expectations
 - Conflict handling and provenance rules
 - Agent and contributor operating rules
+- Evaluation fixture discipline and build-readiness boundaries
 
 ## Current Pages
 
 - [[source-manifest|Source Manifest]]
-- [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
 - [[agent-evaluation-fixtures|Agent Evaluation Fixtures]]
 
-## Active Order-Execution Lens
+## Related Order Execution Governance
 
-Order-execution governance currently lives in [[order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] and [[agent-evaluation-fixtures|Agent Evaluation Fixtures]]. The first page owns blocker, warning, review, override, and transition policy. The second page owns synthetic-fixture and trace discipline for testing future readiness behavior before real customer data or product implementation work is opened.
+[[../order-execution/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] now lives in the promoted [[../order-execution/index|Order Execution]] domain because it is specific to post-close state transitions. [[agent-evaluation-fixtures|Agent Evaluation Fixtures]] remains in governance because it defines broader synthetic-fixture, trace, and human-review discipline for future agent-supported workflows.
 
-Keep broad review-process work separate from this lane until repeated patterns justify a more general human-review boundary page.
+Keep broad review-process work separate from the order-execution lane until repeated patterns justify a general human-review boundary page.
 
 ## Starter Pages To Add
 

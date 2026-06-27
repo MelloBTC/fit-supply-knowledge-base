@@ -12,9 +12,11 @@ sources:
   - wiki/knowledge-base/information-architecture-pressure-test.md
   - wiki/knowledge-base/domain-model-review.md
   - wiki/sales/freight-install-quote-readiness.md
+  - wiki/order-execution/index.md
 related:
   - [[governance/index|Governance]]
   - [[equipment/index|Equipment]]
+  - [[order-execution/index|Order Execution]]
   - [[knowledge-base/index|Knowledge Base]]
   - [[knowledge-base/agent-answerability-targets|Agent Answerability Targets]]
   - [[knowledge-base/roadmap-import-plan|Roadmap Import Plan]]
@@ -25,10 +27,10 @@ related:
   - [[knowledge-base/distributor-workflow-map|Distributor Workflow Map]]
   - [[knowledge-base/agent-capability-map|Agent Capability Map]]
   - [[sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]]
-  - [[projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
-  - [[projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
-  - [[projects/order-execution-state-model|Order Execution State Model]]
-  - [[governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
+  - [[order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]]
+  - [[order-execution/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]]
+  - [[order-execution/order-execution-state-model|Order Execution State Model]]
+  - [[order-execution/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]]
   - [[governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]]
   - [[sales/source-aware-lead-intake-routing|Source-Aware Lead Intake And Routing]]
   - [[sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]]
@@ -40,7 +42,7 @@ agent_answerability:
 tags:
   - root-index
   - navigation
-provenance_notes: Root index for the target-state Fit Supply LLM Wiki skeleton; updated 2026-06-27 to make IA navigation lenses explicit before domain folder browsing.
+provenance_notes: Root index for the target-state Fit Supply LLM Wiki skeleton; updated 2026-06-27 to make IA navigation lenses explicit before domain folder browsing and to link the promoted order-execution pilot domain.
 ---
 
 # Fit Supply Knowledge Base Index
@@ -54,10 +56,10 @@ Use these lenses before browsing folders when a question crosses departments, wo
 - [[company/commercial-fitness-distributor-operating-model|Commercial Fitness Distributor Operating Model]] - Parent operating model, lifecycle, roles, and data-object spine.
 - [[knowledge-base/distributor-workflow-map|Distributor Workflow Map]] - Primary lifecycle navigation from lead source through relationship expansion.
 - [[knowledge-base/agent-capability-map|Agent Capability Map]] - Agent-readiness navigation by capability cluster and human review boundary.
-- [[projects/order-execution-state-model|Order Execution State Model]] - Readiness/state navigation for avoiding false progress after approval.
+- [[order-execution/order-execution-state-model|Order Execution State Model]] - Readiness/state navigation for avoiding false progress after approval.
 - [[governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]] - Evaluation-readiness lens for future testable agent behavior without opening product implementation.
 - [[knowledge-base/wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] - Build-readiness bridge for mature wiki knowledge, not an implementation plan.
-- [[knowledge-base/domain-model-review|Domain Model Review]] and [[knowledge-base/information-architecture-pressure-test|Information Architecture Pressure Test]] - Structure-governance pages to read before adding or moving top-level folders.
+- [[knowledge-base/domain-model-review|Domain Model Review]] and [[knowledge-base/information-architecture-pressure-test|Information Architecture Pressure Test]] - Structure-governance pages to read before adding or moving additional top-level folders.
 
 ## Domains
 
@@ -66,7 +68,8 @@ Use these lenses before browsing folders when a question crosses departments, wo
 - [[sales/index|Sales]] - Sales processes, customer types, quoting, proposals, and financing.
 - [[design/index|Design]] - Space planning, layouts, 2D/3D workflows, and facility design patterns.
 - [[equipment/index|Equipment]] - Equipment taxonomy, specifications, compatibility, and model knowledge.
-- [[projects/index|Projects]] - Project lifecycle, handoffs, timelines, and risk patterns.
+- [[projects/index|Projects]] - Broader project lifecycle, handoffs, timelines, and risk patterns.
+- [[order-execution/index|Order Execution]] - Post-close readiness state, transition gates, delivery/install execution, completion, and relationship-ready handoff.
 - [[service/index|Service]] - Maintenance, support, service workflows, parts, and technician coordination.
 - [[current-state/index|Current State]] - Deferred lane for actual Fit Supply current-state notes.
 - [[knowledge-base/index|Knowledge Base]] - Instructions, answerability targets, contribution patterns, and meta knowledge about this wiki.
@@ -80,16 +83,16 @@ Use these lenses before browsing folders when a question crosses departments, wo
 - [[sales/lead-to-closed-won-workflow|Lead To Closed Won Workflow]] - Case-backed sales workflow from lead signal to closed-won boundary.
 - [[sales/freight-install-quote-readiness|Freight And Install Quote Readiness]] - Target-state quote-readiness workflow for freight, install, extraction, review/provenance, and handoff continuity.
 - [[sales/hunter-sales-existing-multifamily-pattern|Hunter Sales Existing Multifamily Pattern]] - Design-hypothesis sales pattern and validation-status checkpoint for existing multifamily prospecting, reactivation, source-origin routing, provisional probes, and human-reviewed outreach policy.
-- [[projects/close-won-to-delivery-workflow|Close Won To Delivery Workflow]] - Case-backed project workflow from approval to delivery, completion, and relationship continuity.
-- [[knowledge-base/domain-model-review|Domain Model Review]] - First domain-structure checkpoint after roadmap synthesis, including the order-execution lens decision.
-- [[knowledge-base/information-architecture-pressure-test|Information Architecture Pressure Test]] - Structure checkpoint comparing department folders against roadmap workflow, readiness-state, and agent-capability navigation.
+- [[order-execution/close-won-to-delivery-workflow|Close Won To Delivery Workflow]] - Case-backed order-execution workflow from approval to delivery, completion, and relationship continuity.
+- [[knowledge-base/domain-model-review|Domain Model Review]] - Domain-structure checkpoint after roadmap synthesis, including the bounded order-execution pilot promotion.
+- [[knowledge-base/information-architecture-pressure-test|Information Architecture Pressure Test]] - Structure checkpoint comparing department folders against roadmap workflow, readiness-state, and agent-capability navigation, with full `v0.4` migration still deferred.
 - [[knowledge-base/wiki-to-agent-build-bridge|Wiki To Agent Build Bridge]] - Reference-pattern bridge for translating mature wiki knowledge into future build-facing agent requirements without creating product schema or architecture.
 
-## Order-Execution Synthesis Lane
+## Order Execution Domain
 
-- [[projects/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]] - Readiness coordinator behavior, human boundaries, rep visibility, and data shape implications.
-- [[projects/order-execution-state-model|Order Execution State Model]] - Target-state ladder from quote-ready through relationship-ready.
-- [[governance/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] - Gate behavior, blockers, warnings, review boundaries, overrides, and evaluation expectations.
+- [[order-execution/order-execution-readiness-agent-requirements|Order Execution Readiness Agent Requirements]] - Readiness coordinator behavior, human boundaries, rep visibility, and data shape implications.
+- [[order-execution/order-execution-state-model|Order Execution State Model]] - Target-state ladder from quote-ready through relationship-ready.
+- [[order-execution/order-execution-transition-gate-rules|Order Execution Transition Gate Rules]] - Gate behavior, blockers, warnings, review boundaries, overrides, and evaluation expectations.
 - [[governance/agent-evaluation-fixtures|Agent Evaluation Fixtures]] - Synthetic-fixture, policy-parameter, trace, and review-boundary discipline for testing future readiness behavior before real customer data or product implementation work is opened.
 
 ## Working Notes
@@ -99,4 +102,4 @@ Use these lenses before browsing folders when a question crosses departments, wo
 - Keep source-backed claims connected to `raw/` material, roadmap artifacts, or documented first-party knowledge.
 - Leave pages in `Draft` until they have been reviewed.
 - Expand the domain model when roadmap inventory reveals important workflow areas that do not fit the starter skeleton.
-- Treat domain folders as storage homes; use lifecycle, capability, and readiness maps as the primary navigation lenses when a workflow crosses domains.
+- Treat domain folders as storage homes; `order-execution` is the first promoted lane from the folder-structure pilot, while broader v0.4 migration remains gated.
